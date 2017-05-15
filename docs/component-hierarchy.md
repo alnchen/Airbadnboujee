@@ -16,9 +16,6 @@
 **FooterContainer**
  - Footer
 
-**TripsContainer**
- - Trips
-
 **ListingsContainer**
  - Listings
 
@@ -53,7 +50,6 @@
 | "/home" | "HomesContainer" |
 | "/home" | "SearchContainer" |
 | "/home" | "FooterContainer" |
-| "/trips" | "TripsContainer" |
 | "/listings/:listingId" | "ListingsContainer" |
 | "/listings/:listingId" | "BookingFormContainer" |
 | "/listings/:listingId" | "ReviewsContainer" |
