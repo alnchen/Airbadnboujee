@@ -1,6 +1,6 @@
 # RareBnB
 
-[Heroku link][heroku]
+[Heroku link]: heroku
 
 ## Design Docs
 * [View Wireframes][wireframes]
