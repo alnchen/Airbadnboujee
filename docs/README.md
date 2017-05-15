@@ -1,24 +1,28 @@
-RareBnB
+# RareBnB
 
-need links for these:
-api-endpoints.md
-component-hierarchy.md
-sample-state.md
-schema.md
+[Heroku link][heroku]
 
+## Design Docs
+* [View Wireframes][wireframes]
+* [React Components][components]
+* [API endpoints][api-endpoints]
+* [DB schema][schema]
+* [Sample State][sample-state]
 
+[wireframes]: docs/wireframes
+[components]: docs/component-hierarchy.md
+[sample-state]: docs/sample-state.md
+[api-endpoints]: docs/api-endpoints.md
+[schema]: docs/schema.md
 
-*Heroku link goes here*
+## Minimum Viable Product
 
+RareBnB - A booking service inspired by AirBnB. This web application will help users find the most unique resorts all over the world.
 
----------------------------
-Minimum Viable Product:
-RareBnB - A booking service guaranteed to find the most unique resorts all over the world!
-
-Spots
-Bookings
-Spots search (by location & availability) & Google Maps on search
-Reviews
-Bonus: Messaging
-Bonus: User/host profiles
----------------------------
+- [ ] Hosting on Heroku
+- [ ] Spots
+- [ ] Bookings
+- [ ] Spots search (by location & availability) & Google Maps on search
+- [ ] Reviews
+- [ ] Messaging
+- [ ] User/host profiles
