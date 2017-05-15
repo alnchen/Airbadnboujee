@@ -25,6 +25,9 @@
 **BookingFormContainer**
  - BookingForm
 
+**BookingsContainer**
+ - BookingForm
+
 **ReviewFormContainer**
  - ReviewForm
 
@@ -55,4 +58,5 @@
 | "/listings/:listingId" | "BookingFormContainer" |
 | "/listings/:listingId" | "ReviewsContainer" |
 | "/listings/:listingId" | "ReviewFormContainer" |
+| "/bookings" | "BookingsContainer" |
 | "/newListing" | "ListingContainer" |
