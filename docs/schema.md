@@ -12,11 +12,11 @@ session_token   | string    | not null, indexed, unique
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-owner_id    | integer   | not null, foreign key (references users), indexed
+owner_id    | integer   | not null, foreign key (references users)
 location    | string    | not null
 lat         | float     | not null
 lng         | float     | not null
-rate        | integer   | not null, indexed
+rate        | integer   | not null
 image_url   | string    | not null
 title       | string    | not null
 description | string    | not null
@@ -28,8 +28,8 @@ country     | string    | not null
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-booker_id   | integer   | not null, foreign key (references users), indexed
-listing_id  | integer   | not null, foreign key (references spot ), indexed
+booker_id   | integer   | not null, foreign key (references users)
+listing_id  | integer   | not null, foreign key (references listings )
 start_date  | date      | not null
 end_date    | date      | not null
 
@@ -37,7 +37,7 @@ end_date    | date      | not null
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-author_Id   | integer   | not null, foreign key (references users), indexed
-listing_Id  | integer   | not null, foreign key (references spot ), indexed
+author_Id   | integer   | not null, foreign key (references users)
+listing_Id  | integer   | not null, foreign key (references spot )
 rating      | integer   | not null,
 body        | string    | not null
