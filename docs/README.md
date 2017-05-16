@@ -9,23 +9,23 @@
 * [DB schema][schema]
 * [Sample State][sample-state]
 
-[wireframes]: /wireframes
-[components]: /component-hierarchy.md
-[sample-state]: /sample-state.md
-[api-endpoints]: /api-endpoints.md
-[schema]: /schema.md
+[wireframes]: /docs/wireframes
+[components]: /docs/component-hierarchy.md
+[sample-state]: /docs/sample-state.md
+[api-endpoints]: /docs/api-endpoints.md
+[schema]: /docs/schema.md
 
 ## Minimum Viable Product
 
 RareBnB - A booking service inspired by AirBnB. This web application will help users find the most unique resorts all over the world.
 
+- [ ] New account creation, login, and guest/demo login
+- [ ] Production README
 - [ ] Hosting on Heroku
 - [ ] Spots
 - [ ] Bookings
 - [ ] Spots search (by location & availability) & Google Maps on search
 - [ ] Reviews
-- [ ] Messaging
-- [ ] User/host profiles
 
 
 ## Implementation Timeline
@@ -34,16 +34,16 @@ RareBnB - A booking service inspired by AirBnB. This web application will help u
 
 **Objective:** Functioning rails project with front-end Authentication
 
-### Phase 2: Listings Model, API, and components (2 days)
+### Phase 2: Listings Model, API, and components (1.5 days)
 
 **Objective:** Listings belong to Users and can be created, read, edited and destroyed through
 the API.
 
-### Phase 3: Bookings (2 days)
+### Phase 3: Bookings (1.5 days)
 
 **Objective:** Listings belong to Bookings that can be created, read, edited and destroyed through the API.
 
-### Phase 4: Spots Search (1 day)
+### Phase 4: Spots Search (2 days)
 
 **Objective:** Listings can be searched by location and utilizing Google maps.
 
@@ -51,6 +51,6 @@ the API.
 
 **Objective:** Reviews belong to listings and also users and can be created, read, edited and destroyed through the API.
 
-### Phase 6: - CSS (1 day)
+### Phase 6: - Patch Up and CSS (1 day)
 
-**Objective:** Time to style it up.
+**Objective:** Fix overall structure and then it's time to style it up.

@@ -3,8 +3,7 @@
   currentUser: {
     id: 1,
     email: "cp3@clippers.com",
-    fname: "Chris",
-    lname: "Paul"
+    name: "Chris Paul",
   }
 
   listings: {
@@ -16,12 +15,33 @@
       lat: 34.043181,
       lng: -118.267104,
       image_url: "condo.jpg",
-      rate: 160,
+      price: 160,
       city: "Los Angeles",
       state: "California",
-      country: "United States"
+      country: "United States",
     }
   }
+
+  listingDetail: {
+    listingId: 1,
+    title: "High rise condo with an amazing balcony view",
+    price: 160,
+    bookings: {
+      1: {
+        start_date: { month: "Dec", day: 31, year: 2016 }
+        end_date: { month: "Jan", day: 3, year: 2017 }
+      }
+    },
+    reviews: {
+      1: {
+        author_Id: 1,
+        rating: 5,
+        body: "Best view of Downtown Los Angeles, hands down!"
+      }
+    }
+  }
+
+
 
   bookings: {
     1: {

@@ -17,7 +17,10 @@
  - Footer
 
 **ListingsContainer**
- - Listings
+ - ListingsIndex
+
+**ListingDetailContainer**
+ - Listing
 
 **BookingFormContainer**
  - BookingForm

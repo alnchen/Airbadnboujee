@@ -32,18 +32,9 @@
 
 ### Bookings
 
-- `GET /api/listings/:id/bookings`
-  - Show all bookings
-- `POST /api/listings/:id/bookings/:id`
-  - Create a booking
-- `GET /api/listings/:id/bookings`
-  - Show all bookings for listing(:id)
-- `DELETE /api/listings/:id/bookings/:id`
-  - User can cancel a booking
+- `Will be nested within a listing`
 
 ### Reviews
 
-- `GET /api/listings/:id/reviews`
-  - Show all reviews for one listing
 - `POST /api/listings/:id/reviews`
   - Create new review for listing
