@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+.pfpic {
+  height: 150px;
+}
+
+.navBar {
+  width: 100%;
+  background-color: #EFF5FE;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbarLink {
+  margin: 0px 10px
+}
+
+.navBarElement {
+}
+
+.logo {
+  height: 50px;
+}

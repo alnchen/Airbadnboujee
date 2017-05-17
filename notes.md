@@ -6,4 +6,5 @@ jbuilder might need name for state shape
 
 
 ***CSS classes***
-navbarLinks = sign up/log in buttons/nav links
+'navbarLinks' = sign up/log in buttons/nav links
+'navImage' = pf pic in corner
