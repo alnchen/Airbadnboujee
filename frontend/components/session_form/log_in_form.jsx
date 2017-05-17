@@ -8,7 +8,7 @@ class LogInForm extends React.Component {
       password: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-
+    console.log(this.props);
   }
 
   update(field) {
@@ -21,7 +21,7 @@ class LogInForm extends React.Component {
     e.preventDefault();
     // const user = Object.assign({}, this.state);
     const user = this.state;
-    this.props.login(user);
+    this.props.login(user).then(this.props.closeModal);
   }
 
   render(){
@@ -43,6 +43,7 @@ class LogInForm extends React.Component {
           </input>
         </label>
         <br/>
+
         <button>Log In!</button>
 
       </form>

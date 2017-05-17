@@ -7,8 +7,9 @@ const mapStateToProps = (state) => ({
 });
 
 
-const mapDispatchToProps = (dispatch) => ({
-  login: user => dispatch(login(user))
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  login: user => dispatch(login(user)),
+  closeModal: ownProps.closeModal
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(LogInForm);

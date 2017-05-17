@@ -32,23 +32,23 @@ class Greeting extends React.Component{
   render(){
     const loggedOutLinks = () => (
       <nav className="navBarElement">
-        <Link className='navbarLink' to="/host">Become a Host</Link>
-        <Link className='navbarLink' to="/help">Help</Link>
-        <a className='navbarLink' href="#" onClick={this._handleSignUpClick} >Sign Up</a>
-        <a className='navbarLink' href="#" onClick={this._handleLogInClick} >Log In</a>
-        <a className='navbarLink' href="#" onClick={this.demoLogIn} >Demo Account</a>
+        <Link to="/host">Become a Host</Link>
+        <Link to="/help">Help</Link>
+        <a href="#" onClick={this._handleSignUpClick} >Sign Up</a>
+        <a href="#" onClick={this._handleLogInClick} >Log In</a>
+        <a href="#" onClick={this.demoLogIn} >Demo Account</a>
       </nav>
     );
 
     const loggedInLinks = (currentUser, logout) => {
-      const profilePic = currentUser.image_url === null ? currentUser.image_url : 'https://a3-images.myspacecdn.com/images03/1/240e42b5d9ce48a78983961e7fcb3c39/600x600.jpg'
+      const profilePic = currentUser.image_url ? currentUser.image_url : 'https://a3-images.myspacecdn.com/images03/1/240e42b5d9ce48a78983961e7fcb3c39/600x600.jpg'
 
       return (
         <div className="navBarElement">
-          <Link className='navbarLink' to="/host">Become a Host</Link>
-          <Link className='navbarLink' to="/trips">Trips</Link>
-          <Link className='navbarLink' to="/messages">Messages</Link>
-          <Link className='navbarLink' to="/help">Help</Link>
+          <Link to="/host">Become a Host</Link>
+          <Link to="/trips">Trips</Link>
+          <Link to="/messages">Messages</Link>
+          <Link to="/help">Help</Link>
 
           <img className='pfpic' src={profilePic}></img>
           <a onClick={logout} href="#" >Sign Out</a>
@@ -72,7 +72,7 @@ class Greeting extends React.Component{
           contentLabel="SignUpModal"
           >
           <button onClick={this.onSignUpModalClose}>X</button>
-          <SignUpFormContainer/>
+          <SignUpFormContainer closeModal={this.onSignUpModalClose}/>
         </Modal>
 
         <Modal
@@ -82,7 +82,7 @@ class Greeting extends React.Component{
           contentLabel="LogInModal"
           >
           <button onClick={this.onLogInModalClose}>X</button>
-          <LogInFormContainer/>
+          <LogInFormContainer closeModal={this.onLogInModalClose}/>
         </Modal>
 
       </div>

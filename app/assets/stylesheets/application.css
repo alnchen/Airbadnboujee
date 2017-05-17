@@ -14,24 +14,5 @@
  *= require_self
  */
 
-.pfpic {
-  height: 75px;
-  border-radius: 50%;
-}
-
-.navBar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbarLink {
-  margin: 0px 10px
-}
-
-.navBarElement {
-}
-
-.logo {
-  height: 50px;
-}
+ /*@import "base/colors.scss";
+ @import "navbar.scss";*/

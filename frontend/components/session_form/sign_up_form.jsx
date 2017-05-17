@@ -22,7 +22,7 @@ class SignUpForm extends React.Component {
     e.preventDefault();
     // const user = Object.assign({}, this.state);
     const user = this.state;
-    this.props.signup(user);
+    this.props.signup(user).then(this.props.closeModal);
   }
 
   render(){

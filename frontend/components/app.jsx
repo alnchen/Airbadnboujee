@@ -4,8 +4,8 @@ import { Route } from 'react-router-dom';
 
 
 const App = () => (
-  <div>
-    <header><GreetingContainer /></header>
+  <div className='header'>
+    <GreetingContainer />
   </div>
 );
 
