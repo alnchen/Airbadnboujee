@@ -9,7 +9,7 @@ class SignUpForm extends React.Component {
       image_url: '',
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-
+    this.switchForms = this.switchForms.bind(this);
   }
 
   update(field) {
@@ -23,6 +23,12 @@ class SignUpForm extends React.Component {
     // const user = Object.assign({}, this.state);
     const user = this.state;
     this.props.signup(user).then(this.props.closeModal);
+  }
+
+  switchForms(e) {
+    e.preventDefault();
+    this.props.closeModal();
+    this.props.logInModal();
   }
 
   render(){
@@ -51,8 +57,10 @@ class SignUpForm extends React.Component {
           </input>
         </label>
         <br/>
-        <button>Sign Up!</button>
 
+        <button>Sign Up!</button>
+        <label>Already have an account?</label>
+        <button onClick={this.switchForms}>Log in</button>
       </form>
     );
   }

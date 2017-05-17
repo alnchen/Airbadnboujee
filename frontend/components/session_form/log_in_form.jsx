@@ -8,7 +8,7 @@ class LogInForm extends React.Component {
       password: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-    console.log(this.props);
+    this.switchForms = this.switchForms.bind(this);
   }
 
   update(field) {
@@ -22,6 +22,12 @@ class LogInForm extends React.Component {
     // const user = Object.assign({}, this.state);
     const user = this.state;
     this.props.login(user).then(this.props.closeModal);
+  }
+
+  switchForms(e) {
+    e.preventDefault();
+    this.props.closeModal();
+    this.props.signUpModal();
   }
 
   render(){
@@ -45,7 +51,8 @@ class LogInForm extends React.Component {
         <br/>
 
         <button>Log In!</button>
-
+        <label>Don't have an account?</label>
+        <button onClick={this.switchForms}>Sign Up</button>
       </form>
     );
   }

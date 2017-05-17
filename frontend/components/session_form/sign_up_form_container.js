@@ -9,7 +9,8 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
   signup: user => dispatch(signup(user)),
-  closeModal: ownProps.closeModal
+  closeModal: ownProps.closeModal,
+  logInModal: ownProps.logInModal
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SignUpForm);
