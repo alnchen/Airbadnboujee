@@ -1,12 +1,11 @@
 import React from 'react';
 
-class SignUpForm extends React.Component {
+class LogInForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       email: '',
-      password: '',
-      image_url: '',
+      password: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
 
@@ -22,7 +21,7 @@ class SignUpForm extends React.Component {
     e.preventDefault();
     // const user = Object.assign({}, this.state);
     const user = this.state;
-    this.props.signup(user);
+    this.props.login(user);
   }
 
   render(){
@@ -44,18 +43,11 @@ class SignUpForm extends React.Component {
           </input>
         </label>
         <br/>
-        <label>Temp Image Url Input As String
-          <input onChange={this.update("image_url")}
-                 type="text"
-                 value={this.state.image_url}>
-          </input>
-        </label>
-        <br/>
-        <button>Sign Up!</button>
+        <button>Log In!</button>
 
       </form>
     );
   }
 }
 
-export default SignUpForm;
+export default LogInForm;
