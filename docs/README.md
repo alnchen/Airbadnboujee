@@ -1,4 +1,4 @@
-# RareBnB
+# AirBadnBoujie
 
 [Heroku link]: heroku
 
