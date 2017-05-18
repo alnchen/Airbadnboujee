@@ -33,34 +33,42 @@ class SignUpForm extends React.Component {
 
   render(){
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form className="authForm" onSubmit={this.handleSubmit}>
         {this.props.errors}
         <br/>
-        <label>Email
-          <input onChange={this.update("email")}
+
+          <input className="authInputBox" onChange={this.update("email")}
                  type="text"
-                 value={this.state.email}>
+                 value={this.state.email}
+                 placeholder='Email address'>
           </input>
-        </label>
-        <br/>
-        <label>Password
-          <input onChange={this.update("password")}
-                 type="password"
-                 value={this.state.password}>
-          </input>
-        </label>
-        <br/>
-        <label>Temp Image Url Input As String
-          <input onChange={this.update("image_url")}
-                 type="text"
-                 value={this.state.image_url}>
-          </input>
-        </label>
+
         <br/>
 
-        <button>Sign Up!</button>
-        <label>Already have an account?</label>
-        <button onClick={this.switchForms}>Log in</button>
+          <input className="authInputBox" onChange={this.update("password")}
+                 type="password"
+                 value={this.state.password}
+                 placeholder='Create a Password'>
+          </input>
+
+        <br/>
+
+          <input className="authInputBox" onChange={this.update("image_url")}
+                 type="text"
+                 value={this.state.image_url}
+                 placeholder='Profile Pic Image URL'>
+          </input>
+
+        <br/>
+
+        <button className='sessionsButton'>Sign Up</button>
+        <br/>
+        <hr/>
+
+        <div className="accountSwitch">
+          <label>Already have an account?</label>
+          <button className='changeFormsButton' onClick={this.switchForms}>Log in</button>
+        </div>
       </form>
     );
   }

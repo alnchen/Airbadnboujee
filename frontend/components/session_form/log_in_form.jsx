@@ -35,24 +35,26 @@ class LogInForm extends React.Component {
       <form onSubmit={this.handleSubmit}>
         {this.props.errors}
         <br/>
-        <label>Email
-          <input onChange={this.update("email")}
+
+          <input className="authInputBox" onChange={this.update("email")}
                  type="text"
-                 value={this.state.email}>
+                 value={this.state.email}
+                 placeholder='Email address'>
           </input>
-        </label>
-        <br/>
-        <label>Password
-          <input onChange={this.update("password")}
-                 type="password"
-                 value={this.state.password}>
-          </input>
-        </label>
+
         <br/>
 
-        <button>Log In!</button>
+          <input className="authInputBox" onChange={this.update("password")}
+                 type="password"
+                 value={this.state.password}
+                 placeholder='Create a Password'>
+          </input>
+
+        <br/>
+
+        <button className='sessionsButton'>Log In!</button>
         <label>Don't have an account?</label>
-        <button onClick={this.switchForms}>Sign Up</button>
+        <button className='changeFormsButton' onClick={this.switchForms}>Sign Up</button>
       </form>
     );
   }
