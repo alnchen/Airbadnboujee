@@ -17,7 +17,7 @@ class Api::ListingsController < ApplicationController
   def show
     @listing = Listing.find_by(id: params[:id])
     if @listing
-      render "api/listings/show"
+      render :show
     else
       render json: @listing.errors.full_messages
     end
@@ -27,7 +27,7 @@ class Api::ListingsController < ApplicationController
     # implementation to come
   end
 
-  def edit
+  def update
     # implementation to come
   end
 

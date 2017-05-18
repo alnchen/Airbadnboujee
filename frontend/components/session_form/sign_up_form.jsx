@@ -35,7 +35,7 @@ class SignUpForm extends React.Component {
     return (
       <form className="authForm" onSubmit={this.handleSubmit}>
         {this.props.errors}
-        
+
           <input className="authInputBox" onChange={this.update("email")}
                  type="text"
                  value={this.state.email}
@@ -57,6 +57,9 @@ class SignUpForm extends React.Component {
                  value={this.state.image_url}
                  placeholder='Profile Pic Image URL'>
           </input>
+
+          <input className="emailPromosButton" type="checkbox"></input>
+          <label className="emailPromosText">I’d like to receive coupons, promotions, surveys, and updates via email about AirBadnBoujie and its partners.</label>
 
         <br/>
           <button className='sessionsButton'>Sign Up</button>

@@ -26,3 +26,7 @@ import { login, signup, logout } from './actions/session_actions';
 window.login = login;
 window.signup = signup;
 window.logout = logout;
+import { fetchAllListings, fetchOneListing, addListing } from './actions/listings_actions';
+window.fetchAllListings = fetchAllListings;
+window.fetchOneListing = fetchOneListing;
+window.addListing = addListing;
