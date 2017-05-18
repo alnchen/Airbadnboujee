@@ -1,0 +1,22 @@
+.footerLinks {
+  font-family: $sans-serif-header;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 50px 0px 50px;
+}
+
+.footerLinksColumn {
+  flex-direction: column;
+}
+
+.footerLinksColumn * {
+  font-size: 11px;
+  display: block;
+  margin-top: 5px;
+}
+
+.footerColumnCategory {
+  font-weight: bold;
+  font-size: 13px;
+  margin: 12px 0px;;
+}
