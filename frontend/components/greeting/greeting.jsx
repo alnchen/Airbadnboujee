@@ -32,6 +32,7 @@ class Greeting extends React.Component{
   render(){
     const loggedOutLinks = () => (
       <nav className="navBarSessionLinks">
+        <Link to="/listings">Listings</Link>
         <Link to="/host">Become a Host</Link>
         <Link to="/help">Help</Link>
         <a href="#" onClick={this._handleSignUpClick} >Sign Up</a>
@@ -45,6 +46,7 @@ class Greeting extends React.Component{
 
       return (
         <div className="navBarSessionLinks">
+          <Link to="/listings">Listings</Link>
           <Link to="/host">Become a Host</Link>
           <Link to="/trips">Trips</Link>
           <Link to="/messages">Messages</Link>

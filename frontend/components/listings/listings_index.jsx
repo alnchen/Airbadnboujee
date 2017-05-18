@@ -17,9 +17,11 @@ class ListingsIndex extends React.Component {
 
     return (
       <div>
+        <ul>
         { this.props.allListings.map( (listing) => (
-          <ListingsIndexItem listing={listing} />
+          <ListingsIndexItem key={listing.id} listing={listing} />
         ))}
+        </ul>
       </div>
     );
   }

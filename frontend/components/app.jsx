@@ -2,13 +2,16 @@ import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
 import { Route } from 'react-router-dom';
 import ListingsIndexContainer from './listings/listings_index_container';
+import Home from './home/home';
+
 
 const App = () => (
   <div className='header'>
     <GreetingContainer />
     <div>
-      <ListingsIndexContainer />
-      <img width='100%' src="https://goo.gl/nNSkx0"/>
+
+      <Route exact path='/' component={Home}/>
+      <Route path='/listings' component={ListingsIndexContainer}/>
     </div>
   </div>
 );

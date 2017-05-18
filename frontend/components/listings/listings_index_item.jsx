@@ -3,7 +3,6 @@ import React from 'react';
 class ListingsIndexItem extends React.Component {
   constructor(props){
     super(props);
-    console.log(this.props);
   }
 
   render(){
@@ -11,7 +10,9 @@ class ListingsIndexItem extends React.Component {
 
       return (
         <div className="listingIndexItem">
-          <img src={this.props.listing.image_url}></img>
+          <li>
+            <img src={this.props.listing.image_url}></img>
+          </li>
         </div>
       );
   }
