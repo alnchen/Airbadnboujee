@@ -35,8 +35,8 @@ class Greeting extends React.Component{
         <Link to="/listings">Listings</Link>
         <Link to="/host">Become a Host</Link>
         <Link to="/help">Help</Link>
-        <a href="#" onClick={this._handleSignUpClick} >Sign Up</a>
-        <a href="#" onClick={this._handleLogInClick} >Log In</a>
+        <a style={{cursor:'pointer'}} onClick={this._handleSignUpClick} >Sign Up</a>
+        <a style={{cursor:'pointer'}} onClick={this._handleLogInClick} >Log In</a>
         <a href="#" onClick={this.demoLogIn} >Demo Account</a>
       </nav>
     );
@@ -51,7 +51,7 @@ class Greeting extends React.Component{
           <Link to="/trips">Trips</Link>
           <Link to="/messages">Messages</Link>
           <Link to="/help">Help</Link>
-          <img className='pfpic' src={profilePic}></img>
+          <img className='pf-pic' src={profilePic}></img>
           <a onClick={logout} href="#" >Sign Out</a>
         </div>
       );
