@@ -32,7 +32,7 @@ class LogInForm extends React.Component {
 
   render(){
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form className="authForm" onSubmit={this.handleSubmit}>
         {this.props.errors}
         <br/>
 
@@ -51,10 +51,14 @@ class LogInForm extends React.Component {
           </input>
 
         <br/>
+          <button className='sessionsButton'>Log In</button>
+        <br/>
+        <hr/>
 
-        <button className='sessionsButton'>Log In!</button>
-        <label>Don't have an account?</label>
-        <button className='changeFormsButton' onClick={this.switchForms}>Sign Up</button>
+          <div className="accountSwitch">
+          <label>Don't have an account?</label>
+          <button className='changeFormsButton' onClick={this.switchForms}>Sign Up</button>
+        </div>
       </form>
     );
   }

@@ -60,8 +60,7 @@ class SignUpForm extends React.Component {
           </input>
 
         <br/>
-
-        <button className='sessionsButton'>Sign Up</button>
+          <button className='sessionsButton'>Sign Up</button>
         <br/>
         <hr/>
 

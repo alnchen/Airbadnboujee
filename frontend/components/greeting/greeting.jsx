@@ -78,7 +78,7 @@ class Greeting extends React.Component{
           <SignUpFormContainer closeModal={this.onSignUpModalClose} logInModal={this._handleLogInClick}/>
         </Modal>
 
-        <Modal
+        <Modal className="modal"
           isOpen={this.state.LogInmodalOpen}
           onRequestClose={this.onLogInModalClose}
           style={ModalStyle}

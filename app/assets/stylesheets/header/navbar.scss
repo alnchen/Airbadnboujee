@@ -13,12 +13,17 @@
   height: 25px;
   width: 25px;
   border-radius: 50%;
+  object-fit: cover
 }
 
 .logo {
   height: 35px;
   width: 35px;
   margin-left: 15px;
+}
+
+.logo:hover {
+  opacity: 0.6;
 }
 
 .header {
@@ -32,8 +37,15 @@
 }
 
 .navBarSessionLinks * {
-margin: 0px 10px;
+  margin: 0px 10px;
+  padding: 3px 0px;
 }
+
+.navBarSessionLinks *:hover:not(.pfpic) {
+  opacity: 0.6;
+  border-bottom: 1px solid #adadad;
+}
+
 
 .authForm {
   width: 100%;
@@ -47,7 +59,7 @@ margin: 0px 10px;
 // }
 
 input[type='text'], input[type='password'] {
-  border: 1px solid $grey;
+  // border: 1px solid $grey;
   // border-style: solid;
   // border-color: #ff0000 #0000ff;
   //   outline-style: dotted;
@@ -83,7 +95,6 @@ input[type='text'], input[type='password'] {
   padding: 5px 15px;
   border: solid #1f628d 2px;
   text-decoration: none;
-  float: right;
 }
 
 .changeFormsButton:hover {
@@ -100,9 +111,19 @@ input[type='text'], input[type='password'] {
 .authInputBox {
   width: 100%;
   margin: 10px 0px;
-  padding: 10px 0px;;
+  padding: 10px 10px;;
+  box-sizing: border-box;
+  border: 1px solid #a5a4a4;
+  color: #919191;
+  font-family: $sans-serif-header;
+}
+
+input::-webkit-input-placeholder {
+color: #a5a4a4 !important;
 }
 
 .accountSwitch {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
