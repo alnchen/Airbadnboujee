@@ -9,7 +9,7 @@ class ListingsIndexItem extends React.Component {
 
 
       return (
-        <div className="listingIndexItem">
+        <div className="listing-index-item">
           <li>
             <img src={this.props.listing.image_url}></img>
           </li>

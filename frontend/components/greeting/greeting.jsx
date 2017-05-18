@@ -31,7 +31,7 @@ class Greeting extends React.Component{
 
   render(){
     const loggedOutLinks = () => (
-      <nav className="navBarSessionLinks">
+      <nav className="nav-bar-session-links">
         <Link to="/listings">Listings</Link>
         <Link to="/host">Become a Host</Link>
         <Link to="/help">Help</Link>
@@ -45,7 +45,7 @@ class Greeting extends React.Component{
     const profilePic = currentUser.image_url ? currentUser.image_url : 'https://a3-images.myspacecdn.com/images03/1/240e42b5d9ce48a78983961e7fcb3c39/600x600.jpg'
 
       return (
-        <div className="navBarSessionLinks">
+        <div className="nav-bar-session-links">
           <Link to="/listings">Listings</Link>
           <Link to="/host">Become a Host</Link>
           <Link to="/trips">Trips</Link>
@@ -60,7 +60,7 @@ class Greeting extends React.Component{
     const { currentUser, logout } = this.props;
 
     return (
-      <div className="navBar">
+      <div className="nav-bar">
 
         <Link to="/">
             <img className="logo"

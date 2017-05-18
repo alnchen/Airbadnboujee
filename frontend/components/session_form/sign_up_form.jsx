@@ -33,10 +33,10 @@ class SignUpForm extends React.Component {
 
   render(){
     return (
-      <form className="authForm" onSubmit={this.handleSubmit}>
+      <form className="auth-form" onSubmit={this.handleSubmit}>
         {this.props.errors}
 
-          <input className="authInputBox" onChange={this.update("email")}
+          <input className="auth-input-box" onChange={this.update("email")}
                  type="text"
                  value={this.state.email}
                  placeholder='Email address'>
@@ -44,7 +44,7 @@ class SignUpForm extends React.Component {
 
         <br/>
 
-          <input className="authInputBox" onChange={this.update("password")}
+          <input className="auth-input-box" onChange={this.update("password")}
                  type="password"
                  value={this.state.password}
                  placeholder='Create a Password'>
@@ -52,23 +52,23 @@ class SignUpForm extends React.Component {
 
         <br/>
 
-          <input className="authInputBox" onChange={this.update("image_url")}
+          <input className="auth-input-box" onChange={this.update("image_url")}
                  type="text"
                  value={this.state.image_url}
                  placeholder='Profile Pic Image URL'>
           </input>
 
-          <input className="emailPromosButton" type="checkbox"></input>
-          <label className="emailPromosText">I’d like to receive coupons, promotions, surveys, and updates via email about AirBadnBoujie and its partners.</label>
+          <input className="email-promos-button" type="checkbox"></input>
+          <label className="email-promos-text">I’d like to receive coupons, promotions, surveys, and updates via email about AirBadnBoujie and its partners.</label>
 
         <br/>
-          <button className='sessionsButton'>Sign Up</button>
+          <button className='sessions-button'>Sign Up</button>
         <br/>
         <hr/>
 
-        <div className="accountSwitch">
+        <div className="account-switch">
           <label>Already have an account?</label>
-          <button className='changeFormsButton' onClick={this.switchForms}>Log in</button>
+          <button className='change-forms-button' onClick={this.switchForms}>Log in</button>
         </div>
       </form>
     );
