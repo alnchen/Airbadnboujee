@@ -34,7 +34,6 @@ class LogInForm extends React.Component {
     return (
       <form className="authForm" onSubmit={this.handleSubmit}>
         {this.props.errors}
-        <br/>
 
           <input className="authInputBox" onChange={this.update("email")}
                  type="text"
