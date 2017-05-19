@@ -8,13 +8,13 @@ class ListingsIndexItem extends React.Component {
   render(){
     const { image_url, title, price, city } = this.props.listing;
       return (
+
         <div className="listing-index-item">
-          <li>
-            <div className="index-img-container" style={{backgroundImage: `url(${image_url})`}}></div>
-            <div className="index-title">${price} {title}</div>
-            <div className="index-city">{city}</div>
-          </li>
+          <img className="index-image" src={image_url}></img>
+          <div className="index-title">${price} {title}</div>
+          <div className="index-city">{city}</div>
         </div>
+
       );
   }
 }

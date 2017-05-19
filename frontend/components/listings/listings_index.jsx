@@ -16,12 +16,12 @@ class ListingsIndex extends React.Component {
 
 
     return (
-      <div>
-        <ul>
+      <div className="listings-index">
+
         { this.props.allListings.map( (listing) => (
           <ListingsIndexItem key={listing.id} listing={listing} />
         ))}
-        </ul>
+
       </div>
     );
   }

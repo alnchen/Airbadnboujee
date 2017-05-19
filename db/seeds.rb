@@ -65,7 +65,7 @@ Listing.create(
                 lat: '39.1422',
                 lng: '137.1735',
                 price: 3218,
-                image_url: 'http://www.universodasreceitas.com/wp-content/uploads/2017/02/amazing-modern-beach-homes-mesmerizing-1000-ideas-about-beach-house-endearing-beachfront-home-designs.jpg',
+                image_url: 'http://ww1.hdnux.com/photos/56/50/72/12226228/3/1024x1024.jpg',
                 title: 'Right by OB! Hear the waves as you sleep.',
                 description: 'San Diego at it\'s finest!',
                 city: 'San Diego',

@@ -1,12 +1,22 @@
-.listing-index-item {
-  margin: 15px 15px 30px 15px;
-  font-family: $sans-serif-header;
+.listings-index {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.index-img-container {
-  width: 375px;
-  height: 250px;
-  background-size: 100%;
+
+.listing-index-item {
+  font-family: $sans-serif-header;
+  margin: 15px;
+}
+
+.index-image {
+  width: 360px;
+  height: 230px;
+  object-fit: fill;
+
 }
 
 .index-title {
@@ -18,3 +28,5 @@
 .index-city {
   font-size: 12px;
 }
+
+//object fit cover display block
