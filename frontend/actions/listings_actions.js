@@ -25,5 +25,5 @@ export const fetchOneListing = (id) => dispatch => (
 
 export const addListing = (listing) => dispatch => (
   APIUtil.addListing(listing)
-  .then(listing => dispatch(receiveListing(listing)))
+  .then(newListing => dispatch(receiveListing(newListing)))
 );

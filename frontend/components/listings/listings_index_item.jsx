@@ -6,6 +6,10 @@ class ListingsIndexItem extends React.Component {
     super(props);
   }
 
+  componentDidMount () {
+    window.scrollTo(0, 0);
+  }
+
   render(){
     const { image_url, title, price, city, id } = this.props.listing;
       return (
@@ -13,8 +17,10 @@ class ListingsIndexItem extends React.Component {
         <Link to={`/listings/${id}`}>
           <div className="listing-index-item">
             <img className="index-image" src={image_url}></img>
-            <div className="index-title">${price} {title}</div>
-            <div className="index-city">{city}</div>
+            <div className="index-description">
+              <div className="index-title">${price} {title}</div>
+              <div className="index-city">{city}</div>
+            </div>
           </div>
         </Link>
       );

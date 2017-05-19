@@ -85,3 +85,221 @@ Listing.create(
                 state: 'California',
                 country: 'USA'
               )
+
+Listing.create(
+
+               owner_id: 1,
+
+               lat: '34.1341',
+
+               lng: '118.3215',
+
+               price: 600,
+
+               image_url: 'http://static6.businessinsider.com/image/5319e2fd6bb3f74a1f0acca4/house-of-the-day-swedish-dj-avicii-spent-155-million-on-this-bonkers-mansion-in-the-hollywood-hills.jpg',
+
+               title: 'Hollywood sign in your backyard.',
+
+               description: 'Deck with stunning views of the Los Angeles skyline, Griffith Park, and the Hollywood Sign. Located atop Beachwood Canyon, one of LA\'s most popular and unique neighborhoods, the house sits high above the city yet a short drive from all the excitement. ',
+
+               city: 'Hollywood',
+
+               state: 'California',
+
+               country: 'USA'
+
+             )
+
+
+
+
+
+Listing.create(
+
+               owner_id: 1,
+
+               lat: '37.7763',
+
+               lng: '122.4328',
+
+               price: 415,
+
+               image_url: 'https://s-media-cache-ak0.pinimg.com/originals/3e/d2/e5/3ed2e508b26bd740ed368014fdc1da69.jpg',
+
+               title: 'Stay in the world famous San Francisco Painted Ladies!',
+
+               description: 'Looking for a once-in-a-lifetime way to spend a night in San Francisco? Get the true San Franciscan experience by living in the city\'s most famous victorian home.',
+
+               city: 'San Francisco',
+
+               state: 'California',
+
+               country: 'USA'
+
+             )
+
+
+
+
+
+Listing.create(
+
+               owner_id: 1,
+
+               lat: '36.1699',
+
+               lng: '115.1398',
+
+               price: 1000,
+
+               image_url: 'https://blog.travefy.com/wp-content/uploads/2015/05/hugh-hefner-sky-villa-palms-las-vegas.jpg',
+
+               title: 'Palms Playboy Bunny Penthouse Suite.',
+
+               description: 'Stay on the 57th floor of the Palms Hotel. Luxurous Penthouse at Palms Place, 2 bedrooms plus a media room, top floor, over 500 feet in the air with incredible unobstructed view of the entire Strip, downtown and the city.',
+
+               city: 'Las Vegas',
+
+               state: 'Nevada',
+
+               country: 'USA'
+
+             )
+
+
+
+Listing.create(
+
+               owner_id: 1,
+
+               lat: '37.5741',
+
+               lng: '122.3794',
+
+               price: 300,
+
+               image_url: 'http://4cb3fadd15deceda8450-0977690290ec84d574463feb716239f3.r55.cf1.rackcdn.com/A_11.jpg',
+
+               title: 'Huge mansion. Perfect for billionaire parties.',
+
+               description: 'It\'s a fantastic cave-house located just outside of San Francisco. Flintstone house is an exceptional property and spend a few days in it becomes a unique experience, sunny terrace with fantastic views. Capacity 7 guests.',
+
+               city: 'Hillsborough',
+
+               state: 'California',
+
+               country: 'USA'
+
+             )
+
+
+
+
+
+Listing.create(
+
+               owner_id: 1,
+
+               lat: '34.0412',
+
+               lng: '118.4426',
+
+               price: 888,
+
+               image_url: 'http://www.homeandecor.net/wp-content/uploads/2016/05/ai-home-cinama-design-ideas-18.jpg',
+
+               title: 'Live like a celebrity with your own theater!',
+
+               description: 'New home w/panoramic views of the ocean/main channel/city lights. Steam rooms, saunas, stone jacuzzi oasis, movie theatre, game room w/professional billiards table, and a guest house. Custom glass windows & doors throughout the house provide a spectacular 180 degree view from every angle. Panoramic views span down all floors with an amazing rooftop deck & seated patios on every floor. Spend one night here & you\'ll appreciate the house & the entire experience.',
+
+               city: 'West Los Angeles',
+
+               state: 'California',
+
+               country: 'USA'
+
+             )
+
+
+
+
+
+Listing.create(
+
+               owner_id: 1,
+
+               lat: '34.1005',
+
+               lng: '118.3702',
+
+               price: 1200,
+
+               image_url: 'https://static1.squarespace.com/static/52292291e4b046b16fdae37c/563907d2e4b05c696317e66f/563908cfe4b08b90796199de/1446578385470/02_MCT_Stahl_House.jpg',
+
+               title: 'The Iconic Stahl House.',
+
+               description: 'Modernist-styled home designed by architect Pierre Koenig in the Hollywood Hills. Currently listed on the National Register of History Places. An eventide panoramic view of the city through floor-to-ceiling glass walls.',
+
+               city: 'Los Angeles',
+
+               state: 'California',
+
+               country: 'USA'
+
+             )
+
+
+
+
+
+Listing.create(
+
+               owner_id: 1,
+
+               lat: '23.1162',
+
+               lng: '143.1745',
+
+               price: 452,
+
+               image_url: 'http://eaudusoleil-empire.com/resources/eau%20du%20Soliel%20suites.jpg',
+
+               title: 'Huge space. Perfect for billionaire parties.',
+
+               description: 'The penthouse offers a captivating view of the glittering city below. Sprawled out over 4,000 square feet of living space. Sleeps 8.',
+
+               city: 'Las Vegas',
+
+               state: 'California',
+
+               country: 'USA'
+
+             )
+
+
+
+
+
+Listing.create(
+
+               owner_id: 1,
+
+               lat: '34.0736',
+
+               lng: '118.4004',
+
+               price: 550,
+
+               image_url: 'https://s-media-cache-ak0.pinimg.com/originals/b5/75/4e/b5754edd6e8535492a6dc5d63ab49bac.jpg',
+
+               title: '4BD Smart Home w/ Pool & Game Room',
+
+               description: 'Smart Home located in Beverly Hills. 4 bedrooms + an office allow for multiple occasions. The home is equipped with Smart Home technology (controlled by Amazon Echo\'s Alexa Voice Activation, 5 smart TV\'s (70" and 55"), lap pool, game/recreation room, Hi-speed internet, and remodeled kitchen. Located close to shopping and dining.',
+
+               city: 'Beverly Hills',
+
+               state: 'California',
+
+               country: 'USA'
+
+             )

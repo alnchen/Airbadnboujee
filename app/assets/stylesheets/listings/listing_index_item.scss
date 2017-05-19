@@ -1,32 +1,57 @@
 .listings-index {
-  width: 100%;
+  width: auto;
+  display: flex;
+}
+
+.listings-index-items {
+  width: 70%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+.index-description {
+  width: 300px;
+}
 
 .listing-index-item {
   font-family: $sans-serif-header;
   margin: 30px 12px;
+
 }
 
+.listing-index-item:hover {
+  opacity: 0.6;
+}
+
+
 .index-image {
-  width: 360px;
-  height: 230px;
+  width: 300px;
+  height: 200px;
   object-fit: fill;
 
 }
 
 .index-title {
+  width: 300px;
   font-size: 14px;
   font-weight: bold;
   margin-top: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .index-city {
   font-size: 12px;
 }
 
-//object fit cover display block
+.maps-search {
+  width: 30%;
+  background-color: black;
+}
+
+.default-listing-details {
+  
+}

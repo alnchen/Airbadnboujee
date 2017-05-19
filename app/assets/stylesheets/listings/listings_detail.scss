@@ -1,0 +1,75 @@
+.detail-item {
+  font-family: $sans-serif-header;
+  // width: 75%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.detail-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.detail-description {
+
+}
+
+.detail-city {
+
+}
+
+.detail-state {
+
+}
+
+.detail-price {
+
+}
+
+.detail-item-info {
+  width: 70%;
+  margin: 20px;
+}
+
+.detail-item-form {
+  justify-content: center;
+  color: white;
+  width: 30%;
+  height: 500px;
+  background-color: black;
+}
+
+.detail-image-container {
+  height: 575px;
+  overflow: hidden;
+}
+
+.detail-image {
+  width: 100%;
+  object-fit: fill;
+}
+
+.default-listing-details {
+  border-top: 1px solid #e8e8e8;
+}
+
+.detail-info-2-col {
+  display: flex;
+  // justify-content: space-between;
+}
+
+.detail-info-1-col {
+  display: flex;
+  // justify-content: space-between;
+}
+
+.detail-category {
+  width: 20%;
+}
+
+.split {
+  display: flex;
+  justify-content: space-between;
+  
+}

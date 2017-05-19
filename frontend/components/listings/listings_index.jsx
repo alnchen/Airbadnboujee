@@ -15,10 +15,15 @@ class ListingsIndex extends React.Component {
   render() {
     return (
       <div className="listings-index">
-        { this.props.allListings.map( (listing, idx) => (
-          <ListingsIndexItem key={idx} listing={listing} />
-        ))}
-    </div>
+        <div className="listings-index-items">
+          { this.props.allListings.map( (listing, idx) => (
+            <ListingsIndexItem key={idx} listing={listing} />
+          ))}
+        </div>
+        <div className="maps-search">
+          <h1>GOOGLE MAPS</h1>
+        </div>
+      </div>
     );
   }
 }

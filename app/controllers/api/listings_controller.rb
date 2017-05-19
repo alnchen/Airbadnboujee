@@ -10,7 +10,7 @@ class Api::ListingsController < ApplicationController
     if @listing.save
       render :show
     else
-      render json: @spot.errors.full_messages
+      render json: @listing.errors.full_messages
     end
   end
 

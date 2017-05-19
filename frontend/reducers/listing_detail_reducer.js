@@ -12,6 +12,7 @@ const defaultListing = {
   city: '',
   state: '',
   country: '',
+  image_url: ''
 };
 
 export default (state = defaultListing, action) => {
