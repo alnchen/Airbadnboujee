@@ -4,9 +4,9 @@ jbuilder might need name for state shape
 
 use carousel for flipping through images
 parallax
-modal animation 
+modal animation
+
+api_key: AIzaSyBvS_Gjg0uxEeFguoG6stTgRNgWX7w1x_c
 
 
-***CSS classes***
-'navbarLinks' = sign up/log in buttons/nav links
-'navImage' = pf pic in corner
+You can set a custom icon within the marker's constructor, or by calling setIcon() on the marker.

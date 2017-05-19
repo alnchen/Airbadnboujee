@@ -20,9 +20,6 @@ class ListingsIndex extends React.Component {
             <ListingsIndexItem key={idx} listing={listing} />
           ))}
         </div>
-        <div className="maps-search">
-          <h1>GOOGLE MAPS</h1>
-        </div>
       </div>
     );
   }

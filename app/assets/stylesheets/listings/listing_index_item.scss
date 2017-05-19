@@ -4,7 +4,7 @@
 }
 
 .listings-index-items {
-  width: 70%;
+  width: 90%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -47,11 +47,17 @@
   font-size: 12px;
 }
 
-.maps-search {
-  width: 30%;
-  background-color: black;
+.default-listing-details {
+
 }
 
-.default-listing-details {
-  
+.map-container {
+  width: 360px;
+  height: 650px;
+}
+
+.searchMap {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
 }
