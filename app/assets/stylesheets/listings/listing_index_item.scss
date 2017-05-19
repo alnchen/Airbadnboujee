@@ -3,13 +3,13 @@
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  justify-content: center;
 }
 
 
 .listing-index-item {
   font-family: $sans-serif-header;
-  margin: 15px;
+  margin: 30px 12px;
 }
 
 .index-image {

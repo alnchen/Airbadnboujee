@@ -1,5 +1,7 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import ListingsIndexItem from './listings_index_item';
+import ListingsDetailContainer from './listings_detail_container';
 
 class ListingsIndex extends React.Component {
   constructor(props){
@@ -10,19 +12,13 @@ class ListingsIndex extends React.Component {
     this.props.fetchAllListings();
   }
 
-
-
   render() {
-
-
     return (
       <div className="listings-index">
-
-        { this.props.allListings.map( (listing) => (
-          <ListingsIndexItem key={listing.id} listing={listing} />
+        { this.props.allListings.map( (listing, idx) => (
+          <ListingsIndexItem key={idx} listing={listing} />
         ))}
-
-      </div>
+    </div>
     );
   }
 }

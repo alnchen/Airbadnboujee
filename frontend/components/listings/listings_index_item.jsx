@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class ListingsIndexItem extends React.Component {
   constructor(props){
@@ -6,15 +7,16 @@ class ListingsIndexItem extends React.Component {
   }
 
   render(){
-    const { image_url, title, price, city } = this.props.listing;
+    const { image_url, title, price, city, id } = this.props.listing;
       return (
 
-        <div className="listing-index-item">
-          <img className="index-image" src={image_url}></img>
-          <div className="index-title">${price} {title}</div>
-          <div className="index-city">{city}</div>
-        </div>
-
+        <Link to={`/listings/${id}`}>
+          <div className="listing-index-item">
+            <img className="index-image" src={image_url}></img>
+            <div className="index-title">${price} {title}</div>
+            <div className="index-city">{city}</div>
+          </div>
+        </Link>
       );
   }
 }
