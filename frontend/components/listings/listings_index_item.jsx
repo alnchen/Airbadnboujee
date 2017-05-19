@@ -6,12 +6,13 @@ class ListingsIndexItem extends React.Component {
   }
 
   render(){
-
-
+    const { image_url, title, price, city } = this.props.listing;
       return (
         <div className="listing-index-item">
           <li>
-            <img src={this.props.listing.image_url}></img>
+            <div className="index-img-container" style={{backgroundImage: `url(${image_url})`}}></div>
+            <div className="index-title">${price} {title}</div>
+            <div className="index-city">{city}</div>
           </li>
         </div>
       );
@@ -21,4 +22,4 @@ class ListingsIndexItem extends React.Component {
 
 export default ListingsIndexItem;
 
-// const { image_url, title, price } = this.props.listing;
+// <div className="index-img-container"><img src={image_url}></img></div>

@@ -2,11 +2,12 @@
   font-family: $sans-serif-header;
   display: flex;
   justify-content: space-between;
-  margin: 30px 50px 0px 50px;
+  border-top: 1px solid #e8e8e8;
 }
 
 .footer-links-column {
   flex-direction: column;
+  margin: 20px 50px 0px 50px;;
 }
 
 .footer-links-column * {

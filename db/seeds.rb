@@ -33,3 +33,55 @@ Listing.create(
                 state: 'Nevada',
                 country: 'USA'
               )
+
+Listing.create(
+                owner_id: 1,
+                lat: '23.1162',
+                lng: '143.1745',
+                price: 452,
+                image_url: 'http://cdn.homedsgn.com/wp-content/uploads/2014/05/Modern-Mansion-on-Sunset-Plaza-Drive-06.jpg',
+                title: 'Huge mansion. Perfect for billionaire parties.',
+                description: 'Your own white house! 7 Bedroom with 5 Bath in South Carolina',
+                city: 'Anaheim',
+                state: 'California',
+                country: 'USA'
+              )
+
+Listing.create(
+                owner_id: 1,
+                lat: '31.1162',
+                lng: '145.1745',
+                price: 2330,
+                image_url: 'http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2013/08/26/100987825-121017_EJ_stone_mansion_0014r.1910x1000.jpg',
+                title: '230 Rooms. Maybach not included.',
+                description: 'Boujie.',
+                city: 'New York',
+                state: 'New York',
+                country: 'USA'
+              )
+
+Listing.create(
+                owner_id: 1,
+                lat: '39.1422',
+                lng: '137.1735',
+                price: 3218,
+                image_url: 'http://www.universodasreceitas.com/wp-content/uploads/2017/02/amazing-modern-beach-homes-mesmerizing-1000-ideas-about-beach-house-endearing-beachfront-home-designs.jpg',
+                title: 'Right by OB! Hear the waves as you sleep.',
+                description: 'San Diego at it\'s finest!',
+                city: 'San Diego',
+                state: 'California',
+                country: 'USA'
+              )
+
+Listing.create(
+                owner_id: 1,
+                lat: '34.1212',
+                lng: '134.1456',
+                price: 5238,
+                image_url: 'https://s-media-cache-ak0.pinimg.com/originals/22/d9/bd/22d9bd1bf9cf54831051b6906e50ead7.jpg',
+                title: 'My home. Yes, I am Iron Man',
+                description: 'Disclaimer: The Mandarin might come attack us. I gave him my address.',
+                city: 'Malibu',
+                state: 'California',
+                country: 'USA'
+              )
