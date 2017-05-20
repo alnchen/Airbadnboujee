@@ -1,23 +1,6 @@
 import React from 'react';
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const DefaultListingDetails = () => (
   <div>
 

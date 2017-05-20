@@ -20,7 +20,7 @@ class ListingsDetail extends React.Component {
   }
 
   render() {
-    const { lat, lng, owner_id, price, description, title, city, state, country, image_url } = this.props.listing;
+    const { lat, lng, owner_id, price, description, title, city, state, country, image_url, max_guests } = this.props.listing;
 
     return (
       <div>
@@ -32,10 +32,11 @@ class ListingsDetail extends React.Component {
             <div className="detail-description">{description}</div>
             <div className="detail-city">{city}</div>
             <div className="detail-state">{state}</div>
+            <div className="detail-max-guests">{max_guests}</div>
             <DefaultListingDetails />
           </div>
           <div className="detail-item-form">
-            <h1>FORM HERE</h1>
+            <h1>FORM GOES HERE</h1>
           </div>
         </div>
       </div>

@@ -36,7 +36,7 @@ RareBnB - A booking service inspired by AirBnB. This web application will help u
 
 ### Phase 2: Listings Model, API, and components (1.5 days)
 
-**Objective:** Listings belong to Users and can be created, read, edited and destroyed through
+**Objective:** Listings belong to Users and can be created and read through
 the API.
 
 ### Phase 3: Bookings (1.5 days)

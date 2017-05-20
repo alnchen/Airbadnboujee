@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20170518035456) do
     t.string   "city",        null: false
     t.string   "state",       null: false
     t.string   "country",     null: false
+    t.integer  "max_guests",  null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

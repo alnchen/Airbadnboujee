@@ -22,6 +22,7 @@ description | string    | not null
 city        | string    | not null
 state       | string    | not null
 country     | string    | not null
+max_guests  | integer    | not null
 bookings
 
 ## bookings

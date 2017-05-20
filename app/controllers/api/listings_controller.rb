@@ -4,15 +4,15 @@ class Api::ListingsController < ApplicationController
     render :index
   end
 
-  def create
-    @listing = Listing.new(listing_params)
-
-    if @listing.save
-      render :show
-    else
-      render json: @listing.errors.full_messages
-    end
-  end
+  # def create
+  #   @listing = Listing.new(listing_params)
+  #
+  #   if @listing.save
+  #     render :show
+  #   else
+  #     render json: @listing.errors.full_messages
+  #   end
+  # end
 
   def show
     @listing = Listing.find_by(id: params[:id])
@@ -31,10 +31,10 @@ class Api::ListingsController < ApplicationController
     # implementation to come
   end
 
-  def listing_params
-    params.require(:listing).permit(:owner_id, :lat, :lng, :price, :image_url,
-                                    :title, :description, :city, :state, :country)
-  end
+  # def listing_params
+  #   params.require(:listing).permit(:owner_id, :lat, :lng, :price, :image_url,
+  #                                   :title, :description, :city, :state, :country, :max_guests)
+  # end
 
   def bounds
     params[:bounds]
