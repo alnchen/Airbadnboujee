@@ -37,7 +37,7 @@ class Greeting extends React.Component{
         <Link to="/help">Help</Link>
         <a style={{cursor:'pointer'}} onClick={this._handleSignUpClick} >Sign Up</a>
         <a style={{cursor:'pointer'}} onClick={this._handleLogInClick} >Log In</a>
-        <a href="#" onClick={this.demoLogIn} >Demo Account</a>
+        <a style={{cursor:'pointer'}} onClick={this.demoLogIn} >Demo Account</a>
       </nav>
     );
 
@@ -52,7 +52,7 @@ class Greeting extends React.Component{
           <Link to="/messages">Messages</Link>
           <Link to="/help">Help</Link>
           <img className='pf-pic' src={profilePic}></img>
-          <a onClick={logout} href="#" >Sign Out</a>
+          <a onClick={logout} style={{cursor:'pointer'}} >Sign Out</a>
         </div>
       );
     };

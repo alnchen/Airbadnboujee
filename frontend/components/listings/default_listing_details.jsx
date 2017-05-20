@@ -6,16 +6,6 @@ const DefaultListingDetails = () => (
 
     <div className="default-listing-details">
         <div className="detail-info-2-col">
-          <div className="detail-category">The Space</div>
-          <div className="split">
-            <div>Accomodates: 4 <br/> Bathrooms: 2 <br/> Bedrooms: 1</div>
-            <div>Check In: Flexible <br/> Check Out: 12pm (noon)</div>
-          </div>
-        </div>
-    </div>
-
-    <div className="default-listing-details">
-        <div className="detail-info-2-col">
           <div className="detail-category">Amenities</div>
           <div className="split">
             <div>Internet <br/> Wireless Internet</div>

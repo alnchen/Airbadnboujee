@@ -11,8 +11,9 @@ class ListingsMap extends React.Component{
     };
     const map = this.refs.map;
     this.map = new google.maps.Map(map, mapOptions);
-    this.MarkerManager = new MarkerManager(this.map);
-
+    const infowindow = new google.maps.InfoWindow();
+    this.MarkerManager = new MarkerManager(this.map, infowindow);
+    
     // need to get bounds in the right format
 
     this.registerListeners();

@@ -150,7 +150,7 @@ Listing.create(
                lng: -122.3794,
                price: 300,
                image_url: 'http://4cb3fadd15deceda8450-0977690290ec84d574463feb716239f3.r55.cf1.rackcdn.com/A_11.jpg',
-               title: 'Huge mansion. Perfect for billionaire parties.',
+               title: 'Live like the Flintstones!',
                description: 'It\'s a fantastic cave-house located just outside of San Francisco. Flintstone house is an exceptional property and spend a few days in it becomes a unique experience, sunny terrace with fantastic views. Capacity 7 guests.',
                city: 'Hillsborough',
                state: 'California',
