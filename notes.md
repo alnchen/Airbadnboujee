@@ -10,3 +10,5 @@ api_key: AIzaSyBvS_Gjg0uxEeFguoG6stTgRNgWX7w1x_c
 
 
 You can set a custom icon within the marker's constructor, or by calling setIcon() on the marker.
+
+//mapsearch => changed listingscontroller index to utilize in_bounds

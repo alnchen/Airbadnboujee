@@ -6,11 +6,12 @@ import ListingsDetailContainer from './listings_detail_container';
 class ListingsIndex extends React.Component {
   constructor(props){
     super(props);
+    // console.log(this.props);
   }
 
-  componentDidMount() {
-    this.props.fetchAllListings();
-  }
+  // componentDidMount() {
+  //   this.props.fetchAllListings();
+  // }
 
   render() {
     return (

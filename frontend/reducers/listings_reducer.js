@@ -9,6 +9,7 @@ const ListingsReducer = (state = {}, action) => {
     case RECEIVE_LISTING:
       return merge({}, state, action.listing);
     default:
+      console.log("hit default");
       return state;
   }
 };

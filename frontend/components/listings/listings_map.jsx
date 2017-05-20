@@ -10,20 +10,28 @@ class ListingsMap extends React.Component{
       zoom: 12
     };
     const map = this.refs.map;
-
     this.map = new google.maps.Map(map, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
 
-    const marker = new google.maps.Marker({
-      position: { lat: 37.791488, lng: -122.39 },
-      map: this.map,
-    });
+    // need to get bounds in the right format
 
-
+    this.registerListeners();
+    // this.props.updateBounds(bounds);
   }
 
   componentDidUpdate() {
     this.MarkerManager.updateMarkers(this.props.listings);
+  }
+
+  registerListeners() {
+    google.maps.event.addListener(this.map, 'idle', () => {
+      const { north, south, east, west } = this.map.getBounds().toJSON();
+      const bounds = {
+        northEast: { lat: north, lng: east },
+        southWest: { lat: south, lng: west } };
+        // console.log(bounds);
+      this.props.updateBounds(bounds);
+    });
   }
 
   render() {

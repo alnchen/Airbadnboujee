@@ -7,8 +7,8 @@ class SearchMap extends React.Component{
   render() {
     return (
       <div className="searchMap">
-        <ListingsIndex allListings={this.props.allListings} fetchAllListings={this.props.fetchAllListings}/>
-        <ListingsMap listings={this.props.allListings} />
+        <ListingsIndex allListings={this.props.allListings} />
+        <ListingsMap listings={this.props.allListings} updateBounds={this.props.updateBounds}/>
       </div>
     );
   }

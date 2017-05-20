@@ -17,10 +17,7 @@ export default class MarkerManager {
   }
 
   createMarkerFromListing(listing) {
-    console.log(listing);
-    const pos = new google.maps.LatLng(listing.lat, -listing.lng)
-
-    console.log(pos);
+    const pos = new google.maps.LatLng(listing.lat, listing.lng);
     const marker = new google.maps.Marker({
       position: pos,
       map: this.map,
@@ -29,3 +26,5 @@ export default class MarkerManager {
     this.markers[marker.listingId] = marker;
   }
 }
+
+//need to remove benches that are out of view
