@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MarkerManager from '../../util/marker_manager';
+import { withRouter } from 'react-router';
 
 class ListingsMap extends React.Component{
 
@@ -12,8 +13,8 @@ class ListingsMap extends React.Component{
     const map = this.refs.map;
     this.map = new google.maps.Map(map, mapOptions);
     const infowindow = new google.maps.InfoWindow();
-    this.MarkerManager = new MarkerManager(this.map, infowindow);
-    
+    this.MarkerManager = new MarkerManager(this.map, infowindow, this.handleMarkerClick.bind(this));
+
     // need to get bounds in the right format
 
     this.registerListeners();
@@ -42,6 +43,10 @@ class ListingsMap extends React.Component{
       </div>
     );
   }
+
+  handleMarkerClick(listing) {
+    this.props.history.push(`/listings/${listing.id}`);
+  }
 }
 
-export default ListingsMap;
+export default withRouter(ListingsMap);

@@ -106,10 +106,6 @@ Listing.create(
                max_guests: 2
              )
 
-
-
-
-
 Listing.create(
                owner_id: 1,
                lat: 37.7763,
@@ -123,10 +119,6 @@ Listing.create(
                country: 'USA',
                max_guests: 4
              )
-
-
-
-
 
 Listing.create(
                owner_id: 1,
@@ -142,8 +134,6 @@ Listing.create(
                max_guests: 15
              )
 
-
-
 Listing.create(
                owner_id: 1,
                lat: 37.5741,
@@ -157,10 +147,6 @@ Listing.create(
                country: 'USA',
                max_guests: 40
              )
-
-
-
-
 
 Listing.create(
                owner_id: 1,
@@ -176,10 +162,6 @@ Listing.create(
                max_guests: 8
              )
 
-
-
-
-
 Listing.create(
                owner_id: 1,
                lat: 34.1005,
@@ -193,10 +175,6 @@ Listing.create(
                country: 'USA',
                max_guests: 6
              )
-
-
-
-
 
 Listing.create(
                owner_id: 1,
@@ -212,10 +190,6 @@ Listing.create(
                max_guests: 6
              )
 
-
-
-
-
 Listing.create(
                owner_id: 1,
                lat: 34.0736,
@@ -229,3 +203,45 @@ Listing.create(
                country: 'USA',
                max_guests: 10
              )
+
+Listing.create(
+              owner_id: 1,
+              lat: 34.1177,
+              lng: -118.3520,
+              price: 426,
+              image_url: 'http://static2.businessinsider.com/image/570c06d79105841d008bbf74-1200/ted-waitt-bird-streets-house.jpg',
+              title: 'Watch the stars through the ceiling!',
+              description: 'Built in 2009, the contemporary-style home has a colorful feel with stone walls, vibrant wood finishes and exotic lighting fixtures. Requisite walls of floor-to-ceiling glass have sprawling city, canyon and ocean views.',
+              city: 'Los Angeles',
+              state: 'California',
+              country: 'USA',
+              max_guests: 8
+            )
+
+Listing.create(
+              owner_id: 2,
+              lat: 34.0814,
+              lng: -118.4299,
+              price: 693,
+              image_url: 'http://www.idesignarch.com/wp-content/uploads/French-Chateau-Style-Mansion_2.jpg',
+              title: 'For the artist in you, this is built for the ultimate Renaissance man',
+              description: 'The Manor, located at 594 S. Mapleton Drive in the Holmby Hills neighborhood in Los Angeles, California is a stunning 56,500 square feet mansion on a 4.6 acre lot. Designed by architects James Langenheim & Associates, the French Chateau style mansion has 14 bedrooms, 27 bathrooms, a billiards room, bowling alley, arcade room, swimming pool, tennis courts, and servants quarters.',
+              city: 'Los Angeles',
+              state: 'California',
+              country: 'USA',
+              max_guests: 14
+            )
+
+Listing.create(
+              owner_id: 1,
+              lat: 33.0203,
+              lng: -117.2028,
+              price: 425,
+              image_url: 'http://www.catherineandjasonbarry.com/wp-content/uploads/2016/07/49_8092506_KY8A5011_copy.jpg',
+              title: 'For the Pure Nature Lover!',
+              description: 'This 6.75 all usable view acre estate excites the senses immediately as one enters the grand iron gates. As you drive past the cascading waterfalls through the lush tropical vegetation, you are welcomed to a stunning foyer. Massive arched windows beckon you into the formal living room with picturesque resort pool and waterfall views.',
+              city: 'San Diego',
+              state: 'California',
+              country: 'USA',
+              max_guests: 12
+            )
