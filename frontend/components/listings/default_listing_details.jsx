@@ -31,7 +31,7 @@ const DefaultListingDetails = () => (
               <div>No smoking<br/>Not suitable for pets<br/>No parties or events<br/>
                 May not be safe or suitable for children (0-12 years)<br/>Check in time is flexible<br/>
                 No eating meals in the bedroom please.<br/>If something gets broken it's expected to be fixed or replaced by the guest.<br/>
-                No smoking in the house.<br/>Respect appropriate quiet times.<br/>No unregisterd guests allowed in the propety.<br/>
+              No smoking in the house.<br/>Respect appropriate quiet times.<br/>No unregistered guests allowed in the property.<br/>
               </div>
           </div>
       </div>

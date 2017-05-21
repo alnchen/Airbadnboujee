@@ -60,36 +60,38 @@ class Greeting extends React.Component{
     const { currentUser, logout } = this.props;
 
     return (
-      <div className="nav-bar">
+      <div className="nav-bar-container">
+        <div className="nav-bar">
 
-        <Link to="/">
-            <img className="logo"
-             src="http://vignette2.wikia.nocookie.net/marvelcinematicuniverse/images/a/ad/Avengers_Logo.png/revision/latest?cb=20160218131959"/>
-        </Link>
+          <Link to="/">
+              <img className="logo"
+               src="http://vignette2.wikia.nocookie.net/marvelcinematicuniverse/images/a/ad/Avengers_Logo.png/revision/latest?cb=20160218131959"/>
+          </Link>
 
 
-           {currentUser ? loggedInLinks(currentUser, logout) : loggedOutLinks()}
+             {currentUser ? loggedInLinks(currentUser, logout) : loggedOutLinks()}
 
-        <Modal className="modal"
-          isOpen={this.state.SignUpmodalOpen}
-          onRequestClose={this.onSignUpModalClose}
-          style={ModalStyle}
-          contentLabel="SignUpModal"
-          >
-          <button onClick={this.onSignUpModalClose}>X</button>
-          <SignUpFormContainer closeModal={this.onSignUpModalClose} logInModal={this._handleLogInClick}/>
-        </Modal>
+          <Modal className="modal"
+            isOpen={this.state.SignUpmodalOpen}
+            onRequestClose={this.onSignUpModalClose}
+            style={ModalStyle}
+            contentLabel="SignUpModal"
+            >
+            <button onClick={this.onSignUpModalClose}>X</button>
+            <SignUpFormContainer closeModal={this.onSignUpModalClose} logInModal={this._handleLogInClick}/>
+          </Modal>
 
-        <Modal className="modal"
-          isOpen={this.state.LogInmodalOpen}
-          onRequestClose={this.onLogInModalClose}
-          style={ModalStyle}
-          contentLabel="LogInModal"
-          >
-          <button onClick={this.onLogInModalClose}>X</button>
-          <LogInFormContainer closeModal={this.onLogInModalClose} signUpModal={this._handleSignUpClick}/>
-        </Modal>
+          <Modal className="modal"
+            isOpen={this.state.LogInmodalOpen}
+            onRequestClose={this.onLogInModalClose}
+            style={ModalStyle}
+            contentLabel="LogInModal"
+            >
+            <button onClick={this.onLogInModalClose}>X</button>
+            <LogInFormContainer closeModal={this.onLogInModalClose} signUpModal={this._handleSignUpClick}/>
+          </Modal>
 
+        </div>
       </div>
     );
   }

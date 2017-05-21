@@ -9,8 +9,7 @@ import ListingsDetailContainer from './listings/listings_detail_container';
 const App = () => (
   <div className='header'>
     <GreetingContainer />
-    <div>
-
+    <div className="app-body">
       <Route exact path='/' component={Home}/>
       <Route exact path="/listings/:id" component={ListingsDetailContainer} />
       <Route exact path='/listings' component={SearchContainer}/>
