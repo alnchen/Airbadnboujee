@@ -6,11 +6,16 @@ export default class MarkerManager {
     this.markers = {};
     this.infowindow = infowindow;
     this.handleClick = handleClick;
+    this.removeMarker = this.removeMarker.bind(this);
   }
 
   updateMarkers(listings) {
     const listingsObj = {};
-    listings.forEach((listing) => {
+    listings.forEach((listing, idx) => {
+
+      if (idx === 0) {this.map.setCenter({ lat: listing.lat, lng: listing.lng});}
+
+
       listingsObj[listing.id] = listing;
     });
 
@@ -19,6 +24,18 @@ export default class MarkerManager {
       .forEach((newListing) => {
       this.createMarkerFromListing(newListing, this.infowindow, this.handleClick);
     });
+
+    Object.keys(this.markers)
+      .filter(listingId => !listingsObj[listingId])
+      .forEach((listingId) => this.removeMarker(this.markers[listingId]));
+
+    //set position of map to center on first marker
+    // this.map.setCenter(Object.keys(this.markers)[0].getPosition());
+  }
+
+  removeMarker(marker) {
+    this.markers[marker.listingId].setMap(null);
+    delete this.markers[marker.listingId];
   }
 
   createMarkerFromListing(listing, infowindow, handleClick) {
@@ -26,6 +43,7 @@ export default class MarkerManager {
     const marker = new google.maps.Marker({
       position: pos,
       map: this.map,
+      listingId: listing.id
     });
 
     marker.addListener('click', function () {
