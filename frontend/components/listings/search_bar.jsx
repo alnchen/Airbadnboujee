@@ -12,19 +12,27 @@ class SearchBar extends React.Component {
     this.handleLocationInput = this.handleLocationInput.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleGuestInput = this.handleGuestInput.bind(this);
+    this.handleAutocompleteCity = this.handleAutocompleteCity.bind(this);
   }
 
   componentDidMount(){
     const autocomplete = new google.maps.places.Autocomplete(document.getElementById('txtPlaces'), {types: ['(cities)'], componentRestrictions: {country: "us"}});
-    google.maps.event.addListener(autocomplete, 'place_changed', function () {
-        var place = test.getPlace();
-        var address = place.formatted_address;
-        var latitude = place.geometry.location.A;
-        var longitude = place.geometry.location.F;
+    autocomplete.addListener('place_changed', () => {
+      const place = autocomplete.getPlace().name;
+      console.log(place);
+      this.handleAutocompleteCity(place);
+        // var place = test.getPlace();
+        // var address = place.formatted_address;
+        // var latitude = place.geometry.location.A;
+        // var longitude = place.geometry.location.F;
     });
-
-
   }
+
+  handleAutocompleteCity(place) {
+    this.setState({city: place});
+    console.log(this.state);
+  }
+
 
   handleLocationInput(event) {
     this.setState({city: event.currentTarget.value});
@@ -63,8 +71,8 @@ class SearchBar extends React.Component {
             <option value='9'>9</option>
             <option value='10'>10+</option>
           </select>
-          <button type="submit">See Listings</button>
-
+        <input id="price-min" type="range" min="1" max="10"/>
+        <button type="submit">See Listings</button>
       </form>
     );
   }

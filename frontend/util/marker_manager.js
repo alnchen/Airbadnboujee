@@ -46,6 +46,7 @@ export default class MarkerManager {
     const marker = new google.maps.Marker({
       position: pos,
       map: this.map,
+      icon: 'http://ruralshores.com/assets/marker-icon.png',
       listingId: listing.id
     });
 

@@ -50,7 +50,6 @@ class Greeting extends React.Component{
   render(){
     const loggedOutLinks = () => (
       <nav className="nav-bar-session-links">
-        <Link to="/listings">Listings</Link>
         <Link to="/host">Become a Host</Link>
         <Link to="/help">Help</Link>
         <a style={{cursor:'pointer'}} onClick={this._handleSignUpClick} >Sign Up</a>
@@ -64,7 +63,6 @@ class Greeting extends React.Component{
 
       return (
         <div className="nav-bar-session-links">
-          <Link to="/listings">Listings</Link>
           <Link to="/host">Become a Host</Link>
           <Link to="/trips">Trips</Link>
           <Link to="/messages">Messages</Link>
@@ -87,7 +85,7 @@ class Greeting extends React.Component{
           </Link>
           <SearchBarContainer />
 
-             {currentUser ? loggedInLinks(currentUser, logout) : loggedOutLinks()}
+          {currentUser ? loggedInLinks(currentUser, logout) : loggedOutLinks()}
 
           <Modal className="modal"
             isOpen={this.state.SignUpmodalOpen}

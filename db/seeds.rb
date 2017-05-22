@@ -25,19 +25,6 @@ Listing.create(
                 max_guests: 18000,
               )
 
-Listing.create(
-                owner_id: 1,
-                lat: 36.1162,
-                lng: -115.1745,
-                price: 930,
-                image_url: 'http://i.dailymail.co.uk/i/pix/2015/04/29/14/2822CDF700000578-3060715-image-a-8_1430312882049.jpg',
-                title: 'Caesars Palace Open View Penthouse',
-                description: 'What better way to start your trip in sin city than staying in a room with an open ceiling?',
-                city: 'Las Vegas',
-                state: 'Nevada',
-                country: 'USA',
-                max_guests: 4
-              )
 
 Listing.create(
                 owner_id: 1,
@@ -68,6 +55,20 @@ Listing.create(
               )
 
 Listing.create(
+              owner_id: 1,
+              lat: 34.0212,
+              lng: -118.7798,
+              price: 5238,
+              image_url: 'https://s-media-cache-ak0.pinimg.com/originals/22/d9/bd/22d9bd1bf9cf54831051b6906e50ead7.jpg',
+              title: 'My home. Yes, I am Iron Man',
+              description: 'Disclaimer: The Mandarin might come attack us. I gave him my address.',
+              city: 'Malibu',
+              state: 'California',
+              country: 'USA',
+              max_guests: 25
+              )
+
+Listing.create(
                 owner_id: 1,
                 lat: 32.7422,
                 lng: -117.1735,
@@ -82,17 +83,17 @@ Listing.create(
               )
 
 Listing.create(
-                owner_id: 1,
-                lat: 34.0212,
-                lng: -118.7798,
-                price: 5238,
-                image_url: 'https://s-media-cache-ak0.pinimg.com/originals/22/d9/bd/22d9bd1bf9cf54831051b6906e50ead7.jpg',
-                title: 'My home. Yes, I am Iron Man',
-                description: 'Disclaimer: The Mandarin might come attack us. I gave him my address.',
-                city: 'Malibu',
-                state: 'California',
-                country: 'USA',
-                max_guests: 25
+              owner_id: 1,
+              lat: 36.1162,
+              lng: -115.1745,
+              price: 930,
+              image_url: 'http://i.dailymail.co.uk/i/pix/2015/04/29/14/2822CDF700000578-3060715-image-a-8_1430312882049.jpg',
+              title: 'Caesars Palace Open View Penthouse',
+              description: 'What better way to start your trip in sin city than staying in a room with an open ceiling?',
+              city: 'Las Vegas',
+              state: 'Nevada',
+              country: 'USA',
+              max_guests: 4
               )
 
 Listing.create(
