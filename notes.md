@@ -17,3 +17,4 @@ lifecycle methods
   -search is updating listings slice of state but clicking on listings triggers map to re-render bounds and update listings slice again
   -clicking on listings before making a search shows no listings
   -map does not update markers/view based no search
+Google maps autofill not working with onChange/onBlur

@@ -27,12 +27,14 @@ class ListingsDetail extends React.Component {
         <div className="detail-image-container"><img className="detail-image" src={image_url}/></div>
         <div className="detail-item">
           <div className="detail-item-info">
-            <div className="detail-price">{price}</div>
+            <div className="detail-price">Price per night: {price}</div>
             <div className="detail-title">{title}</div>
+            <div className="detail-city-state">{city}, {state}</div>
+            <div className="detail-max-guests">Max Guests: {max_guests}</div>
+            <br/>
+            <div style={{fontSize:13}}>About my place:</div>
             <div className="detail-description">{description}</div>
-            <div className="detail-city">{city}</div>
-            <div className="detail-state">{state}</div>
-            <div className="detail-max-guests">{max_guests}</div>
+            <br/>
             <DefaultListingDetails />
           </div>
           <div className="detail-item-form">

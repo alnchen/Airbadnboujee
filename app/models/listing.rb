@@ -25,9 +25,17 @@ class Listing < ApplicationRecord
   #
   def self.find_by_filters(city, guests)
     # , start_date, end_date)
+
     if city == ''
       listings = Listing.all
     else
+
+      until city[-1] != ' '
+        city = city[0..-2]
+      end
+
+      city = city.split(' ').map(&:capitalize).join(' ')
+
       listings = Listing.where(
       city: city
       )
