@@ -6,6 +6,7 @@ import { fetchAllListings } from '../../actions/listings_actions';
 
 const mapStateToProps = (state) => ({
   allListings: listingsArray(state),
+
 });
 
 const mapDispatchToProps = (dispatch) => ({

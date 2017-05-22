@@ -56,7 +56,7 @@ Listing.create(
                 lng: -118.345,
                 price: 2330,
                 image_url: 'http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2013/08/26/100987825-121017_EJ_stone_mansion_0014r.1910x1000.jpg',
-                title: '230 Rooms. Maybach not included.',
+                title: '620 Rooms. Maybach not included.',
                 description: 'Boujie.',
                 city: 'Los Angeles',
                 state: 'California',

@@ -14,5 +14,5 @@ export const changeBounds = (bounds) => ({
 
 export const updateBounds = (filter) => (dispatch, getState) => {
   dispatch(changeBounds(filter));
-  return fetchAllListings({ bounds: getState().filter} )(dispatch);
+  return fetchAllListings(getState().filters)(dispatch);
 };

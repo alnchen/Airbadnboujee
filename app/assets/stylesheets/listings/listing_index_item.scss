@@ -52,11 +52,14 @@
 }
 
 .map-container {
+  // margin: 30px;
   width: 360px;
-  height: 400px;;
+  height: 85vh;
+  position: fixed;
+  right: 10px;
 }
 
-.searchMap {
+.search-map {
   display: flex;
   justify-content: space-between;
   margin: 20px;

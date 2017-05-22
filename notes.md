@@ -1,6 +1,4 @@
-jbuilder might need name for state shape
-
-"Become a Host" and "Help" Links in Navbar
+use index of all listings with horizontal menu for front page element
 
 Extras:
 use carousel for flipping through images
@@ -12,6 +10,10 @@ map click pop up clickable title to show page
 api_key: AIzaSyBvS_Gjg0uxEeFguoG6stTgRNgWX7w1x_c
 
 
-You can set a custom icon within the marker's constructor, or by calling setIcon() on the marker.
 
-//mapsearch => changed listingscontroller index to utilize in_bounds
+
+ASK TA:
+lifecycle methods
+  -search is updating listings slice of state but clicking on listings triggers map to re-render bounds and update listings slice again
+  -clicking on listings before making a search shows no listings
+  -map does not update markers/view based no search

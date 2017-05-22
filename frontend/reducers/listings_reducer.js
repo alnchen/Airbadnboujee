@@ -5,9 +5,11 @@ const ListingsReducer = (state = {}, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_LISTINGS:
+      // console.log('inside listings reducers receive listings');
       return action.listings;
     case RECEIVE_LISTING:
-      return merge({}, state, action.listing);
+      //for adding listing
+      // return merge({}, state, action.listing);
     default:
       return state;
   }

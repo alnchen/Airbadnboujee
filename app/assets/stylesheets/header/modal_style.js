@@ -16,7 +16,8 @@ const modalStyle = {
     // bottom          : '100px',
     // border          : '10px solid #ccc',
     padding         : '20px',
-    zIndex          : 11
+    zIndex          : 11,
+    // opacity         : 100,
   }
 };
 

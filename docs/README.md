@@ -38,13 +38,13 @@ RareBnB - A booking service inspired by AirBnB. This web application will help u
 
 **Objective:** Listings belong to Users and can be seen from listings page along with map.
 
-### Phase 3: Bookings (1.5 days)
-
-**Objective:** Logged in user can make a booking and view their own bookings.
-
-### Phase 4: Spots Search (2 days)
+### Phase 3: Spots Search (2 days)
 
 **Objective:** Listings can be searched by location and number of guests.
+
+### Phase 4: Bookings (1.5 days)
+
+**Objective:** Logged in user can make a booking and view their own bookings.
 
 ### Phase 5: Reviews (1 day)
 

@@ -13,6 +13,54 @@ class Listing < ApplicationRecord
         .where("lng < ?", bounds[:northEast][:lng])
   end
 
+
+  # def is_available?(start_date, end_date)
+  #   self.bookings.each do |booking|
+  #     if booking.start_date <= end_date && start_date <= booking.end_date
+  #       return false
+  #     end
+  #   end
+  #   true
+  # end
+  #
+  def self.find_by_filters(city, guests)
+    # , start_date, end_date)
+    if city == ''
+      listings = Listing.all
+    else
+      listings = Listing.where(
+      city: city
+      )
+    end
+
+    # if bounds
+    #   west_lng = bounds[:southWest][:lng]
+    #   east_lng = bounds[:northEast][:lng]
+    #   south_lat = bounds[:southWest][:lat]
+    #   north_lat = bounds[:northEast][:lat]
+    #
+    #   listings = Listing.where(
+    #     lat: (south_lat..north_lat),
+    #     lng: (west_lng..east_lng),
+    #   )
+    # else
+    #   listings = Listing.all
+    # end
+
+    # if start_date == "" || end_date == ""
+    #   return listings
+    # else
+    #   return listings.select do |listing|
+    #     listing.is_available?(Date.parse(start_date), Date.parse(end_date))
+    #   end
+    # end
+
+    if guests == ''
+      return listings
+    else
+      return listings.select { |listing| guests.to_i <= listing.max_guests }
+    end
+  end
 end
 
 # {

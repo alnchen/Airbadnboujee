@@ -6,6 +6,7 @@ import Home from './home/home';
 import Footer from './footer/footer';
 import ListingsDetailContainer from './listings/listings_detail_container';
 
+
 const App = () => (
   <div className='header'>
     <GreetingContainer />

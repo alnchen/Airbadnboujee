@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 import ModalStyle from '../../../app/assets/stylesheets/header/modal_style';
 import SignUpFormContainer from '../session_form/sign_up_form_container';
 import LogInFormContainer from '../session_form/log_in_form_container';
+import SearchBarContainer from '../listings/search_bar_container';
 
 class Greeting extends React.Component{
   constructor(props) {
@@ -17,6 +18,7 @@ class Greeting extends React.Component{
     this.onSignUpModalClose = this.onSignUpModalClose.bind(this);
     this.onLogInModalClose = this.onLogInModalClose.bind(this);
     this.demoLogIn = this.demoLogIn.bind(this);
+    // this.afterModalOpen = this.afterModalOpen.bind(this);
   }
 
   _handleSignUpClick() { this.setState({ SignUpmodalOpen: true }); }
@@ -24,6 +26,22 @@ class Greeting extends React.Component{
 
   _handleLogInClick() { this.setState({ LogInmodalOpen: true }); }
   onLogInModalClose() { this.setState({ LogInmodalOpen: false }); }
+
+  // onSignUpModalClose() {
+  //   this.setState({ SignUpmodalOpen: false });
+  //   ModalStyle.content.opacity = 0;
+  //   console.log("inside close");
+  // }
+  //
+  // onLogInModalClose() {
+  //   this.setState({ LogInmodalOpen: false });
+  //   ModalStyle.content.opacity = 0;
+  //   console.log("inside close");
+  // }
+  //
+  // afterModalOpen() {
+  //   ModalStyle.content.opacity = 100;
+  // }
 
   demoLogIn(){
     this.props.login({ email: 'tom@myspace.com', password: 'password'});
@@ -67,13 +85,14 @@ class Greeting extends React.Component{
               <img className="logo"
                src="http://vignette2.wikia.nocookie.net/marvelcinematicuniverse/images/a/ad/Avengers_Logo.png/revision/latest?cb=20160218131959"/>
           </Link>
-
+          <SearchBarContainer />
 
              {currentUser ? loggedInLinks(currentUser, logout) : loggedOutLinks()}
 
           <Modal className="modal"
             isOpen={this.state.SignUpmodalOpen}
             onRequestClose={this.onSignUpModalClose}
+            onAfterOpen={this.afterModalOpen}
             style={ModalStyle}
             contentLabel="SignUpModal"
             >
@@ -84,6 +103,7 @@ class Greeting extends React.Component{
           <Modal className="modal"
             isOpen={this.state.LogInmodalOpen}
             onRequestClose={this.onLogInModalClose}
+            onAfterOpen={this.afterModalOpen}
             style={ModalStyle}
             contentLabel="LogInModal"
             >

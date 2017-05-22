@@ -1,7 +1,15 @@
 class Api::ListingsController < ApplicationController
-  def index
-    @listings = Listing.in_bounds(bounds)
-    render :index
+  def index    
+    @listings = Listing.find_by_filters(params[:filters][:city], params[:filters][:guests])
+
+
+      # if (params[:maxGuests])
+      #   listings = listings.where(max)
+      # else
+      #
+      # ends
+
+      render :index
   end
 
   # def create
@@ -31,12 +39,9 @@ class Api::ListingsController < ApplicationController
     # implementation to come
   end
 
-  # def listing_params
-  #   params.require(:listing).permit(:owner_id, :lat, :lng, :price, :image_url,
-  #                                   :title, :description, :city, :state, :country, :max_guests)
-  # end
-
-  def bounds
-    params[:bounds]
+  def listing_params
+    params.require(:listing).permit(:owner_id, :lat, :lng, :price, :image_url,
+                                    :title, :description, :city, :state, :country, :max_guests)
   end
+
 end

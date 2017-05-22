@@ -8,7 +8,7 @@ const RootReducer = combineReducers({
   session: SessionReducer,
   listings: ListingsReducer,
   listing: ListingDetailReducer,
-  filter: FilterReducer,
+  filters: FilterReducer,
 });
 
 export default RootReducer;

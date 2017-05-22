@@ -5,11 +5,11 @@
 //   })
 // );
 
-export const fetchAllListings = data => (
+export const fetchAllListings = filters => (
   $.ajax({
     method: 'GET',
     url: 'api/listings',
-    data
+    data: {filters}
   })
 );
 
