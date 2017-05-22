@@ -22,6 +22,8 @@ class SearchBar extends React.Component {
         var latitude = place.geometry.location.A;
         var longitude = place.geometry.location.F;
     });
+
+
   }
 
   handleLocationInput(event) {
@@ -45,7 +47,7 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <form id="search_form" onSubmit={this.handleFormSubmit}>
+      <form className="search-form" onSubmit={this.handleFormSubmit}>
         <br/>
         <input onBlur={this.handleLocationInput} type="text" id="txtPlaces" placeholder="Where?" />
           <select onChange={this.handleGuestInput}>

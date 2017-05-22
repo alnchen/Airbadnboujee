@@ -14,7 +14,7 @@ class ListingsIndexItem extends React.Component {
     const { image_url, title, price, city, id } = this.props.listing;
       return (
 
-        <Link to={`/listings/${id}`}>
+        <Link id={title} to={`/listings/${id}`}>
           <div className="listing-index-item">
             <img className="index-image" src={image_url}></img>
             <div className="index-description">

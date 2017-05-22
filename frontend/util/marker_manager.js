@@ -61,6 +61,18 @@ export default class MarkerManager {
 
     this.markers[marker.listingId] = marker;
 
+    const htmlElement = document.getElementById(listing.title);
+    if (htmlElement) {
+      htmlElement.onmouseover = () => {
+        infowindow.setContent(listing.title);
+        infowindow.open(this.map, marker);
+        // this.map.setCenter({ lat: listing.lat, lng: listing.lng});
+      };
+
+      htmlElement.onmouseout = () => {
+        infowindow.close(this.map, marker);
+      };
+    }
   }
 
 }
