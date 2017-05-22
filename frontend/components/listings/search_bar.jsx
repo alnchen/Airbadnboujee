@@ -15,8 +15,8 @@ class SearchBar extends React.Component {
   }
 
   componentDidMount(){
-    const test = new google.maps.places.Autocomplete(document.getElementById('txtPlaces'), {types: ['(cities)'], componentRestrictions: {country: "us"}});
-    google.maps.event.addListener(test, 'place_changed', function () {
+    const autocomplete = new google.maps.places.Autocomplete(document.getElementById('txtPlaces'), {types: ['(cities)'], componentRestrictions: {country: "us"}});
+    google.maps.event.addListener(autocomplete, 'place_changed', function () {
         var place = test.getPlace();
         var address = place.formatted_address;
         var latitude = place.geometry.location.A;
@@ -47,7 +47,7 @@ class SearchBar extends React.Component {
     return (
       <form id="search_form" onSubmit={this.handleFormSubmit}>
         <br/>
-        <input onBlur={this.handleLocationInput} type="text" id="txtPlaces" placeholder="Enter a location" />
+        <input onBlur={this.handleLocationInput} type="text" id="txtPlaces" placeholder="Where?" />
           <select onChange={this.handleGuestInput}>
             <option selected disabled value='default'>Number of Guests</option>
             <option value='1'>1</option>
@@ -61,7 +61,7 @@ class SearchBar extends React.Component {
             <option value='9'>9</option>
             <option value='10'>10+</option>
           </select>
-          <button type="submit">Submit</button>
+          <button type="submit">See Listings</button>
 
       </form>
     );

@@ -11,11 +11,11 @@ class ListingsMap extends React.Component{
     //   zoom: 5
     // };
 
-    const lat = this.props.listings[0] ? this.props.listings[0].lat : 37.7909;
-    const lng = this.props.listings[0] ? this.props.listings[0].lng : -122.3934;
+    // const lat = this.props.listings[0] ? this.props.listings[0].lat : 37.7909;
+    // const lng = this.props.listings[0] ? this.props.listings[0].lng : -122.3934;
 
     const mapOptions = {
-      center: { lat: lat, lng: lng },
+      // center: { lat: lat, lng: lng },
       zoom: 10
     };
 

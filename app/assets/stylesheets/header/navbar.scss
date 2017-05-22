@@ -146,3 +146,14 @@ color: #a5a4a4 !important;
 .email-promos-text {
   font-size: 12px;
 }
+
+//for removing search pins and google logo
+.pac-icon {
+  width: 0;
+  background-image: none;
+}
+
+.pac-container:after {
+  background-image: none !important;
+    height: 0px;
+}
