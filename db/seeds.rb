@@ -12,6 +12,91 @@ Listing.destroy_all
 tom = User.create(email: 'tom@myspace.com', password: 'password')
 jerry = User.create(email: 'jerry@xanga.com', password: 'password')
 
+
+Listing.create!(
+                owner_id: 1,
+                lat: 37.7884,
+                lng: -122.4076,
+                price: 1015,
+                image_url: 'https://s-media-cache-ak0.pinimg.com/originals/ab/d4/82/abd482f0bbf7b2ea4a9672ea195eadeb.jpg',
+                title: 'Grand entrance into San Francisco!',
+                description: "8,800 sf, 8+ bedroom, epic mansion! Huge, beautiful mansion with vast outdoor space. The house's beauty is featured in dozens of catalogs, including Pottery Barn, Williams Sonoma, Gumps, Cost Plus, & Loews. Designed by Augustus Laver, the architect of the Flood Mansion, home of the Pacific Union Club, a major San Francisco landmark. At least 15 beds; more for a fee. Fully stocked kitchen. Charges apply for all guests, DAY OR NIGHT. For small groups, I will lower the rate and lock 1-2 unneeded bedrooms & bathrooms.",
+                city: 'San Francisco',
+                state: 'California',
+                country: 'USA',
+                max_guests: 20
+                )
+
+Listing.create!(
+                owner_id: 1,
+                lat: 37.5453,
+                lng: -122.4368,
+                price: 495,
+                image_url: 'https://s-media-cache-ak0.pinimg.com/originals/fb/68/b4/fb68b4caeb3bd3a4300fc61cea76132f.jpg',
+                title: 'Family house with Game Room!',
+                description: 'Game room and 4 beds (5 possible): The top floor is mostly one very large, wide open space, with beds, games and a half bathroom (no shower or tub). It has four twin beds. It also has a full size "click clack" sofa bed. This will be a sofa unless you request a bed (fees may apply). There is a big "arcade size" air hockey table, and a smaller (not "arcade size") shuffleboard table, board games, puzzles and more..',
+                city: 'San Francisco',
+                state: 'California',
+                country: 'USA',
+                max_guests: 12
+                )
+
+Listing.create!(
+                owner_id: 1,
+                lat: 37.7853,
+                lng: -122.4081,
+                price: 215,
+                image_url: 'http://s1.r29static.com//bin/entry/3b5/x,80/1566903/image.jpg',
+                title: 'Right near Union Squre',
+                description: 'Enjoy your stay in this amazing condo located an aquarium. Room contains a king size bed with firm mattress, 2 nightstands, 40'' TV and a build-in closet and a fish tank with beautiful Malawi Cichlids. Could be perfect for a single person or a couple visiting San Francisco.',
+                city: 'San Francisco',
+                state: 'California',
+                country: 'USA',
+                max_guests: 2
+                )
+
+Listing.create!(
+                owner_id: 1,
+                lat: 37.7537,
+                lng: -122.4168,
+                price: 695,
+                image_url: 'https://s-media-cache-ak0.pinimg.com/originals/28/59/b9/2859b92a7f4ed5fa674711c797bc2bd4.jpg',
+                title: 'Vacation ready, equipped with a bowling alley and bar!',
+                description: 'This luxury home boasts epic proportions and an array of fabulous facilities. Spanning across 15,000 square feet of spectacular living space this vast property includes a bowling alley, squash & basketball court, home cinema, game room, spa, and gym..',
+                city: 'San Francisco',
+                state: 'California',
+                country: 'USA',
+                max_guests: 12
+                )
+
+Listing.create!(
+                owner_id: 1,
+                lat: 37.8591,
+                lng: -122.4853,
+                price: 300,
+                image_url: 'http://d751626467d7f300fc09-8b5ab94d6c0e85f41c767cd488d9c749.r17.cf1.rackcdn.com/020.jpg',
+                title: 'Watch the sunset/sunrise from the 50th floor!',
+                description: 'This beautiful condo is located on the 50th Floor of the Place Tower facing the San Francisco Bay. I just purchased this unit and it is newly refurbished by the hotel with brand new furniture, wall coverings & flooring. The best feature of this condo is the large balcony with expansive views. I keep the balcony open at all times for my guests to enjoy the outdoor space and relax while taking in the breathtaking views.',
+                city: 'Sausolito',
+                state: 'California',
+                country: 'USA',
+                max_guests: 10
+                )
+
+Listing.create!(
+                owner_id: 1,
+                lat: 37.8735,
+                lng: -122.4566,
+                price: 275,
+                image_url: 'https://s-media-cache-ak0.pinimg.com/originals/c2/44/3b/c2443b74dd8be20fd8d34d97d64bbda8.jpg',
+                title: 'Live in color!',
+                description: 'It is a newly remodeled town house with a modern design with every room filled with so much art. Many people love the creative, colorful vibrations it exudes. The room is filled with art in many forms, photography, and painted fabrics.',
+                city: 'Tiburon',
+                state: 'California',
+                country: 'USA',
+                max_guests: 4
+                )
+
 Listing.create!(
                 owner_id: 2,
                 lat: 34.0430,
@@ -252,32 +337,32 @@ Listing.create!(
                 )
 
 Listing.create!(
-                 owner_id: 1,
-                 lat: 37.7903,
-                 lng: -122.3961,
-                 price: 350,
-                 image_url: 'https://static01.nyt.com/images/2012/10/21/realestate/21COV3/Cove-jp-1-jumbo.jpg',
-                 title: 'Techie or not, this SF property suits you',
-                 description: 'Constructed in 2015, this 60 story tower offers perfect views and comfort during your stay. Located in the center of downtown San Francisco, you are at walkable distances to many shops and restaurants.',
-                 city: 'San Francisco',
-                 state: 'California',
-                 country: 'USA',
-                 max_guests: 6
-                 )
+                owner_id: 1,
+                lat: 37.7903,
+                lng: -122.3961,
+                price: 350,
+                image_url: 'https://static01.nyt.com/images/2012/10/21/realestate/21COV3/Cove-jp-1-jumbo.jpg',
+                title: 'Techie or not, this SF property suits you',
+                description: 'Constructed in 2015, this 60 story tower offers perfect views and comfort during your stay. Located in the center of downtown San Francisco, you are at walkable distances to many shops and restaurants.',
+                city: 'San Francisco',
+                state: 'California',
+                country: 'USA',
+                max_guests: 6
+                )
 
 Listing.create!(
-                 owner_id: 1,
-                 lat: 37.7852,
-                 lng: -122.4043,
-                 price: 375,
-                 image_url: 'https://sanfranciscoarchitects.files.wordpress.com/2017/03/gallery_house_e_facade_746x1000.jpg?w=760',
-                 title: 'It’s not always about the size!',
-                 description: 'This cozy property offers visitors an unique San Francisco experience. Enjoy natural sunlight and magnificent views with the gorgeous panoramic windows. Located in the mission, you are close to many bars and restaurants.',
-                 city: 'San Francisco',
-                 state: 'California',
-                 country: 'USA',
-                 max_guests: 6
-                 )
+                owner_id: 1,
+                lat: 37.7852,
+                lng: -122.4043,
+                price: 375,
+                image_url: 'https://sanfranciscoarchitects.files.wordpress.com/2017/03/gallery_house_e_facade_746x1000.jpg?w=760',
+                title: 'It’s not always about the size!',
+                description: 'This cozy property offers visitors an unique San Francisco experience. Enjoy natural sunlight and magnificent views with the gorgeous panoramic windows. Located in the mission, you are close to many bars and restaurants.',
+                city: 'San Francisco',
+                state: 'California',
+                country: 'USA',
+                max_guests: 6
+                )
 
 
 Listing.create!(
@@ -360,6 +445,20 @@ Listing.create!(
                 title: 'THE 5 MILLION STAR VIEW – UNCENSORED',
                 description: 'Lay in the bed. Turn off the lamp and start counting. The bubble structure is kept inflated by a slight over-pressure from a noiseless ventilation system. It permanently renews the air inside 2-7 times the volume per hour and this way it prevents humidity. The system has heating elements with thermostat so the bubble stays warm all winter.',
                 city: 'Larkspur',
+                state: 'California',
+                country: 'USA',
+                max_guests: 4
+                )
+
+Listing.create!(
+                owner_id: 1,
+                lat: 37.8313,
+                lng: -122.2852,
+                price: 450,
+                image_url: 'http://thedisneyblog.com/wp-content/uploads/2011/07/photo1-lrg.jpg',
+                title: 'Pixar Dream Come True',
+                description: 'Inspired by the movie Up, this cozy home is located on the Pixar campus in Emeryville, California. You will have full access to the Finding Nemo swimming pool, Toy Story basketball court, and your own personal golf cart to explore the campus.',
+                city: 'Emeryville',
                 state: 'California',
                 country: 'USA',
                 max_guests: 4

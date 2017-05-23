@@ -47,6 +47,7 @@ export default class MarkerManager {
       position: pos,
       map: this.map,
       icon: 'http://ruralshores.com/assets/marker-icon.png',
+      animation: google.maps.Animation.DROP,
       listingId: listing.id
     });
 
