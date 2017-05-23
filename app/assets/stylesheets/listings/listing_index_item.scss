@@ -1,14 +1,8 @@
 .listings-index {
-  width: auto;
-  display: flex;
-}
-
-.listings-index-items {
-  width: 100%;
-  height: auto;
+  width: 60vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  // background-color: red;
 }
 
 .index-description {
@@ -16,9 +10,17 @@
 }
 
 .listing-index-item {
+  // background-color: red;
   font-family: $sans-serif-header;
-  margin: 30px 20px;
-  transition: transform 0.3s ease-in-out
+  margin: 15px 10px 0px 10px;
+  transition: transform 0.3s ease-in-out;
+  // display: flex;
+  // flex-wrap: wrap;
+  //
+  // width: 20vw;
+  // height: auto;
+  // display: flex;
+  // flex-wrap: wrap;
 }
 
 .listing-index-item:hover {
@@ -42,7 +44,7 @@
 
 .index-title {
   width: 300px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   margin-top: 6px;
   text-overflow: ellipsis;
@@ -51,7 +53,7 @@
 }
 
 .index-city {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .default-listing-details {
@@ -60,14 +62,20 @@
 
 .map-container {
   // margin: 30px;
-  width: 360px;
-  height: 85vh;
+  width: 35vw;
+  // height: 85vh;
+  height: 95vh;
   position: fixed;
-  right: 10px;
+  top: 0px;
+  right: 0px;
+  // right: 10px;
 }
 
-.search-map {
+.search-results {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 20px;
+  // background-color: white;
 }

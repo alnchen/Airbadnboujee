@@ -7,10 +7,13 @@ class ListingsDetail extends React.Component {
     super(props);
   }
 
-
   componentDidMount() {
     this.props.fetchOneListing(this.props.match.params.id)
     .then(window.scrollTo(0, 0));
+  }
+
+  componentWillUnmount() {
+    $('.parallax-mirror').remove();
   }
 
   componentWillReceiveProps(nextProps) {
@@ -21,6 +24,8 @@ class ListingsDetail extends React.Component {
 
   render() {
     const { lat, lng, owner_id, price, description, title, city, state, country, image_url, max_guests } = this.props.listing;
+
+    $('.detail-image-container').parallax({imageSrc: image_url})
 
     return (
       <div>

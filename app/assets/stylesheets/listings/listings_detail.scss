@@ -41,8 +41,14 @@
 }
 
 .detail-image-container {
-  height: 575px;
-  overflow: hidden;
+  opacity: 0.0;
+  // height: 575px;
+  // overflow: hidden;
+  // background: transparent;
+  // background: transparent;
+  // min-height: 700px;
+  z-index: -10;
+  max-height: 80vh;
 }
 
 // .detail-image-container:hover {

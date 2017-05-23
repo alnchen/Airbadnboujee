@@ -15,6 +15,7 @@ class SearchBar extends React.Component {
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleGuestInput = this.handleGuestInput.bind(this);
     this.handleAutocompleteCity = this.handleAutocompleteCity.bind(this);
+    this.clearFields = this.clearFields.bind(this);
   }
 
   componentDidMount(){
@@ -24,12 +25,13 @@ class SearchBar extends React.Component {
       // console.log(place);
       this.handleAutocompleteCity(place);
     });
-    google.maps.event.addDomListener(document.getElementById('txtPlaces'), 'keydown', (e) => {
+    google.maps.event.addDomListener(document.getElementById('txtPlaces'), 'keydown', function(e) {
       if (e.keyCode === 13) {
-        e.preventDefault;
-        const place = e.currentTarget.value.split(',')[0];
-        this.setState({city: place});
-        this.handleFormSubmit;
+        e.preventDefault();
+        // const place = e.currentTarget.value.split(',')[0];
+        // this.setState({city: place});
+        // this.clearFields();
+        // this.handleFormSubmit();
       }
     });
   }
@@ -40,7 +42,9 @@ class SearchBar extends React.Component {
   }
 
   handleLocationInput(event) {
-    this.setState({city: event.currentTarget.value});
+    // console.log(event.currentTarget.value);
+    // console.log('inside location input');
+    this.setState({city: event.currentTarget.value.split(',')[0]});
     // console.log(this.state.city);
   }
 
@@ -50,19 +54,23 @@ class SearchBar extends React.Component {
 
   handleFormSubmit(event) {
     event.preventDefault();
-    const filters = this.state;
-    // debugger
-    // console.log("inside handleFormSubmit");
-    this.props.fetchAllListings(filters)
+    this.props.fetchAllListings(this.state)
     .then(this.props.history.push(`/listings/`));
+    this.clearFields();
   }
 
-  render() {    
+  clearFields(){
+    document.getElementById('txtPlaces').value='';
+  }
+
+  render() {
     return (
       <form className="search-form" onSubmit={this.handleFormSubmit}>
         <br/>
+
         <Slider />
         <Range />
+
         <input onBlur={this.handleLocationInput} type="text" id="txtPlaces" placeholder="Where?" />
           <select onChange={this.handleGuestInput}>
             <option selected disabled value='default'>Number of Guests</option>

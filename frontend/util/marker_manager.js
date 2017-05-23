@@ -11,14 +11,14 @@ export default class MarkerManager {
 
   updateMarkers(listings) {
     const listingsObj = {};
-    listings.forEach((listing, idx) => {
 
-      if (idx === 0) {
-        this.map.setCenter({ lat: listing.lat, lng: listing.lng});
-      }
+    const lat = listings.length > 0 ? listings[0].lat : 37.791;
+    const lng = listings.length > 0 ? listings[0].lng : -122.3935;
 
-      this.map.setZoom(10);
+    this.map.setCenter({ lat: lat, lng: lng});
+    this.map.setZoom(10);
 
+    listings.forEach((listing) => {
       listingsObj[listing.id] = listing;
     });
 

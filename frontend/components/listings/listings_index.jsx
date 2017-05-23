@@ -14,13 +14,16 @@ class ListingsIndex extends React.Component {
   // }
 
   render() {
+    const empty = this.props.allListings.length === 0 ?
+                  <div>Sorry, no listings available here!</div>
+                  : <div></div>;
+
     return (
       <div className="listings-index">
-        <div className="listings-index-items">
-          { this.props.allListings.map( (listing, idx) => (
-            <ListingsIndexItem key={idx} listing={listing} />
-          ))}
-        </div>
+        { empty }
+        {this.props.allListings.map( (listing, idx) => (
+          <ListingsIndexItem key={idx} listing={listing} />
+        ))}
       </div>
     );
   }

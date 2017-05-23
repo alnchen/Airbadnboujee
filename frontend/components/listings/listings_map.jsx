@@ -31,13 +31,9 @@ class ListingsMap extends React.Component{
     this.MarkerManager.updateMarkers(this.props.listings);
   }
 
-
-
   componentDidUpdate() {
     this.MarkerManager.updateMarkers(this.props.listings);
   }
-
-
 
   // registerListeners() {
   //   google.maps.event.addListener(this.map, 'idle', () => {
