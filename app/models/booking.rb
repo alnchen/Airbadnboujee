@@ -1,5 +1,5 @@
 class Booking < ApplicationRecord
-  validates :user_id, :listing_id, :num_of_guests, :check_in, :check_out
+  validates :user_id, :listing_id, :num_of_guests, :check_in, :check_out, presence: true
 
   belongs_to :guest,
     primary_key: :id,
@@ -11,6 +11,6 @@ class Booking < ApplicationRecord
     foreign_key: :listing_id,
     class_name: 'Listing'
 
-#testing 
+#testing
 
 end
