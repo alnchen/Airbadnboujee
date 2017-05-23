@@ -8,6 +8,11 @@ class ListingsIndex extends React.Component {
           <par className='footer-links-column'>
           <label className='footer-column-category'>ABOUT</label>
             Paragraph about my project goes here
+            <br/>
+            But first....
+            <audio id="music" controls="controls">
+              <source src="http://freeringtonesdownload.info/download/?id=5251" type="audio/mpeg" />
+            </audio>
           </par>
 
           <div className='footer-links-column'>
