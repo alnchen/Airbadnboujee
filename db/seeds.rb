@@ -11,7 +11,7 @@ Listing.destroy_all
 
 User.create(email: 'tom@myspace.com', password: 'password')
 
-Listing.create(
+Listing.create!(
                 owner_id: 1,
                 lat: 34.0430,
                 lng: -118.2673,
@@ -26,7 +26,7 @@ Listing.create(
               )
 
 
-Listing.create(
+Listing.create!(
                 owner_id: 1,
                 lat: 34.1162,
                 lng: -118.1735,
@@ -40,7 +40,7 @@ Listing.create(
                 max_guests: 20
               )
 
-Listing.create(
+Listing.create!(
                 owner_id: 1,
                 lat: 34.1162,
                 lng: -118.345,
@@ -54,7 +54,7 @@ Listing.create(
                 max_guests: 500
               )
 
-Listing.create(
+Listing.create!(
               owner_id: 1,
               lat: 34.0212,
               lng: -118.7798,
@@ -68,7 +68,7 @@ Listing.create(
               max_guests: 25
               )
 
-Listing.create(
+Listing.create!(
                 owner_id: 1,
                 lat: 32.7422,
                 lng: -117.1735,
@@ -82,7 +82,7 @@ Listing.create(
                 max_guests: 2
               )
 
-Listing.create(
+Listing.create!(
               owner_id: 1,
               lat: 36.1162,
               lng: -115.1745,
@@ -96,7 +96,7 @@ Listing.create(
               max_guests: 4
               )
 
-Listing.create(
+Listing.create!(
                owner_id: 1,
                lat: 34.1341,
                lng: -118.3215,
@@ -110,7 +110,7 @@ Listing.create(
                max_guests: 2
              )
 
-Listing.create(
+Listing.create!(
                owner_id: 1,
                lat: 37.7763,
                lng: -122.4328,
@@ -124,7 +124,7 @@ Listing.create(
                max_guests: 4
              )
 
-Listing.create(
+Listing.create!(
                owner_id: 1,
                lat: 36.1699,
                lng: -115.1398,
@@ -138,7 +138,7 @@ Listing.create(
                max_guests: 15
              )
 
-Listing.create(
+Listing.create!(
                owner_id: 1,
                lat: 37.5741,
                lng: -122.3794,
@@ -152,7 +152,7 @@ Listing.create(
                max_guests: 40
              )
 
-Listing.create(
+Listing.create!(
                owner_id: 1,
                lat: 34.0412,
                lng: -118.4426,
@@ -166,7 +166,7 @@ Listing.create(
                max_guests: 8
              )
 
-Listing.create(
+Listing.create!(
                owner_id: 1,
                lat: 34.1005,
                lng: -118.3702,
@@ -180,7 +180,7 @@ Listing.create(
                max_guests: 6
              )
 
-Listing.create(
+Listing.create!(
                owner_id: 1,
                lat: 36.1662,
                lng: -115.1745,
@@ -194,7 +194,7 @@ Listing.create(
                max_guests: 6
              )
 
-Listing.create(
+Listing.create!(
                owner_id: 1,
                lat: 34.0736,
                lng: -118.4004,
@@ -208,7 +208,7 @@ Listing.create(
                max_guests: 10
              )
 
-Listing.create(
+Listing.create!(
               owner_id: 1,
               lat: 34.1177,
               lng: -118.3520,
@@ -222,7 +222,7 @@ Listing.create(
               max_guests: 8
             )
 
-Listing.create(
+Listing.create!(
               owner_id: 2,
               lat: 34.0814,
               lng: -118.4299,
@@ -236,7 +236,7 @@ Listing.create(
               max_guests: 14
             )
 
-Listing.create(
+Listing.create!(
               owner_id: 1,
               lat: 33.0203,
               lng: -117.2028,
@@ -249,3 +249,61 @@ Listing.create(
               country: 'USA',
               max_guests: 12
             )
+
+Listing.create!(
+               owner_id: 1,
+               lat: 37.7903,
+               lng: -122.3961,
+               price: 350,
+               image_url: 'https://static01.nyt.com/images/2012/10/21/realestate/21COV3/Cove-jp-1-jumbo.jpg',
+               title: 'Techie or not, this SF property suits you',
+               description: 'Constructed in 2015, this 60 story tower offers perfect views and comfort during your stay. Located in the center of downtown San Francisco, you are at walkable distances to many shops and restaurants.',
+               city: 'San Francisco',
+               state: 'California',
+               country: 'USA',
+               max_guests: 6
+             )
+
+Listing.create!(
+               owner_id: 1,
+               lat: 37.7852,
+               lng: -122.4043,
+               price: 375,
+               image_url: 'https://sanfranciscoarchitects.files.wordpress.com/2017/03/gallery_house_e_facade_746x1000.jpg?w=760',
+               title: 'It’s not always about the size!',
+               description: 'This cozy property offers visitors an unique San Francisco experience. Enjoy natural sunlight and magnificent views with the gorgeous panoramic windows. Located in the mission, you are close to many bars and restaurants.',
+               city: 'San Francisco',
+               state: 'California',
+               country: 'USA',
+               max_guests: 6
+             )
+
+
+Listing.create!(
+               owner_id: 1,
+               lat: 37.8716,
+               lng: -122.2727,
+               price: 314,
+               image_url: 'https://puu.sh/vWAlK/fd3e1e4c88.jpg',
+               title: 'Cal Bears all welcomed!',
+               description: 'Sunrise or sunset, the views from virtually every window are infinitely inspirational. And the art and artistry of the design, materials, and construction, are no less divine. Every detail, from the infinity lap pool, to the copper topped domes, to the hand-picked stone, has been thoughtfully set in its place to create! a sublime symmetry, and a balance with the beauty of the natural surroundings.',
+               city: 'Berkeley',
+               state: 'California',
+               country: 'USA',
+               max_guests: 6
+             )
+
+
+Listing.create!(
+               owner_id: 1,
+               lat: 32.7353,
+               lng: -117.1490,
+               price: 215,
+               image_url: 'http://sandiegorealestateconnects.com/files/2012/07/Electra-2603-24.jpg',
+               title: 'Vacation ready, this studio is for you!',
+               description: 'Gorgeous studio in downtown San Diego located steps away from the Gas Lamp district. Property is furnished with a full size kitchen. Hangout on the private balcony while overlooking the city.  Visitors will have access to a swimming pool, hot tub and a gym.',
+               city: 'San Diego',
+               state: 'California',
+               country: 'USA',
+               max_guests: 4
+	 )

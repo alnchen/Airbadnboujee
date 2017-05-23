@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
+import Slider, { Range } from 'rc-slider';
+// import 'rc-slider/assets/index.css';
 
 class SearchBar extends React.Component {
   constructor(props){
@@ -19,20 +21,23 @@ class SearchBar extends React.Component {
     const autocomplete = new google.maps.places.Autocomplete(document.getElementById('txtPlaces'), {types: ['(cities)'], componentRestrictions: {country: "us"}});
     autocomplete.addListener('place_changed', () => {
       const place = autocomplete.getPlace().name;
-      console.log(place);
+      // console.log(place);
       this.handleAutocompleteCity(place);
-        // var place = test.getPlace();
-        // var address = place.formatted_address;
-        // var latitude = place.geometry.location.A;
-        // var longitude = place.geometry.location.F;
+    });
+    google.maps.event.addDomListener(document.getElementById('txtPlaces'), 'keydown', (e) => {
+      if (e.keyCode === 13) {
+        e.preventDefault;
+        const place = e.currentTarget.value.split(',')[0];
+        this.setState({city: place});
+        this.handleFormSubmit;
+      }
     });
   }
 
   handleAutocompleteCity(place) {
     this.setState({city: place});
-    console.log(this.state);
+    // console.log(this.state);
   }
-
 
   handleLocationInput(event) {
     this.setState({city: event.currentTarget.value});
@@ -43,20 +48,21 @@ class SearchBar extends React.Component {
     this.setState({guests: event.currentTarget.value});
   }
 
-
-  handleFormSubmit() {
+  handleFormSubmit(event) {
     event.preventDefault();
     const filters = this.state;
+    // debugger
     // console.log("inside handleFormSubmit");
-    this.props.fetchAllListings(filters);
-    this.props.history.push(`/listings/`);
+    this.props.fetchAllListings(filters)
+    .then(this.props.history.push(`/listings/`));
   }
 
-
-  render() {
+  render() {    
     return (
       <form className="search-form" onSubmit={this.handleFormSubmit}>
         <br/>
+        <Slider />
+        <Range />
         <input onBlur={this.handleLocationInput} type="text" id="txtPlaces" placeholder="Where?" />
           <select onChange={this.handleGuestInput}>
             <option selected disabled value='default'>Number of Guests</option>
@@ -73,12 +79,11 @@ class SearchBar extends React.Component {
           </select>
         <input id="price-min" type="range" min="1" max="10"/>
         <button type="submit">See Listings</button>
+
+
       </form>
     );
   }
 }
 
 export default withRouter(SearchBar);
-
-<Link to="/listings"><button type="submit">Submit</button></Link>
-//use fetchAllListings(filters)
