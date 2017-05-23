@@ -9,6 +9,7 @@ class ListingsIndex extends React.Component {
     // console.log(this.props);
   }
 
+
   // componentDidMount() {
   //   this.props.fetchAllListings();
   // }
