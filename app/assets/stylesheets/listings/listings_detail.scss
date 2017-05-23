@@ -72,11 +72,15 @@
 }
 
 .detail-category {
-  width: 20%;
+  width: 13vw;
 }
 
-.split {
+.details {
   display: flex;
   justify-content: space-between;
+  width: 50vw;
 
+  li {
+    margin-bottom: 10px;
+  }
 }

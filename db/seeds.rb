@@ -42,7 +42,7 @@ Listing.create!(
                 )
 
 Listing.create!(
-                owner_id: tom.id,
+                owner_id: 2,
                 lat: 34.1162,
                 lng: -118.345,
                 price: 2330,
@@ -56,7 +56,7 @@ Listing.create!(
                 )
 
 Listing.create!(
-                owner_id: tom.id,
+                owner_id: 2,
                 lat: 34.0212,
                 lng: -118.7798,
                 price: 5238,
