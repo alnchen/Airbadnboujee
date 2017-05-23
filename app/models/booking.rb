@@ -11,4 +11,6 @@ class Booking < ApplicationRecord
     foreign_key: :listing_id,
     class_name: 'Listing'
 
+#testing 
+
 end
