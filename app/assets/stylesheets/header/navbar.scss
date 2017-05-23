@@ -27,7 +27,7 @@
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  object-fit: cover
+  object-fit: cover;
 }
 
 .logo {
@@ -116,6 +116,10 @@
 .sessions-button:hover {
   background: #d6172b;
   text-decoration: none;
+}
+
+.pf-pic:hover {
+
 }
 
 .auth-input-box {
