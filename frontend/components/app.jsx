@@ -5,7 +5,7 @@ import SearchContainer from './listings/search_container';
 import Home from './home/home';
 import Footer from './footer/footer';
 import ListingsDetailContainer from './listings/listings_detail_container';
-
+import BookingsContainer from './bookings/booking_container';
 
 const App = () => (
   <div className='header'>
@@ -14,6 +14,7 @@ const App = () => (
       <Route exact path='/' component={Home}/>
       <Route exact path="/listings/:id" component={ListingsDetailContainer} />
       <Route exact path='/listings' component={SearchContainer}/>
+      <Route exact path='/trips' component={BookingsContainer}/>
     </div>
     <Footer />
   </div>

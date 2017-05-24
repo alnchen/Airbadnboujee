@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import DefaultListingDetails from './default_listing_details';
+import BookingFormContainer from '../bookings/booking_form_container';
 
 class ListingsDetail extends React.Component {
   constructor(props){
@@ -23,7 +24,7 @@ class ListingsDetail extends React.Component {
   }
 
   render() {
-    const { lat, lng, owner_id, price, description, title, city, state, country, image_url, max_guests } = this.props.listing;
+    const { id, lat, lng, owner_id, price, description, title, city, state, country, image_url, max_guests } = this.props.listing;
 
     $('.detail-image-container').parallax({imageSrc: image_url})
 
@@ -43,7 +44,7 @@ class ListingsDetail extends React.Component {
             <DefaultListingDetails />
           </div>
           <div className="detail-item-form">
-            <h1>FORM GOES HERE</h1>
+            <BookingFormContainer />
           </div>
         </div>
       </div>

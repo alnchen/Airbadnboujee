@@ -30,3 +30,7 @@ import { fetchAllListings, fetchOneListing, addListing } from './actions/listing
 window.fetchAllListings = fetchAllListings;
 window.fetchOneListing = fetchOneListing;
 window.addListing = addListing;
+import { fetchAllBookings, addBooking, deleteBooking} from './util/booking_util';
+window.fetchAllBookings = fetchAllBookings;
+window.addBooking = addBooking;
+window.deleteBooking = deleteBooking;

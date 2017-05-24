@@ -4,6 +4,9 @@ Extras:
 use carousel for flipping through images
 modal animation
 multiple parallax photos in home page
+set map on each individual show page
+heroku re-seed
+
 
 api_key: AIzaSyBvS_Gjg0uxEeFguoG6stTgRNgWX7w1x_c
 
@@ -17,3 +20,4 @@ to-do:
 
 
 ASK TA:
+  -why no log of git commits

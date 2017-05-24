@@ -73,7 +73,7 @@ class SearchBar extends React.Component {
 
         <input onBlur={this.handleLocationInput} type="text" id="txtPlaces" placeholder="Where?" />
           <select onChange={this.handleGuestInput}>
-            <option selected disabled value='default'>Number of Guests</option>
+            <option defaultValue disabled value='default'>Number of Guests</option>
             <option value='1'>1</option>
             <option value='2'>2</option>
             <option value='3'>3</option>

@@ -16,7 +16,7 @@ class ListingsIndex extends React.Component {
           </par>
 
           <div className='footer-links-column'>
-            <label className='footer-column-category'>AirBadnBoujie</label>
+            <label className='footer-column-category'>AirBadnBoujee</label>
             <Link to="/about-us">About Us</Link>
             <Link to="/careers">Careers</Link>
             <Link to="/press">Press</Link>
