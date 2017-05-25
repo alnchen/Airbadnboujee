@@ -5,5 +5,5 @@ export const listingsArray = (state) => (
 );
 
 export const bookingsArray = (state) => (
-  values(state.bookings)
+  values(state.bookings.bookings)
 );

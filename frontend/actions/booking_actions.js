@@ -28,8 +28,9 @@ export const receiveBookingErrors = (errors) => ({
 
 export const addBooking = (booking) => dispatch => (
   APIUtil.addBooking(booking)
-  .then(newBooking => dispatch(receiveOneBooking(newBooking)),
-  errors => dispatch(receiveBookingErrors(errors)))
+  // .then(newBooking => dispatch(receiveOneBooking(newBooking)),
+  // errors => dispatch(receiveBookingErrors(errors)))
+  .fail(errors => dispatch(receiveBookingErrors(errors)))
 );
 
 export const fetchAllBookings = () => dispatch => (

@@ -7,7 +7,7 @@ import { fetchAllListings } from '../../actions/listings_actions';
 
 const mapStateToProps = (state, ownProps) => ({
   // currentUser: state.session.currentUser
-  listing: state.listings[ownProps.match.params.id],
+  listing: state.listing || {},
   currentUser: state.session.currentUser
 });
 
