@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import DefaultListingDetails from './default_listing_details';
 import BookingFormContainer from '../bookings/booking_form_container';
+import ReviewFormContainer from '../reviews/review_form_container';
 
 class ListingsDetail extends React.Component {
   constructor(props){
@@ -42,6 +43,7 @@ class ListingsDetail extends React.Component {
             <div className="detail-description">{description}</div>
             <br/>
             <DefaultListingDetails />
+            <ReviewFormContainer />
           </div>
           <div className="detail-item-form">
             <BookingFormContainer />
