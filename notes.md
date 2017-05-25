@@ -12,12 +12,13 @@ api_key: AIzaSyBvS_Gjg0uxEeFguoG6stTgRNgWX7w1x_c
 
 
 to-do:
-  -fix location update issue where path cannot push same path
-  -hide nav search bar when inside search page
-    -render inside search component instead
+  -home page
+  -style dropdowns
 
 
 
 
 ASK TA:
   -why no log of git commits
+  -cancel trip button
+  -booking reducer console log issue

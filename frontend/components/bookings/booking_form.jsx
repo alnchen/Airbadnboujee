@@ -54,6 +54,7 @@ class BookingForm extends React.Component {
       return;
     } else if (!this.state.num_of_guests) {
       this.setState({errors: ['How many guests?']});
+      return;
     } else {
       this.setState({errors: []});
     }
@@ -70,6 +71,9 @@ class BookingForm extends React.Component {
   }
 
   render() {
+    const days = this.state.startDate && this.state.endDate ? this.state.endDate.diff(this.state.startDate, 'days') : null
+    const price = days ? (<div> Total for {days} nights before fees: ${this.props.listing.price * days}</div>) : (<div/>)
+
 
     const errors = this.state.errors ? this.state.errors.map( (error, idx) => <div className='booking-form-errors' key={idx}>{error}</div>) : <div></div>
 
@@ -77,18 +81,17 @@ class BookingForm extends React.Component {
       <form className='booking-form' onSubmit={this.handleFormSubmit}>
 
         <div className='form-label'>Request Booking</div>
-        <DateRangePicker
-          startDatePlaceholderText={'Check In'}
-          endDatePlaceholderText={'Check Out'}
-          startDate={this.state.startDate}
-          endDate={this.state.endDate}
-          onDatesChange={({ startDate, endDate }) => this.setState({ startDate: startDate, endDate: endDate, errors: null })}
-          focusedInput={this.state.focusedInput}
-          onFocusChange={focusedInput => this.setState({ focusedInput })}
-          minimumNights={0}
+          <DateRangePicker
+            startDatePlaceholderText={'Check In'}
+            endDatePlaceholderText={'Check Out'}
+            startDate={this.state.startDate}
+            endDate={this.state.endDate}
+            onDatesChange={({ startDate, endDate }) => this.setState({ startDate: startDate, endDate: endDate, errors: null })}
+            focusedInput={this.state.focusedInput}
+            onFocusChange={focusedInput => this.setState({ focusedInput })}
+            minimumNights={0}
           />
 
-        <div>{this.props.listing.price}</div>
         <select className='guests-dropdown' onChange={this.handleGuests}>
           <option selected disabled value='default'>Number of Guests</option>
           <option value={1}>1</option>
@@ -103,6 +106,7 @@ class BookingForm extends React.Component {
           <option value={10}>10+</option>
         </select>
 
+        {price}
         { errors }
 
         <br/>
