@@ -34,3 +34,5 @@ import { fetchAllBookings, addBooking, deleteBooking} from './util/booking_util'
 window.fetchAllBookings = fetchAllBookings;
 window.addBooking = addBooking;
 window.deleteBooking = deleteBooking;
+import { addReview } from './actions/review_actions';
+window.addReview = addReview;

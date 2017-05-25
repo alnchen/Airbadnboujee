@@ -3,6 +3,7 @@ class User < ApplicationRecord
 
   has_many :listings
   has_many :bookings
+  has_many :reviews
 
   validates :email, :password_digest, :session_token, presence: true
   validates :email, uniqueness: true

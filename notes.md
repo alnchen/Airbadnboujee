@@ -16,9 +16,9 @@ to-do:
   -style dropdowns
 
 
-
-
 ASK TA:
   -why no log of git commits
-  -cancel trip button
-  -booking reducer console log issue
+  -smooth div shrink transition
+  -service fee and total sections for booking form
+
+  

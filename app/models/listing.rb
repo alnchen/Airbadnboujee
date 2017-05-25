@@ -6,6 +6,11 @@ class Listing < ApplicationRecord
     foreign_key: :owner_id,
     class_name: 'User'
 
+  has_many :reviews,
+    primary_key: :id,
+    foreign_key: :listing_id,
+    class_name: 'Review'
+
   def self.in_bounds(bounds)
     self.where("lat < ?", bounds[:northEast][:lat])
         .where("lat > ?", bounds[:southWest][:lat])
