@@ -54,6 +54,7 @@ class BookingForm extends React.Component {
       return;
     } else if (!this.state.num_of_guests) {
       this.setState({errors: ['How many guests?']});
+      return;
     } else {
       this.setState({errors: []});
     }
@@ -70,6 +71,9 @@ class BookingForm extends React.Component {
   }
 
   render() {
+    const days = this.state.startDate && this.state.endDate ? this.state.endDate.diff(this.state.startDate, 'days') : null
+    const price = days ? (<div> Total for {days} nights before fees: ${this.props.listing.price * days}</div>) : (<div/>)
+
 
     const errors = this.state.errors ? this.state.errors.map( (error, idx) => <div className='booking-form-errors' key={idx}>{error}</div>) : <div></div>
 
@@ -105,6 +109,7 @@ class BookingForm extends React.Component {
           <option value={10}>10+</option>
         </select>
 
+        {price}
         { errors }
 
         { cost }
