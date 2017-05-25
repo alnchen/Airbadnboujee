@@ -25,7 +25,6 @@ export const receiveBookingErrors = (errors) => ({
   errors
 });
 
-
 export const addBooking = (booking) => dispatch => (
   APIUtil.addBooking(booking)
   // .then(newBooking => dispatch(receiveOneBooking(newBooking)),

@@ -19,7 +19,7 @@ class BookingForm extends React.Component {
 
   handleGuests(event) {
     this.setState({num_of_guests: event.currentTarget.value}, () => {
-      console.log(this.state);
+      // console.log(this.state);
     });
   }
 
@@ -60,11 +60,11 @@ class BookingForm extends React.Component {
     const details = {
                       user_id: this.props.currentUser.id,
                       listing_id: this.props.listing.id,
-                      check_in: this.state.startDate.format("YYYY-MM-DD"),
-                      check_out: this.state.endDate.format("YYYY-MM-DD"),
+                      check_in: this.state.startDate.format("DD-MM-YYYY"),
+                      check_out: this.state.endDate.format("DD-MM-YYYY"),
                       num_of_guests: this.state.num_of_guests
                     };
-    console.log(details);
+    // console.log(details);
     this.props.addBooking({booking: details})
     .then(this.props.history.push(`/trips/`));
   }

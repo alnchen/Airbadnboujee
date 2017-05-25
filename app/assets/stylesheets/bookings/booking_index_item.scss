@@ -1,21 +1,42 @@
 .bookings {
   margin-left: auto;
   margin-right: auto;
-  justify-content: center
+  // background-color: red;
+  // justify-content: center
 }
 
 .booking-index-item {
+  border-radius: 10px;
   display: flex;
-  height: 200px;
-  width: 900px;
-  background-color: black;
-  color: white;
+  height: 175px;
+  width: 700px;
+  border: 1px solid $grey;
+  // background-color: black;
+  // color: white;
   margin-bottom: 5px;
+  overflow: hidden;
+  font-family: $sans-serif-header;
+  background-color: #fcfcfc;
+}
+
+.booking-text {
+  margin: 7px 15px 15px 15px;
 }
 
 .booking-index-pic {
   height: 100%;
   width: 275px;
-  object-fit: cover;
-  border-radius: 25px;
+  // object-fit: cover;
+  // border-radius: 25px;
+}
+
+.booking-city {
+  font-family: $booking-city;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.cancel-button {
+  font-size: 11px;
+  margin-left: 320px;
 }

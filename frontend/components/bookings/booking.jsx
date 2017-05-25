@@ -7,9 +7,17 @@ class Booking extends React.Component {
     this.props.fetchAllBookings();
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.props.fetchAllBookings();
+  }
+
   render() {
 
-    const output = this.props.bookings.map((booking, idx) => <BookingIndexItem booking={ booking } listing={ booking.listing } key={idx}/>);
+    const output = this.props.bookings.map((booking, idx) => <BookingIndexItem
+                                                              booking={ booking }
+                                                              deleteBooking={ this.props.deleteBooking }
+                                                              key={idx}
+                                                              />);
 
     return (
     <div className="bookings">{ output }</div>
