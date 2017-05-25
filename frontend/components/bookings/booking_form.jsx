@@ -73,22 +73,24 @@ class BookingForm extends React.Component {
 
     const errors = this.state.errors ? this.state.errors.map( (error, idx) => <div className='booking-form-errors' key={idx}>{error}</div>) : <div></div>
 
+  const nights = this.state.startDate && this.state.endDate ? this.state.endDate.diff(this.state.startDate, 'days') : null
+  const cost = nights ? (<div>Total cost for { nights } nights before fees: ${ nights * this.props.listing.price }</div>) : (<div></div>)
+
     return (
       <form className='booking-form' onSubmit={this.handleFormSubmit}>
 
         <div className='form-label'>Request Booking</div>
-        <DateRangePicker
-          startDatePlaceholderText={'Check In'}
-          endDatePlaceholderText={'Check Out'}
-          startDate={this.state.startDate}
-          endDate={this.state.endDate}
-          onDatesChange={({ startDate, endDate }) => this.setState({ startDate: startDate, endDate: endDate, errors: null })}
-          focusedInput={this.state.focusedInput}
-          onFocusChange={focusedInput => this.setState({ focusedInput })}
-          minimumNights={0}
+          <DateRangePicker
+            startDatePlaceholderText={'Check In'}
+            endDatePlaceholderText={'Check Out'}
+            startDate={this.state.startDate}
+            endDate={this.state.endDate}
+            onDatesChange={({ startDate, endDate }) => this.setState({ startDate: startDate, endDate: endDate, errors: null })}
+            focusedInput={this.state.focusedInput}
+            onFocusChange={focusedInput => this.setState({ focusedInput })}
+            minimumNights={0}
           />
 
-        <div>{this.props.listing.price}</div>
         <select className='guests-dropdown' onChange={this.handleGuests}>
           <option selected disabled value='default'>Number of Guests</option>
           <option value={1}>1</option>
@@ -104,6 +106,8 @@ class BookingForm extends React.Component {
         </select>
 
         { errors }
+
+        { cost }
 
         <br/>
         { this.sessionMessage() }
