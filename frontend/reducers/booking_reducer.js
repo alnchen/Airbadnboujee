@@ -19,7 +19,7 @@ const BookingsReducer = (state = _initialState, action) => {
     case DELETE_BOOKING:
       let nextState = merge({}, state);
       // console.log(action.booking.id);
-      delete nextState[action.booking.id];
+      delete nextState.bookings[action.booking.id];
       // console.log(nextState);
       return nextState;
     case RECEIVE_BOOKING_ERRORS:

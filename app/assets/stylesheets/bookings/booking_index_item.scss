@@ -1,11 +1,12 @@
 .bookings {
   // background-color: red;
   // justify-content: center
-  // display: flex;
-  // display: flex;
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 
 .booking-index-item {
+  margin: 0 auto;
   border-radius: 10px;
   display: flex;
   height: 175px;
@@ -13,7 +14,7 @@
   border: 1px solid $grey;
   // background-color: black;
   // color: white;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   overflow: hidden;
   font-family: $sans-serif-header;
   background-color: #fcfcfc;
@@ -38,15 +39,16 @@
 .booking-city {
   font-family: $booking-city;
   font-size: 30px;
-  margin-bottom: 5px;
+  margin: 10px 0px 10px 0px;
 }
 
 .cancel-button {
   font-size: 11px;
-  margin-left: 320px;
+  margin-left: 300px;
 }
 
 .booking-image-container {
+  margin-right: 15px;
   overflow:hidden;
   width:275px;
   // height:150px;

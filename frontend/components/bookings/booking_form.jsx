@@ -71,14 +71,10 @@ class BookingForm extends React.Component {
   }
 
   render() {
-    const days = this.state.startDate && this.state.endDate ? this.state.endDate.diff(this.state.startDate, 'days') : null
-    const price = days ? (<div> Total for {days} nights before fees: ${this.props.listing.price * days}</div>) : (<div/>)
-
-
     const errors = this.state.errors ? this.state.errors.map( (error, idx) => <div className='booking-form-errors' key={idx}>{error}</div>) : <div></div>
 
-  const nights = this.state.startDate && this.state.endDate ? this.state.endDate.diff(this.state.startDate, 'days') : null
-  const cost = nights ? (<div>Total cost for { nights } nights before fees: ${ nights * this.props.listing.price }</div>) : (<div></div>)
+    const nights = this.state.startDate && this.state.endDate ? this.state.endDate.diff(this.state.startDate, 'days') : null
+    const cost = nights ? (<div>Total cost for { nights } nights before fees: ${ nights * this.props.listing.price }</div>) : (<div></div>)
 
     return (
       <form className='booking-form' onSubmit={this.handleFormSubmit}>
@@ -109,9 +105,7 @@ class BookingForm extends React.Component {
           <option value={10}>10+</option>
         </select>
 
-        {price}
         { errors }
-
         { cost }
 
         <br/>
