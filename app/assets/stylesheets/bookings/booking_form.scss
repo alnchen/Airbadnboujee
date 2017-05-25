@@ -12,5 +12,19 @@
 
 .signed-out-message {
 
-  
+
+}
+
+.booking-form-errors {
+  color: #1125d8;
+}
+
+.form-label {
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  font-family: $booking-city;
+  padding: 11px;
+  background-color: #151d6b;
+  color: white;
 }

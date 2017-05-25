@@ -27,9 +27,11 @@ class BookingIndexItem extends React.Component {
     return (
       <div className='booking-index-item'>
 
-        <Link id={title} to={`/listings/${this.props.booking.listing.id}`}>
-        <img className='booking-index-pic' src={image_url}/>
-        </Link>
+        <div className='booking-image-container'>
+          <Link id={title} to={`/listings/${this.props.booking.listing.id}`}>
+            <img className='booking-index-pic' src={image_url}/>
+          </Link>
+        </div>
 
         <div className='booking-text'>
           <div className='booking-city'>{city}</div>

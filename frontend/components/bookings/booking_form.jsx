@@ -71,11 +71,12 @@ class BookingForm extends React.Component {
 
   render() {
 
-    const errors = this.state.errors ? this.state.errors.map( (error, idx) => <div key={idx}>{error}</div>) : <div></div>
+    const errors = this.state.errors ? this.state.errors.map( (error, idx) => <div className='booking-form-errors' key={idx}>{error}</div>) : <div></div>
 
     return (
       <form className='booking-form' onSubmit={this.handleFormSubmit}>
 
+        <div className='form-label'>Request Booking</div>
         <DateRangePicker
           startDatePlaceholderText={'Check In'}
           endDatePlaceholderText={'Check Out'}

@@ -81,6 +81,8 @@ class Greeting extends React.Component{
 
     const { currentUser, logout } = this.props;
 
+    // https://goo.gl/8wkAJj
+
     return (
       <div className="nav-bar-container">
         <div className="nav-bar">
