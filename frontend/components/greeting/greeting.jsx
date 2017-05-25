@@ -5,6 +5,7 @@ import ModalStyle from '../../../app/assets/stylesheets/header/modal_style';
 import SignUpFormContainer from '../session_form/sign_up_form_container';
 import LogInFormContainer from '../session_form/log_in_form_container';
 import SearchBarContainer from '../listings/search_bar_container';
+import { withRouter } from 'react-router';
 
 class Greeting extends React.Component{
   constructor(props) {
@@ -18,7 +19,7 @@ class Greeting extends React.Component{
     this.onSignUpModalClose = this.onSignUpModalClose.bind(this);
     this.onLogInModalClose = this.onLogInModalClose.bind(this);
     this.demoLogIn = this.demoLogIn.bind(this);
-    // this.afterModalOpen = this.afterModalOpen.bind(this);
+    this.logOutRedirect = this.logOutRedirect.bind(this);
   }
 
   _handleSignUpClick() { this.setState({ SignUpmodalOpen: true }); }
@@ -43,8 +44,13 @@ class Greeting extends React.Component{
   //   ModalStyle.content.opacity = 100;
   // }
 
-  demoLogIn(){
+  demoLogIn() {
     this.props.login({ email: 'tom@myspace.com', password: 'password'});
+  }
+
+  logOutRedirect() {
+    this.props.logout()
+    .then(this.props.history.push(`/`));
   }
 
   render(){
@@ -59,7 +65,7 @@ class Greeting extends React.Component{
     );
 
     const loggedInLinks = (currentUser, logout) => {
-    const profilePic = currentUser.image_url ? currentUser.image_url : 'https://a3-images.myspacecdn.com/images03/1/240e42b5d9ce48a78983961e7fcb3c39/600x600.jpg'
+      const profilePic = currentUser.image_url ? currentUser.image_url : 'https://a3-images.myspacecdn.com/images03/1/240e42b5d9ce48a78983961e7fcb3c39/600x600.jpg'
 
       return (
         <div className="nav-bar-session-links">
@@ -85,7 +91,7 @@ class Greeting extends React.Component{
           </Link>
           <SearchBarContainer />
 
-          {currentUser ? loggedInLinks(currentUser, logout) : loggedOutLinks()}
+          {currentUser ? loggedInLinks(currentUser, this.logOutRedirect) : loggedOutLinks()}
 
           <Modal className="modal"
             isOpen={this.state.SignUpmodalOpen}
@@ -114,4 +120,4 @@ class Greeting extends React.Component{
     );
   }
 }
-export default Greeting;
+export default withRouter(Greeting);
