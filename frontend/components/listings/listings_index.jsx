@@ -16,7 +16,7 @@ class ListingsIndex extends React.Component {
 
   render() {
     const empty = this.props.allListings.length === 0 ?
-                  <div>Sorry, no listings available here!</div>
+                  <div className='no-listings'>Sorry, no listings available here!</div>
                   : <div></div>;
 
     return (

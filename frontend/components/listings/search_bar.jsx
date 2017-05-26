@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import Slider, { Range } from 'rc-slider';
-// import 'rc-slider/assets/index.css';
 
 class SearchBar extends React.Component {
   constructor(props){
@@ -34,6 +32,9 @@ class SearchBar extends React.Component {
         // this.handleFormSubmit();
       }
     });
+
+    this.props.fetchAllListings(this.state);
+
   }
 
   handleAutocompleteCity(place) {
@@ -57,6 +58,8 @@ class SearchBar extends React.Component {
     this.props.fetchAllListings(this.state)
     .then(this.props.history.push(`/listings/`));
     this.clearFields();
+    this.setState({city: '',
+    guests: ''});
   }
 
   clearFields(){
@@ -68,12 +71,9 @@ class SearchBar extends React.Component {
       <form className="search-form" onSubmit={this.handleFormSubmit}>
         <br/>
 
-        <Slider />
-        <Range />
-
         <input onBlur={this.handleLocationInput} type="text" id="txtPlaces" placeholder="Where?" />
-          <select onChange={this.handleGuestInput}>
-            <option selected disabled value='default'>Number of Guests</option>
+          <select className='navbar-select' onChange={this.handleGuestInput}>
+            <option selected disabled value='default'>Guests</option>
             <option value='1'>1</option>
             <option value='2'>2</option>
             <option value='3'>3</option>
@@ -85,8 +85,7 @@ class SearchBar extends React.Component {
             <option value='9'>9</option>
             <option value='10'>10+</option>
           </select>
-        <input id="price-min" type="range" min="1" max="10"/>
-        <button type="submit">See Listings</button>
+        <button className='search-listings' type="submit">See Listings</button>
 
 
       </form>

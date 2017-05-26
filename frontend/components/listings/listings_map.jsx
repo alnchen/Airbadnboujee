@@ -48,8 +48,8 @@ class ListingsMap extends React.Component{
 
   render() {
     return (
-      <div>
-      <div className='map-container' ref='map'/>
+      <div className='other-container'>
+        <div className='map-container' ref='map'/>
       </div>
     );
   }

@@ -3,7 +3,6 @@ import ListingsMap from './listings_map';
 import ListingsIndex from './listings_index';
 
 class SearchMap extends React.Component{
-
   render() {
     return (
       <div className="search-results">

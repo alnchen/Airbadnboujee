@@ -56,7 +56,6 @@ class Greeting extends React.Component{
   render(){
     const loggedOutLinks = () => (
       <nav className="nav-bar-session-links">
-        <Link to="/">Help</Link>
         <a style={{cursor:'pointer'}} onClick={this._handleSignUpClick} >Sign Up</a>
         <a style={{cursor:'pointer'}} onClick={this._handleLogInClick} >Log In</a>
         <a style={{cursor:'pointer'}} onClick={this.demoLogIn} >Demo Account</a>
@@ -68,8 +67,8 @@ class Greeting extends React.Component{
 
       return (
         <div className="nav-bar-session-links">
-          <Link to="/trips">Trips</Link>
           <Link to="/">Help</Link>
+          <Link to="/trips">Trips</Link>
           <a onClick={logout} style={{cursor:'pointer'}} >Sign Out</a>
           <img className='pf-pic' src={profilePic}></img>
         </div>
@@ -78,16 +77,19 @@ class Greeting extends React.Component{
 
     const { currentUser, logout } = this.props;
 
-    // https://goo.gl/8wkAJj
+    // http://res.cloudinary.com/ac31624/image/upload/v1495823999/airbadnbougee_lhitxk.png
 
     return (
       <div className="nav-bar-container">
         <div className="nav-bar">
 
-          <Link to="/">
-              <img className="logo"
-               src="http://vignette2.wikia.nocookie.net/marvelcinematicuniverse/images/a/ad/Avengers_Logo.png/revision/latest?cb=20160218131959"/>
-          </Link>
+
+          <div className='logo-container'>
+            <Link to="/">
+                <img className="logo"
+                 src="http://vignette2.wikia.nocookie.net/marvelcinematicuniverse/images/a/ad/Avengers_Logo.png/revision/latest?cb=20160218131959"/>
+            </Link>
+          </div>
           <SearchBarContainer />
 
           {currentUser ? loggedInLinks(currentUser, this.logOutRedirect) : loggedOutLinks()}
