@@ -37,11 +37,18 @@ class ReviewForm extends React.Component {
     document.getElementById("review-text").value="";
   }
 
+
+
+
   render() {
 
     const errors = this.props.errors.responseText ?
                     this.props.errors.responseText :
                     ''
+
+
+    const button = this.props.currentUser ? <button className='comment-submit' onClick={ this.handleSubmit }>Submit</button> : <div className='log-in-to-review'>Log in to review</div>
+
 
     return (
       <form className='review-form'>
@@ -71,7 +78,8 @@ class ReviewForm extends React.Component {
                    className='review-text'
                    placeholder='Write a comment'>
             </textarea>
-            <button className='comment-submit' onClick={ this.handleSubmit }>Submit</button>
+            <br/>
+            { button }
           </div>
       </form>
 

@@ -49,15 +49,14 @@ class Greeting extends React.Component{
   }
 
   logOutRedirect() {
-    this.props.logout()
-    .then(this.props.history.push(`/`));
+    this.props.logout();
+    // .then(this.props.history.push(`/`));
   }
 
   render(){
     const loggedOutLinks = () => (
       <nav className="nav-bar-session-links">
-        <Link to="/host">Become a Host</Link>
-        <Link to="/help">Help</Link>
+        <Link to="/">Help</Link>
         <a style={{cursor:'pointer'}} onClick={this._handleSignUpClick} >Sign Up</a>
         <a style={{cursor:'pointer'}} onClick={this._handleLogInClick} >Log In</a>
         <a style={{cursor:'pointer'}} onClick={this.demoLogIn} >Demo Account</a>
@@ -69,12 +68,10 @@ class Greeting extends React.Component{
 
       return (
         <div className="nav-bar-session-links">
-          <Link to="/host">Become a Host</Link>
           <Link to="/trips">Trips</Link>
-          <Link to="/messages">Messages</Link>
-          <Link to="/help">Help</Link>
-          <img className='pf-pic' src={profilePic}></img>
+          <Link to="/">Help</Link>
           <a onClick={logout} style={{cursor:'pointer'}} >Sign Out</a>
+          <img className='pf-pic' src={profilePic}></img>
         </div>
       );
     };

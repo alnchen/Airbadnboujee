@@ -9,7 +9,10 @@ api_key: AIzaSyBvS_Gjg0uxEeFguoG6stTgRNgWX7w1x_c
 
 
 to-do:
-  -home page
+  -home page mid section
+  -make map float
+  -update dead links
+  
   -style dropdowns
 
 

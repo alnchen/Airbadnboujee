@@ -32,8 +32,10 @@
 }
 
 .signed-out-message {
-
-
+  display: flex;
+  justify-content: center;
+  color: #1125d8;
+  margin-bottom: 20px;
 }
 
 .booking-form-errors {

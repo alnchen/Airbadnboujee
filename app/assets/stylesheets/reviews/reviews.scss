@@ -53,10 +53,10 @@
   text-align: center;
   background-color: #151d6b;
   color: white;
-  position: relative;
-  bottom: 9px;
+  // position: relative;
+  // bottom: 9px;
   padding: 5px 0px;
-  border-radius: 3px;
+  border-radius: 20px;
 }
 
 .review-top * {
@@ -64,6 +64,7 @@
 }
 
 .detail-remove {
+  margin-top: 10px;
   background-color: red;
   font-size: 11px;
   border-radius: 12px;
@@ -73,4 +74,9 @@
 
 .review-rating {
   font-size: 13px;
+  margin-top: 10px;
+}
+
+.log-in-to-review {
+  color: #1125d8;
 }

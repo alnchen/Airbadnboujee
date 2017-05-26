@@ -19,9 +19,11 @@ class ReviewDetail extends React.Component{
 
 
     const deleteButton = () => {
-      return this.props.review.author.id === this.props.currentUser.id ?
-      <button className='detail-remove' onClick={this.handleDelete}>Remove Your Comment?</button>
-      : <div></div>;
+      if (this.props.currentUser) {
+        return this.props.review.author.id === this.props.currentUser.id ?
+        <button className='detail-remove' onClick={this.handleDelete}>Remove Your Comment?</button>
+        : <div></div>;
+      }
     };
 
     return (
