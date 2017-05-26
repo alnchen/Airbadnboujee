@@ -1,15 +1,16 @@
-// export const fetchAllReviews = () => (
-//   $.ajax({
-//     method: 'GET',
-//     url: 'api/bookings',
-//   })
-// );
+export const fetchAllReviews = (listing_id) => (
+  $.ajax({
+    method: 'GET',
+    url: 'api/reviews',
+    data: {listing_id}
+  })
+);
 
-export const addReview = (booking) => (
+export const addReview = (review) => (
   $.ajax({
     method: 'POST',
     url: 'api/reviews',
-    data: booking
+    data: review
   })
 );
 

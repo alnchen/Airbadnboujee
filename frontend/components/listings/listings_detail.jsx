@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import DefaultListingDetails from './default_listing_details';
 import BookingFormContainer from '../bookings/booking_form_container';
 import ReviewFormContainer from '../reviews/review_form_container';
+import ReviewIndexContainer from '../reviews/review_index_container';
 
 class ListingsDetail extends React.Component {
   constructor(props){
@@ -12,6 +13,7 @@ class ListingsDetail extends React.Component {
   componentDidMount() {
     this.props.fetchOneListing(this.props.match.params.id)
     .then(window.scrollTo(0, 0));
+    this.props.fetchReviews(this.props.match.params.id);
   }
 
   componentWillUnmount() {
@@ -43,7 +45,8 @@ class ListingsDetail extends React.Component {
             <div className="detail-description">{description}</div>
             <br/>
             <DefaultListingDetails />
-            <ReviewFormContainer />
+            <ReviewFormContainer listing_id={id}/>
+            <ReviewIndexContainer listing_id={id}/>
           </div>
           <div className="detail-item-form">
             <BookingFormContainer />

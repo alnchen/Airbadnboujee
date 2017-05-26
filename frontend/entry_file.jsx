@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<Root store={store}/>, root);
 });
 
-
 //testing
 import { login, signup, logout } from './actions/session_actions';
 window.login = login;
@@ -36,3 +35,5 @@ window.addBooking = addBooking;
 window.deleteBooking = deleteBooking;
 import { addReview } from './actions/review_actions';
 window.addReview = addReview;
+import { fetchReviews } from './actions/review_actions';
+window.fetchReviews = fetchReviews;

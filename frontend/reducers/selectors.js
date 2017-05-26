@@ -7,3 +7,7 @@ export const listingsArray = (state) => (
 export const bookingsArray = (state) => (
   values(state.bookings.bookings)
 );
+
+export const reviewsArray = (state) => (
+  values(state.reviews.reviews)
+);
