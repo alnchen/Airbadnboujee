@@ -30,31 +30,10 @@
   margin: 20px;
 }
 
-
-// .detail-item-form {
-//   justify-content: center;
-//   color: white;
-//   width: 30%;
-//   height: 500px;
-//   background-color: black;
-// }
-
 .detail-image-container {
   opacity: 0.0;
-  // height: 575px;
-  // overflow: hidden;
-  // background: transparent;
-  // background: transparent;
-  // min-height: 700px;
   z-index: -10;
-  // max-height: 80vh;
 }
-
-// .detail-image-container:hover {
-//   -webkit-transform: scale(1.3);
-//   -ms-transform: scale(1.3);
-//   transform: scale(1.3);
-// }
 
 .detail-image {
   width: 100%;
@@ -68,7 +47,6 @@
 
 .detail-info-2-col {
   display: flex;
-  // justify-content: space-between;
 }
 
 .detail-category {

@@ -28,22 +28,6 @@ class Greeting extends React.Component{
   _handleLogInClick() { this.setState({ LogInmodalOpen: true }); }
   onLogInModalClose() { this.setState({ LogInmodalOpen: false }); }
 
-  // onSignUpModalClose() {
-  //   this.setState({ SignUpmodalOpen: false });
-  //   ModalStyle.content.opacity = 0;
-  //   console.log("inside close");
-  // }
-  //
-  // onLogInModalClose() {
-  //   this.setState({ LogInmodalOpen: false });
-  //   ModalStyle.content.opacity = 0;
-  //   console.log("inside close");
-  // }
-  //
-  // afterModalOpen() {
-  //   ModalStyle.content.opacity = 100;
-  // }
-
   demoLogIn() {
     this.props.login({ email: 'tom@myspace.com', password: 'password'});
   }
@@ -77,8 +61,6 @@ class Greeting extends React.Component{
 
     const { currentUser, logout } = this.props;
 
-    // http://res.cloudinary.com/ac31624/image/upload/v1495823999/airbadnbougee_lhitxk.png
-
     return (
       <div className="nav-bar-container">
         <div className="nav-bar">
@@ -87,7 +69,7 @@ class Greeting extends React.Component{
           <div className='logo-container'>
             <Link to="/">
                 <img className="logo"
-                 src="http://vignette2.wikia.nocookie.net/marvelcinematicuniverse/images/a/ad/Avengers_Logo.png/revision/latest?cb=20160218131959"/>
+                 src="http://res.cloudinary.com/ac31624/image/upload/v1495823999/airbadnbougee_lhitxk.png"/>
             </Link>
           </div>
           <SearchBarContainer />

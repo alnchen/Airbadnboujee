@@ -4,7 +4,6 @@ import Booking from './booking';
 import { bookingsArray } from '../../reducers/selectors';
 
 const mapStateToProps = (state) => ({
-  // currentUser: state.session.currentUser
   bookings: bookingsArray(state),
 });
 

@@ -19,6 +19,3 @@ class FeaturedListing extends React.Component{
 }
 
 export default FeaturedListing;
-
-// <img className='featured-image' src={this.props.listing.image_url}/>
-// <div className='featured-title'>{this.props.listing.title}</div>

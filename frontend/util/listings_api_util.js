@@ -1,10 +1,3 @@
-// export const fetchAllListings = () => (
-//   $.ajax({
-//     method: 'GET',
-//     url: 'api/listings'
-//   })
-// );
-
 export const fetchAllListings = filters => (
   $.ajax({
     method: 'GET',

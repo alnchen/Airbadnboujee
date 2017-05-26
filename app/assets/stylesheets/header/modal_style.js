@@ -10,14 +10,8 @@ const modalStyle = {
   },
   content : {
     position        : 'fixed',
-    // top             : '100px',
-    // left            : '150px',
-    // right           : '150px',
-    // bottom          : '100px',
-    // border          : '10px solid #ccc',
     padding         : '20px',
     zIndex          : 11,
-    // opacity         : 100,
   }
 };
 

@@ -10,7 +10,6 @@ const FilterReducer = (state = defaultState, action) => {
   Object.freeze(state);
   switch(action.type) {
     case UPDATE_BOUNDS:
-      // console.log("inside filters reducer update bounds");
       return Object.assign({}, state, { bounds: action.bounds });
     default:
       return state;

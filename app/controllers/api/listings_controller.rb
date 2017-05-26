@@ -1,26 +1,8 @@
 class Api::ListingsController < ApplicationController
-  def index    
+  def index
     @listings = Listing.find_by_filters(params[:filters][:city], params[:filters][:guests])
-
-
-      # if (params[:maxGuests])
-      #   listings = listings.where(max)
-      # else
-      #
-      # ends
-
-      render :index
+    render :index
   end
-
-  # def create
-  #   @listing = Listing.new(listing_params)
-  #
-  #   if @listing.save
-  #     render :show
-  #   else
-  #     render json: @listing.errors.full_messages
-  #   end
-  # end
 
   def show
     @listing = Listing.find_by(id: params[:id])

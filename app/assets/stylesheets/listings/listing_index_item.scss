@@ -3,7 +3,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // margin: 0 auto;
   min-height: calc(100vh - 220px);
   position: relative;
   right: 25px;
@@ -22,17 +21,9 @@
 }
 
 .listing-index-item {
-  // background-color: red;
   font-family: $sans-serif-header;
   margin: 15px 15px 15px 15px;
   transition: transform 0.3s ease-in-out;
-  // display: flex;
-  // flex-wrap: wrap;
-  //
-  // width: 20vw;
-  // height: auto;
-  // display: flex;
-  // flex-wrap: wrap;
 }
 
 .listing-index-item:hover {
@@ -73,9 +64,7 @@
 }
 
 .map-container {
-  // margin: 30px;
   width: 35vw;
-  // height: 85vh;
   height: calc(100vh - 150px);
 }
 
@@ -93,5 +82,4 @@
   justify-content: space-between;
   align-items: flex-start;
   margin: 20px;
-  // background-color: white;
 }

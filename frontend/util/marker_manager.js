@@ -31,9 +31,6 @@ export default class MarkerManager {
     Object.keys(this.markers)
       .filter(listingId => !listingsObj[listingId])
       .forEach((listingId) => this.removeMarker(this.markers[listingId]));
-
-    //set position of map to center on first marker
-    // this.map.setCenter(Object.keys(this.markers)[0].getPosition());
   }
 
   removeMarker(marker) {
@@ -68,7 +65,6 @@ export default class MarkerManager {
       htmlElement.onmouseover = () => {
         infowindow.setContent(listing.title);
         infowindow.open(this.map, marker);
-        // this.map.setCenter({ lat: listing.lat, lng: listing.lng});
       };
 
       htmlElement.onmouseout = () => {

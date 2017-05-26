@@ -19,14 +19,7 @@ class BookingForm extends React.Component {
 
   handleGuests(event) {
     this.setState({num_of_guests: event.currentTarget.value}, () => {
-      // console.log(this.state);
     });
-  }
-
-  componentDidMount() {
-    // if (!this.props.listing.id) {
-    //   this.props.fetchAllListings(filters);
-    // }
   }
 
   sessionMessage() {
@@ -37,7 +30,6 @@ class BookingForm extends React.Component {
     } else {
       return (
         <button className='book-my-stay' type='submit'>Book My Stay</button>
-        // <Link to="/trips">Book My Stay</Link>
       );
     }
   }
@@ -65,7 +57,6 @@ class BookingForm extends React.Component {
                       check_out: this.state.endDate.format("DD-MM-YYYY"),
                       num_of_guests: this.state.num_of_guests
                     };
-    // console.log(details);
     this.props.addBooking({booking: details})
     .then(this.props.history.push(`/trips/`));
   }
@@ -115,11 +106,3 @@ class BookingForm extends React.Component {
 }
 
 export default BookingForm;
-
-// {this.state.errors.map(error => (
-//   <h1 className='booking-form-error'>{error}</h1>
-// ))}
-//
-// {this.props.errors.map(error => (
-//   <h1 className='booking-form-error'>{error}</h1>
-// ))}

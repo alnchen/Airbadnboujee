@@ -7,12 +7,10 @@ const reviewReducer = (state = {}, action) => {
 
   switch (action.type) {
     case RECEIVE_REVIEWS:
-      // console.log('hit receive reviews');
       newState = {reviews: action.reviews};
       newState.errors = [];
       return newState;
     case RECEIVE_REVIEW:
-      // console.log('hit receive single review');
       newState = Object.assign({}, state);
       newState.reviews[action.review.id] = action.review;
       return newState;
@@ -27,7 +25,6 @@ const reviewReducer = (state = {}, action) => {
       delete nextState.reviews[action.review.id];
       return nextState;
     default:
-      // console.log('hit default');
       return state;
   }
 };

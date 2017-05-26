@@ -13,14 +13,9 @@ const BookingsReducer = (state = _initialState, action) => {
     console.log('inside receive bookings');
       return {bookings: action.bookings,
              errors: []};
-    // case RECEIVE_ONE_BOOKING:
-    //   const booking = action.booking;
-    //   return merge({}, state, {bookings: [booking], errors: []});
     case DELETE_BOOKING:
       let nextState = merge({}, state);
-      // console.log(action.booking.id);
       delete nextState.bookings[action.booking.id];
-      // console.log(nextState);
       return nextState;
     case RECEIVE_BOOKING_ERRORS:
       const errors = action.errors;

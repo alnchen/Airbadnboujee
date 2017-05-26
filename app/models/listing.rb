@@ -18,18 +18,7 @@ class Listing < ApplicationRecord
         .where("lng < ?", bounds[:northEast][:lng])
   end
 
-
-  # def is_available?(start_date, end_date)
-  #   self.bookings.each do |booking|
-  #     if booking.start_date <= end_date && start_date <= booking.end_date
-  #       return false
-  #     end
-  #   end
-  #   true
-  # end
-  #
   def self.find_by_filters(city, guests)
-    # , start_date, end_date)
 
     if city == ''
       listings = Listing.all

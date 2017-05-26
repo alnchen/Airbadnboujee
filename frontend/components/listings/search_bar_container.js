@@ -5,7 +5,6 @@ import { listingsArray } from '../../reducers/selectors';
 import SearchBar from './search_bar';
 
 const mapStateToProps = (state) => ({
-  // allListings: listingsArray(state)
 });
 
 const mapDispatchToProps = (dispatch) => ({

@@ -26,10 +26,6 @@ class SearchBar extends React.Component {
     google.maps.event.addDomListener(document.getElementById('txtPlaces'), 'keydown', function(e) {
       if (e.keyCode === 13) {
         e.preventDefault();
-        // const place = e.currentTarget.value.split(',')[0];
-        // this.setState({city: place});
-        // this.clearFields();
-        // this.handleFormSubmit();
       }
     });
 
@@ -39,14 +35,10 @@ class SearchBar extends React.Component {
 
   handleAutocompleteCity(place) {
     this.setState({city: place});
-    // console.log(this.state);
   }
 
   handleLocationInput(event) {
-    // console.log(event.currentTarget.value);
-    // console.log('inside location input');
     this.setState({city: event.currentTarget.value.split(',')[0]});
-    // console.log(this.state.city);
   }
 
   handleGuestInput(event) {
@@ -86,8 +78,6 @@ class SearchBar extends React.Component {
             <option value='10'>10+</option>
           </select>
         <button className='search-listings' type="submit">See Listings</button>
-
-
       </form>
     );
   }

@@ -6,7 +6,6 @@ class HomePage extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
     $('.home-transparent').parallax({imageSrc: 'https://goo.gl/nNSkx0'});
-    // this.props.fetchAllListings();
   }
 
   componentWillUnmount() {
@@ -30,7 +29,7 @@ class HomePage extends React.Component {
     const featuredListings = featured.map( (listing, idx) => {
       return <FeaturedListing key={idx} listing={listing}/>;
     });
-    
+
     return (
       <div>
         <div className='home-transparent'>

@@ -7,10 +7,6 @@ class BookingIndexItem extends React.Component {
     this.cancelTrip = this.cancelTrip.bind(this);
   }
 
-  // componentDidMount () {
-  //   window.scrollTo(0, 0);
-  // }
-
   cancelTrip(id) {
     return (e) => this.props.deleteBooking(id);
   }
@@ -49,5 +45,3 @@ class BookingIndexItem extends React.Component {
 
 
 export default BookingIndexItem;
-
-// <button onClick={this.props.cancelTrip(this.props.booking.id)}>Cancel Trip</button>
