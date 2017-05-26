@@ -8,17 +8,18 @@
 
 .detail-title {
   font-family: $booking-city;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   margin-right: 30px;
 }
 
 .detail-description {
-
+  margin: 5px 0px;
 }
 
+
 .detail-city-state, .detail-max-guests {
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .detail-item-info {
@@ -26,6 +27,7 @@
   height: 30%;
   margin: 20px;
 }
+
 
 // .detail-item-form {
 //   justify-content: center;
@@ -59,6 +61,7 @@
 
 .default-listing-details {
   border-top: 1px solid #e8e8e8;
+  padding-top: 10px;
 }
 
 .detail-info-2-col {
@@ -67,6 +70,8 @@
 }
 
 .detail-category {
+  font-weight: bolder;
+  font-size: 15px;
   width: 13vw;
 }
 
@@ -74,6 +79,7 @@
   display: flex;
   justify-content: space-between;
   width: 50vw;
+  font-size: 13px;
 
   li {
     margin-bottom: 10px;

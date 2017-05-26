@@ -40,7 +40,7 @@ class ListingsDetail extends React.Component {
             <div className="detail-city-state">{city}, {state}</div>
             <div className="detail-max-guests">Max Guests: {max_guests}</div>
             <br/>
-            <div style={{fontSize:13}}>About my place:</div>
+            <div>About my place:</div>
             <div className="detail-description">{description}</div>
             <br/>
             <DefaultListingDetails />

@@ -2,7 +2,6 @@ use index of all listings with horizontal menu for front page element
 
 Extras:
 use carousel for flipping through images
-set map on each individual show page
 heroku re-seed
 put in image for show page (suitcase handle)
 
@@ -16,5 +15,4 @@ to-do:
 
 ASK TA:
   -why no log of git commits
-  -smooth div shrink transition
-  -service fee and total sections for booking form
+  -bookings reducer issue

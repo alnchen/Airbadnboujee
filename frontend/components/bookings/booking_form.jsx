@@ -79,7 +79,7 @@ class BookingForm extends React.Component {
     return (
       <form className='booking-form' onSubmit={this.handleFormSubmit}>
 
-        <div className='form-label'>${ this.props.listing.price } per night</div>
+          <div className='form-label'>${ this.props.listing.price } per night</div>
           <DateRangePicker
             startDatePlaceholderText={'Check In'}
             endDatePlaceholderText={'Check Out'}

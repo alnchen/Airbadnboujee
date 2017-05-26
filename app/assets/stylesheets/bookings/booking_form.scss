@@ -9,7 +9,7 @@
   border: 1px solid black;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  overflow: hidden;
+  // overflow: hidden;
   opacity: 0.9;
 }
 
@@ -50,6 +50,13 @@
   padding: 11px;
   background-color: #151d6b;
   color: white;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+  // overflow: hidden;
+}
+
+.form-label-container {
+  overflow: hidden;
 }
 
 .book-my-stay {
@@ -62,7 +69,7 @@
   background-color: #151d6b;
   color: white;
   border-radius: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .book-my-stay:hover {

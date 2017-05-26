@@ -2,10 +2,46 @@
   background: transparent;
   min-height: 700px;
   z-index: -1;
+  color: white;
 }
 
 .home-description {
   height: 800px;
   background-color: black;
   width: 100%;
+}
+
+.definition-container {
+  width: 570px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+
+.boujee {
+  font-size: 85px;
+  font-family: 'Judson', serif;
+  // font-weight: bold;
+}
+
+.pronunciation {
+  font-size: 28px;
+  width: auto;
+}
+
+.definition {
+  font: $sans-serif-header;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.adjective {
+  font-size: 32px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.def-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }

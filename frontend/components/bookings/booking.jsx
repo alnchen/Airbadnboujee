@@ -8,8 +8,15 @@ class Booking extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.props.fetchAllBookings();
+    if (this.props !== nextProps){
+      this.props.fetchAllBookings();
+    }
   }
+
+  // componentWillUpdate() {
+  //   this.props.fetchAllBookings();
+  // }
+
 
   render() {
 
