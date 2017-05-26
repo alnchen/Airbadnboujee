@@ -31,19 +31,16 @@ class ReviewForm extends React.Component {
     console.log(review);
   }
 
-
   render() {
     return (
       <form className='review-form'>
-        <div className='review-form-title'>Have you stayed here before? Leave a review!</div>
 
-          {this.props.listing_id}
+        <div className='review-form-title'>Have you stayed here before? Leave a review!</div>
 
           <Rating
             placeholderRate={this.state.rating}
             start={0}
-            stop={5}
-            fractions={2}
+            stop={10}
             onChange={ (rate) => {
               this.setState({rating: rate});
             }}

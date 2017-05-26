@@ -1,5 +1,5 @@
 import { RECEIVE_REVIEW, RECEIVE_REVIEWS, RECEIVE_REVIEW_ERRORS, DELETE_REVIEW, CLEAR_REVIEW_ERRORS } from '../actions/review_actions';
-
+import merge from 'lodash/merge';
 
 const reviewReducer = (state = {}, action) => {
   Object.freeze(state);
@@ -22,11 +22,14 @@ const reviewReducer = (state = {}, action) => {
     case CLEAR_REVIEW_ERRORS:
       newState.errors= [];
       return newState;
+    case DELETE_REVIEW:
+      let nextState = merge({}, state);
+      delete nextState.reviews[action.review.id];
+      return nextState;
     default:
       // console.log('hit default');
       return state;
   }
 };
-
 
 export default reviewReducer;
