@@ -21,19 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //testing
-import { login, signup, logout } from './actions/session_actions';
-window.login = login;
-window.signup = signup;
-window.logout = logout;
-import { fetchAllListings, fetchOneListing, addListing } from './actions/listings_actions';
-window.fetchAllListings = fetchAllListings;
-window.fetchOneListing = fetchOneListing;
-window.addListing = addListing;
-import { fetchAllBookings, addBooking, deleteBooking} from './util/booking_util';
-window.fetchAllBookings = fetchAllBookings;
-window.addBooking = addBooking;
-window.deleteBooking = deleteBooking;
-import { addReview } from './actions/review_actions';
-window.addReview = addReview;
-import { fetchReviews } from './actions/review_actions';
-window.fetchReviews = fetchReviews;
+// import { login, signup, logout } from './actions/session_actions';
+// window.login = login;
+// window.signup = signup;
+// window.logout = logout;
+// import { fetchAllListings, fetchOneListing, addListing } from './actions/listings_actions';
+// window.fetchAllListings = fetchAllListings;
+// window.fetchOneListing = fetchOneListing;
+// window.addListing = addListing;
+// import { fetchAllBookings, addBooking, deleteBooking} from './util/booking_util';
+// window.fetchAllBookings = fetchAllBookings;
+// window.addBooking = addBooking;
+// window.deleteBooking = deleteBooking;
+// import { addReview } from './actions/review_actions';
+// window.addReview = addReview;
+// import { fetchReviews } from './actions/review_actions';
+// window.fetchReviews = fetchReviews;
