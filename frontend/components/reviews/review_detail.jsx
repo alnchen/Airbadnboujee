@@ -12,10 +12,13 @@ class ReviewDetail extends React.Component{
 
   render() {
     const { body, rating } = this.props.review;
-
+    const image_url = this.props.review.author.image_url ?
+                      this.props.review.author.image_url :
 
     return (
       <div className='review'>
+
+
         {body}
 
         <Rating
