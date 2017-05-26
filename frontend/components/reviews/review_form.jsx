@@ -14,7 +14,9 @@ class ReviewForm extends React.Component {
   }
 
   handleBodyInput(e) {
-    this.setState({body: e.currentTarget.value});
+    this.setState({body: e.currentTarget.value.charAt(0).toUpperCase() +
+                         e.currentTarget.value.slice(1)
+    });
   }
 
   handleRatingInput(rating) {
@@ -28,33 +30,49 @@ class ReviewForm extends React.Component {
                       body: this.state.body
     };
     this.props.addReview({review: review});
-    console.log(review);
+    this.setState({
+      rating: null,
+      body: null
+    });
+    document.getElementById("review-text").value="";
   }
 
   render() {
+
+    const errors = this.props.errors.responseText ?
+                    this.props.errors.responseText :
+                    ''
+
     return (
       <form className='review-form'>
 
-        <div className='review-form-title'>Have you stayed here before? Leave a review!</div>
+        <div className='review-top'>
+          <div className='review-form-title'>Have you stayed here before?</div>
+            <div>Leave a rating and review below!</div>
+            <Rating
+              placeholderRate={this.state.rating}
+              start={0}
+              stop={10}
+              onChange={ (rate) => {
+                this.setState({rating: rate});
+              }}
+              placeholder={ <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Yellow_star.svg/2000px-Yellow_star.svg.png" className=".form-circle" />}
+              full={ <img src="http://www.freeiconspng.com/uploads/white-star-icon-11.png" />}
+            />
+        </div>
 
-          <Rating
-            placeholderRate={this.state.rating}
-            start={0}
-            stop={10}
-            onChange={ (rate) => {
-              this.setState({rating: rate});
-            }}
-          />
+          { errors }
 
           <br/>
-
-          <input type='text'
-                 onChange={ this.handleBodyInput }
-                 className='review-text'
-                 placeholder='Write a comment'>
-          </input>
-
-          <button onClick={ this.handleSubmit }>Submit</button>
+          <div className='comment-submit-row'>
+            <textarea
+                   id='review-text'
+                   onChange={ this.handleBodyInput }
+                   className='review-text'
+                   placeholder='Write a comment'>
+            </textarea>
+            <button className='comment-submit' onClick={ this.handleSubmit }>Submit</button>
+          </div>
       </form>
 
     );

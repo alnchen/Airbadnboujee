@@ -36,7 +36,7 @@ class BookingForm extends React.Component {
       );
     } else {
       return (
-        <button type='submit'>Book My Stay</button>
+        <button className='book-my-stay' type='submit'>Book My Stay</button>
         // <Link to="/trips">Book My Stay</Link>
       );
     }
@@ -74,12 +74,12 @@ class BookingForm extends React.Component {
     const errors = this.state.errors ? this.state.errors.map( (error, idx) => <div className='booking-form-errors' key={idx}>{error}</div>) : <div></div>
 
     const nights = this.state.startDate && this.state.endDate ? this.state.endDate.diff(this.state.startDate, 'days') : null
-    const cost = nights ? (<div>Total cost for { nights } nights before fees: ${ nights * this.props.listing.price }</div>) : (<div></div>)
+    const cost = nights ? (<div className='costs'>Total cost before fees: ${ nights * this.props.listing.price }</div>) : (<div></div>)
 
     return (
       <form className='booking-form' onSubmit={this.handleFormSubmit}>
 
-        <div className='form-label'>Request Booking</div>
+        <div className='form-label'>${ this.props.listing.price } per night</div>
           <DateRangePicker
             startDatePlaceholderText={'Check In'}
             endDatePlaceholderText={'Check Out'}
@@ -104,7 +104,6 @@ class BookingForm extends React.Component {
           <option value={9}>9</option>
           <option value={10}>10+</option>
         </select>
-
         { errors }
         { cost }
 

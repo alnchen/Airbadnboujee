@@ -20,23 +20,21 @@ class ReviewDetail extends React.Component{
 
     const deleteButton = () => {
       return this.props.review.author.id === this.props.currentUser.id ?
-      <button onClick={this.handleDelete}>Delete Comment</button>
+      <button className='detail-remove' onClick={this.handleDelete}>Remove Your Comment?</button>
       : <div></div>;
     };
 
     return (
       <div className='review'>
 
-        <img className='review-pf-pic' src={image_url} />
-        {body}
+        <div>
+          <img className='review-pf-pic' src={image_url} />
+          <div className='review-rating'>Rating: {rating}/10</div>
+        </div>
 
-        <Rating
-          placeholderRate={rating}
-          start={0}
-          stop={10}
-          readonly={true}
-        />
+          {body}
 
+        <br/>
       { deleteButton() }
       </div>
     );

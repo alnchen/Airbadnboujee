@@ -1,13 +1,16 @@
 .detail-item {
   font-family: $sans-serif-header;
-  // width: 75%;
+  width: 75%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 
 .detail-title {
-  font-size: 21px;
+  font-family: $booking-city;
+  font-size: 24px;
   font-weight: bold;
+  margin-right: 30px;
 }
 
 .detail-description {
@@ -16,13 +19,6 @@
 
 .detail-city-state, .detail-max-guests {
   font-size: 14px;
-}
-
-.detail-price {
-  float: right;
-  padding: 3px;
-  border: 1px solid #bababa;
-  border-radius: 3px;
 }
 
 .detail-item-info {
