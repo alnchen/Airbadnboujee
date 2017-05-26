@@ -32,7 +32,7 @@ class BookingForm extends React.Component {
   sessionMessage() {
     if (!this.props.currentUser) {
       return (
-        <div className='signed-out-message'>Log in to book.</div>
+        <div className='signed-out-message'>Log in to book</div>
       );
     } else {
       return (

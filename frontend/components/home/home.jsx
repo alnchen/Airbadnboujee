@@ -27,12 +27,10 @@ class HomePage extends React.Component {
       }
     }
 
-    const featuredListings = featured.map( (listing) => {
-      return <FeaturedListing listing={listing}/>;
+    const featuredListings = featured.map( (listing, idx) => {
+      return <FeaturedListing key={idx} listing={listing}/>;
     });
-
-    console.log(featured);
-
+    
     return (
       <div>
         <div className='home-transparent'>

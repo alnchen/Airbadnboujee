@@ -29,5 +29,3 @@ class ListingsIndexItem extends React.Component {
 
 
 export default ListingsIndexItem;
-
-// <div className="index-img-container"><img src={image_url}></img></div>
