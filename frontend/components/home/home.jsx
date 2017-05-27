@@ -8,6 +8,10 @@ class HomePage extends React.Component {
     $('.home-transparent').parallax({imageSrc: 'https://goo.gl/nNSkx0'});
   }
 
+  componentWillMount() {
+    this.props.fetchAllListings();
+  }
+
   componentWillUnmount() {
     $('.parallax-mirror').remove();
   }
