@@ -10,7 +10,6 @@ const BookingsReducer = (state = _initialState, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_BOOKINGS:
-    console.log('inside receive bookings');
       return {bookings: action.bookings,
              errors: []};
     case DELETE_BOOKING:

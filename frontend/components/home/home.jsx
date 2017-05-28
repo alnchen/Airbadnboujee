@@ -1,37 +1,47 @@
 import React from 'react';
-import FeaturedListing from '../listings/featured_listing';
+import FeaturedListingContainer from '../listings/featured_listing_container';
 
 class HomePage extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      city: '',
+      guests: ''
+    };
+  }
+
 
   componentDidMount() {
     window.scrollTo(0, 0);
     $('.home-transparent').parallax({imageSrc: 'https://goo.gl/nNSkx0'});
+    // console.log(this.state);
+    // this.props.fetchAllListings(this.state);
   }
 
-  componentWillMount() {
-    this.props.fetchAllListings();
-  }
+  // componentWillMount() {
+  // }
 
   componentWillUnmount() {
     $('.parallax-mirror').remove();
   }
 
   render(){
+    const length = this.props.allListings.length;
+    let randomNumbers = [];
 
-    const featured = [];
-
-    if ( this.props.allListings.length > 1 ) {
-      while (featured.length < 6) {
-        let rand = Math.floor((Math.random() * this.props.allListings.length) + 1 );
-
-        if ( !featured.includes(this.props.allListings[rand])   ) {
-          featured.push(this.props.allListings[rand]);
+    if (this.props.allListings.length > 0) {
+      while (randomNumbers.length < 6) {
+        let rand = Math.floor((Math.random() * (length) ));
+        if ( !randomNumbers.includes(rand)) {
+          randomNumbers.push(rand);
         }
       }
     }
 
-    const featuredListings = featured.map( (listing, idx) => {
-      return <FeaturedListing key={idx} listing={listing}/>;
+    console.log(randomNumbers);
+
+    const featuredListings = randomNumbers.map( (number, idx) => {
+      return <FeaturedListingContainer key={idx} listing={this.props.allListings[number]}/>;
     });
 
     return (
@@ -58,6 +68,3 @@ class HomePage extends React.Component {
 }
 
 export default HomePage;
-
-
-// <img src='https://goo.gl/nNSkx0'/>
