@@ -38,8 +38,6 @@ class HomePage extends React.Component {
       }
     }
 
-    console.log(randomNumbers);
-
     const featuredListings = randomNumbers.map( (number, idx) => {
       return <FeaturedListingContainer key={idx} listing={this.props.allListings[number]}/>;
     });
