@@ -47,7 +47,7 @@ class ReviewForm extends React.Component {
                     ''
 
 
-    const button = this.props.currentUser ? <button className='comment-submit' onClick={ this.handleSubmit }>Submit</button> : <div className='log-in-to-review'>Log in to review</div>
+    const button = this.props.currentUser ? <button className='comment-submit' type="button" onClick={ this.handleSubmit }>Submit</button> : <div className='log-in-to-review'>Log in to review</div>
 
 
     return (
