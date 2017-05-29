@@ -53,7 +53,7 @@ class HomePage extends React.Component {
         <div className='home-description'>
           <div className='featured-spacing'>{featuredListings}</div>
           <br/>
-          <div className='featured-heading'>Find your next vacation today</div>
+          <div className='featured-heading'>Find your next vacation today!</div>
         </div>
       </div>
     );
