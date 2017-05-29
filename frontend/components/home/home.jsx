@@ -14,12 +14,7 @@ class HomePage extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
     $('.home-transparent').parallax({imageSrc: 'https://goo.gl/nNSkx0'});
-    // console.log(this.state);
-    // this.props.fetchAllListings(this.state);
   }
-
-  // componentWillMount() {
-  // }
 
   componentWillUnmount() {
     $('.parallax-mirror').remove();

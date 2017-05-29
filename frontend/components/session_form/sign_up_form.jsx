@@ -20,10 +20,7 @@ class SignUpForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    // const user = Object.assign({}, this.state);
-    // this.setState({email: this.state.email.toLowerCase()});
     const user = this.state;
-    // console.log(user);
     this.props.signup(user).then(this.props.closeModal);
   }
 

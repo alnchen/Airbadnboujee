@@ -3,7 +3,7 @@ import BookingIndexItem from './booking_index_item';
 
 class Booking extends React.Component {
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.fetchAllBookings();
   }
 
@@ -14,7 +14,6 @@ class Booking extends React.Component {
   }
 
   render() {
-
     const output = this.props.bookings.map((booking, idx) =>
                     <BookingIndexItem booking={ booking } deleteBooking={ this.props.deleteBooking } key={idx} />);
 

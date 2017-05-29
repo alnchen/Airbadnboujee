@@ -12,19 +12,6 @@
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvS_Gjg0uxEeFguoG6stTgRNgWX7w1x_c&libraries=places"></script>
 
-    <!-- <script type="text/javascript">
-        google.maps.event.addDomListener(window, 'load', function () {
-            var places = new google.maps.places.Autocomplete(document.getElementById('txtPlaces'), {types: ['(cities)'], componentRestrictions: {country: "us"}});
-            google.maps.event.addListener(places, 'place_changed', function () {
-                var place = places.getPlace();
-                var address = place.formatted_address;
-                var latitude = place.geometry.location.A;
-                var longitude = place.geometry.location.F;
-                console.log("inside app html");
-            });
-        });
-    </script> -->
-
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>

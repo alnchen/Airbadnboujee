@@ -20,7 +20,6 @@ class SearchBar extends React.Component {
     const autocomplete = new google.maps.places.Autocomplete(document.getElementById('txtPlaces'), {types: ['(cities)'], componentRestrictions: {country: "us"}});
     autocomplete.addListener('place_changed', () => {
       const place = autocomplete.getPlace().name;
-      // console.log(place);
       this.handleAutocompleteCity(place);
     });
     google.maps.event.addDomListener(document.getElementById('txtPlaces'), 'keydown', function(e) {

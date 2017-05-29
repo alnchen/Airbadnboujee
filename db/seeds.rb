@@ -9,7 +9,7 @@
 User.destroy_all
 Listing.destroy_all
 
-tom = User.create(email: 'tom@myspace.com', password: 'password')
+tom = User.create(email: 'tom@myspace.com', password: 'password', image_url: 'https://a3-images.myspacecdn.com/images03/1/240e42b5d9ce48a78983961e7fcb3c39/600x600.jpg')
 jerry = User.create(email: 'jerry@xanga.com', password: 'password')
 
 

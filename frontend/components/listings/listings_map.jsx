@@ -35,6 +35,8 @@ class ListingsMap extends React.Component{
     this.MarkerManager.updateMarkers(this.props.listings);
   }
 
+
+  //for future bounds search implementation
   // registerListeners() {
   //   google.maps.event.addListener(this.map, 'idle', () => {
   //     const { north, south, east, west } = this.map.getBounds().toJSON();

@@ -4,7 +4,7 @@ import Booking from './booking';
 import { bookingsArray } from '../../reducers/selectors';
 
 const mapStateToProps = (state) => ({
-  bookings: bookingsArray(state),
+  bookings: bookingsArray(state) || []
 });
 
 const mapDispatchToProps = (dispatch) => ({
