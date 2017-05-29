@@ -65,6 +65,7 @@ export default class MarkerManager {
       htmlElement.onmouseover = () => {
         infowindow.setContent(listing.title);
         infowindow.open(this.map, marker);
+        this.map.setCenter({ lat: listing.lat, lng: listing.lng});
       };
 
       htmlElement.onmouseout = () => {
