@@ -8,7 +8,7 @@ Rails.application.configure do
 
 
   #for fast reload
-  config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
+  # config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
 
   # Do not eager load code on boot.
   config.eager_load = false
