@@ -62,7 +62,7 @@ class SearchBar extends React.Component {
       <form className="search-form" onSubmit={this.handleFormSubmit}>
         <br/>
 
-        <input onBlur={this.handleLocationInput} type="text" id="txtPlaces" placeholder="Where?" />
+        <input onBlur={this.handleLocationInput} type="text" id="txtPlaces" placeholder="City? (e.g. San Francisco)" />
           <select className='navbar-select' onChange={this.handleGuestInput}>
             <option selected disabled value='default'>Guests</option>
             <option value='1'>1</option>
