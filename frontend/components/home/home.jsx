@@ -50,8 +50,8 @@ class HomePage extends React.Component {
       }
     });
 
-    const numHomes = this.props.allListings.length;
-    const numCities = cities.length;
+    // const numHomes = this.props.allListings.length;
+    // const numCities = cities.length;
 
     return (
       <div>
@@ -69,7 +69,7 @@ class HomePage extends React.Component {
         <div className='home-description'>
           <div className='featured-spacing'>{featuredListings}</div>
           <br/>
-          <div className='featured-heading'>With {numHomes} listings in {numCities} cities. Find your next vacation today!</div>
+          <div className='featured-heading'>Find your next vacation today!</div>
         </div>
       </div>
     );
