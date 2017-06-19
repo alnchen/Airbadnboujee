@@ -8,6 +8,7 @@ class HomePage extends React.Component {
       city: '',
       guests: ''
     };
+    this.handleButtonPush = this.handleButtonPush.bind(this);
   }
 
 
@@ -18,6 +19,12 @@ class HomePage extends React.Component {
 
   componentWillUnmount() {
     $('.parallax-mirror').remove();
+  }
+
+  handleButtonPush() {
+    event.preventDefault();
+    this.props.fetchAllListings(this.state)
+    .then(this.props.history.push(`/listings/`));
   }
 
   render(){
@@ -70,3 +77,5 @@ class HomePage extends React.Component {
 }
 
 export default HomePage;
+
+// <button className='featured-button' onClick={this.handleButtonPush} type="submit">See Listings</button>

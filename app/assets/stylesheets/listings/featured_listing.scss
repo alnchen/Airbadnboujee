@@ -6,7 +6,7 @@
 
 .featured-image-container {
   overflow:hidden;
-  // border-radius: 10px;
+  border-radius: 2px;
   height: 250px;
   width: 415px;
   // height: 30vh;
@@ -59,4 +59,8 @@
   display: flex;
   justify-content: center;
   z-index: 100;
+}
+
+.featured-button {
+  background-color: blue;
 }

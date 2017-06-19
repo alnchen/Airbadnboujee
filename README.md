@@ -1,8 +1,8 @@
 # AirBadnBoujee
 
-Check out a live version [here][AirBadnBoujee].
+[Live link][AirBadnBoujee].
 
-[AirBadnBoujee]: https://airbadnboujee.herokuapp.com/#
+[AirBadnBoujee]: https://airbadnboujee.com/
 
 ![screenshot](http://res.cloudinary.com/ac31624/image/upload/v1495837374/home_page_ffbyjh.png)
 
