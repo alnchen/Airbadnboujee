@@ -2,7 +2,7 @@
 
 [Live link][AirBadnBoujee].
 
-[AirBadnBoujee]: https://airbadnboujee.com/
+[AirBadnBoujee]: http://www.airbadnboujee.com/#/
 
 ![screenshot](http://res.cloudinary.com/ac31624/image/upload/v1495837374/home_page_ffbyjh.png)
 
