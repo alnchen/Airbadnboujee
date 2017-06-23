@@ -66,6 +66,7 @@ class BookingIndexItem extends React.Component {
               onAfterOpen={this.afterModalOpen}
               style={ModalStyle}
               contentLabel="SignUpModal"
+              closeTimeoutMS={200}
               >
               <button className='modal-x'onClick={this.onCancelModalClose}>X</button>
               <div className='confirmation'>Are you sure you want to cancel this trip?</div>

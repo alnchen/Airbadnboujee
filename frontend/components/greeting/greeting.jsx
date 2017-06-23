@@ -95,6 +95,7 @@ class Greeting extends React.Component{
             onAfterOpen={this.afterModalOpen}
             style={ModalStyle}
             contentLabel="SignUpModal"
+            closeTimeoutMS={200}
             >
             <button className='modal-x'onClick={this.onSignUpModalClose}>X</button>
             <SignUpFormContainer closeModal={this.onSignUpModalClose} logInModal={this._handleLogInClick}/>
@@ -107,6 +108,7 @@ class Greeting extends React.Component{
             onAfterOpen={this.afterModalOpen}
             style={ModalStyle}
             contentLabel="LogInModal"
+            closeTimeoutMS={200}
             >
             <button className='modal-x'onClick={this.onLogInModalClose}>X</button>
             <LogInFormContainer closeModal={this.onLogInModalClose} signUpModal={this._handleSignUpClick}/>
