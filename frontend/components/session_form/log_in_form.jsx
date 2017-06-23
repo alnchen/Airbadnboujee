@@ -39,7 +39,7 @@ class LogInForm extends React.Component {
           <input className="auth-input-box" onChange={this.update("email")}
                  type="text"
                  value={this.state.email}
-                 placeholder='Email address'>
+                 placeholder='Email Address'>
           </input>
 
         <br/>
@@ -47,8 +47,11 @@ class LogInForm extends React.Component {
           <input className="auth-input-box" onChange={this.update("password")}
                  type="password"
                  value={this.state.password}
-                 placeholder='Create a Password'>
+                 placeholder='Password'>
           </input>
+
+          <input className="email-promos-button" type="checkbox"></input>
+          <label className="email-promos-text">Keep me logged in</label>
 
         <br/>
           <button className='sessions-button'>Log In</button>

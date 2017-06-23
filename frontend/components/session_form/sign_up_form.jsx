@@ -38,7 +38,7 @@ class SignUpForm extends React.Component {
           <input className="auth-input-box" onChange={this.update("email")}
                  type="text"
                  value={this.state.email}
-                 placeholder='Email address'>
+                 placeholder='Email Address'>
           </input>
 
         <br/>
@@ -51,14 +51,8 @@ class SignUpForm extends React.Component {
 
         <br/>
 
-          <input className="auth-input-box" onChange={this.update("image_url")}
-                 type="text"
-                 value={this.state.image_url}
-                 placeholder='Profile Pic Image URL'>
-          </input>
-
           <input className="email-promos-button" type="checkbox"></input>
-          <label className="email-promos-text">I’d like to receive coupons, promotions, surveys, and updates via email about AirBadnBoujie and its partners.</label>
+          <label className="email-promos-text">I’d like to receive coupons, promotions, surveys, and updates via email about AirBadnBoujee and its partners</label>
 
         <br/>
           <button className='sessions-button'>Sign Up</button>
@@ -75,3 +69,9 @@ class SignUpForm extends React.Component {
 }
 
 export default SignUpForm;
+
+// <input className="auth-input-box" onChange={this.update("image_url")}
+//        type="text"
+//        value={this.state.image_url}
+//        placeholder='Profile Pic Image URL'>
+// </input>
