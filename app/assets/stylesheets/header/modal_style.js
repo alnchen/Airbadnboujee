@@ -12,6 +12,8 @@ const modalStyle = {
     position        : 'fixed',
     padding         : '20px',
     zIndex          : 11,
+    opacity         : 0,
+    transition      : 'opacity 0.3s'
   }
 };
 

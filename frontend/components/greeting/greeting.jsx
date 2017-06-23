@@ -20,13 +20,25 @@ class Greeting extends React.Component{
     this.onLogInModalClose = this.onLogInModalClose.bind(this);
     this.demoLogIn = this.demoLogIn.bind(this);
     this.logOutRedirect = this.logOutRedirect.bind(this);
+    this.afterModalOpen = this.afterModalOpen.bind(this);
   }
 
   _handleSignUpClick() { this.setState({ SignUpmodalOpen: true }); }
-  onSignUpModalClose() { this.setState({ SignUpmodalOpen: false }); }
-
   _handleLogInClick() { this.setState({ LogInmodalOpen: true }); }
-  onLogInModalClose() { this.setState({ LogInmodalOpen: false }); }
+
+  onSignUpModalClose() {
+    this.setState({ SignUpmodalOpen: false });
+    ModalStyle.content.opacity = 0;
+  }
+
+  onLogInModalClose() {
+    this.setState({ LogInmodalOpen: false });
+    ModalStyle.content.opacity = 0;
+  }
+
+  afterModalOpen() {
+    ModalStyle.content.opacity = 100;
+  }
 
   demoLogIn() {
     this.props.login({ email: 'jerry@xanga.com', password: 'password'});
@@ -76,7 +88,8 @@ class Greeting extends React.Component{
 
           {currentUser ? loggedInLinks(currentUser, this.logOutRedirect) : loggedOutLinks()}
 
-          <Modal className="modal"
+          <Modal
+            className="modal"
             isOpen={this.state.SignUpmodalOpen}
             onRequestClose={this.onSignUpModalClose}
             onAfterOpen={this.afterModalOpen}
@@ -87,7 +100,8 @@ class Greeting extends React.Component{
             <SignUpFormContainer closeModal={this.onSignUpModalClose} logInModal={this._handleLogInClick}/>
           </Modal>
 
-          <Modal className="modal"
+          <Modal
+            className="modal"
             isOpen={this.state.LogInmodalOpen}
             onRequestClose={this.onLogInModalClose}
             onAfterOpen={this.afterModalOpen}
