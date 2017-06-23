@@ -69,7 +69,7 @@ class Greeting extends React.Component{
           <div className='logo-container'>
             <Link to="/">
                 <img className="logo"
-                 src="http://res.cloudinary.com/ac31624/image/upload/v1495823999/airbadnbougee_lhitxk.png"/>
+                 src="https://res.cloudinary.com/ac31624/image/upload/v1498189642/logo1_kens28.png"/>
             </Link>
           </div>
           <SearchBarContainer />

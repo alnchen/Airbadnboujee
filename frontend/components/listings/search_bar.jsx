@@ -64,7 +64,8 @@ class SearchBar extends React.Component {
 
         <input onBlur={this.handleLocationInput} type="text" id="txtPlaces" placeholder="City? (e.g. San Francisco)" />
           <select className='navbar-select' onChange={this.handleGuestInput}>
-            <option selected disabled value='default'>Guests</option>
+
+            <option default>Num of Guests</option>
             <option value='1'>1</option>
             <option value='2'>2</option>
             <option value='3'>3</option>
@@ -83,3 +84,4 @@ class SearchBar extends React.Component {
 }
 
 export default withRouter(SearchBar);
+// <option disabled value='default'>Guests</option>
