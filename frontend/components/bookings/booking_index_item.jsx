@@ -14,8 +14,18 @@ class BookingIndexItem extends React.Component {
     this.handleCancelClick = this.handleCancelClick.bind(this);
   }
 
-  onCancelModalClose() { this.setState({ cancelPromptOpen: false }); }
-  handleCancelClick() { this.setState({ cancelPromptOpen: true }); }
+  onCancelModalClose() {
+    this.setState({ cancelPromptOpen: false });
+    ModalStyle.content.opacity = 0;
+  }
+
+  afterModalOpen() {
+    ModalStyle.content.opacity = 100;
+  }
+
+  handleCancelClick() {
+    this.setState({ cancelPromptOpen: true });
+  }
 
   cancelTrip(id) {
     // const id = this.props.booking.id;
