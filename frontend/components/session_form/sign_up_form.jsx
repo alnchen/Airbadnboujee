@@ -10,6 +10,7 @@ class SignUpForm extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.switchForms = this.switchForms.bind(this);
+    this.guestLogIn = this.guestLogIn.bind(this);
   }
 
   update(field) {
@@ -24,6 +25,11 @@ class SignUpForm extends React.Component {
     this.props.signup(user).then(this.props.closeModal);
   }
 
+  guestLogIn() {
+    this.props.login({ email: 'jerry@xanga.com', password: 'password'})
+    .then(this.props.closeModal);
+  }
+
   switchForms(e) {
     e.preventDefault();
     this.props.closeModal();
@@ -32,7 +38,7 @@ class SignUpForm extends React.Component {
 
   render(){
     return (
-      <form className="auth-form" onSubmit={this.handleSubmit}>
+      <form className="auth-form">
         {this.props.errors}
 
           <input className="auth-input-box" onChange={this.update("email")}
@@ -55,7 +61,8 @@ class SignUpForm extends React.Component {
           <label className="email-promos-text">I’d like to receive coupons, promotions, surveys, and updates via email about AirBadnBoujee and its partners</label>
 
         <br/>
-          <button className='sessions-button'>Sign Up</button>
+          <button onClick={this.handleSubmit} className='sessions-button'>Sign Up</button>
+          <button onClick={this.guestLogIn} className='sessions-demo-button'>Demo Account</button>
         <br/>
         <hr/>
 

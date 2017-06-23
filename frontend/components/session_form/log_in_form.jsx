@@ -9,6 +9,7 @@ class LogInForm extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.switchForms = this.switchForms.bind(this);
+    this.guestLogIn = this.guestLogIn.bind(this);
   }
 
   update(field) {
@@ -25,6 +26,11 @@ class LogInForm extends React.Component {
     this.props.login(user).then(this.props.closeModal);
   }
 
+  guestLogIn() {
+    this.props.login({ email: 'jerry@xanga.com', password: 'password'})
+    .then(this.props.closeModal);
+  }
+
   switchForms(e) {
     e.preventDefault();
     this.props.closeModal();
@@ -33,7 +39,7 @@ class LogInForm extends React.Component {
 
   render(){
     return (
-      <form className="auth-form" onSubmit={this.handleSubmit}>
+      <form className="auth-form">
         {this.props.errors}
 
           <input className="auth-input-box" onChange={this.update("email")}
@@ -54,7 +60,8 @@ class LogInForm extends React.Component {
           <label className="email-promos-text">Keep me logged in</label>
 
         <br/>
-          <button className='sessions-button'>Log In</button>
+          <button onClick={this.handleSubmit} className='sessions-button'>Log In</button>
+          <button onClick={this.guestLogIn} className='sessions-demo-button'>Demo Account</button>
         <br/>
         <hr/>
 
