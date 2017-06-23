@@ -49,9 +49,9 @@ class Greeting extends React.Component{
     const loggedInLinks = (currentUser, logout) => {
       const profilePic = currentUser.image_url ? currentUser.image_url : 'https://a3-images.myspacecdn.com/images03/1/240e42b5d9ce48a78983961e7fcb3c39/600x600.jpg'
 
+      // <Link to="/">Help</Link>
       return (
         <div className="nav-bar-session-links">
-          <Link to="/">Help</Link>
           <Link to="/trips">Trips</Link>
           <a onClick={logout} style={{cursor:'pointer'}} >Sign Out</a>
           <img className='pf-pic' src={profilePic}></img>

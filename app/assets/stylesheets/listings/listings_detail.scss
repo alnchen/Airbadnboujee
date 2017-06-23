@@ -33,6 +33,8 @@
 .detail-image-container {
   opacity: 0.0;
   z-index: -10;
+  // for showing some details in main page
+  max-height: 79vh;
 }
 
 .detail-image {
