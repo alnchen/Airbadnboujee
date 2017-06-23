@@ -39,5 +39,18 @@ module.exports = {
   devtool: 'source-maps',
   resolve: {
     extensions: [".js", ".jsx", "*"]
-  }
+  },
+  // for removing process.env.NODE_ENV error message
+  plugins:[
+    new webpack.DefinePlugin({
+      'process.env':{
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress:{
+        warnings: true
+      }
+    })
+  ]
 };
