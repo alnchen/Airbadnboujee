@@ -83,7 +83,7 @@ class Greeting extends React.Component{
             style={ModalStyle}
             contentLabel="SignUpModal"
             >
-            <button onClick={this.onSignUpModalClose}>X</button>
+            <button className='modal-x'onClick={this.onSignUpModalClose}>X</button>
             <SignUpFormContainer closeModal={this.onSignUpModalClose} logInModal={this._handleLogInClick}/>
           </Modal>
 
@@ -94,7 +94,7 @@ class Greeting extends React.Component{
             style={ModalStyle}
             contentLabel="LogInModal"
             >
-            <button onClick={this.onLogInModalClose}>X</button>
+            <button className='modal-x'onClick={this.onLogInModalClose}>X</button>
             <LogInFormContainer closeModal={this.onLogInModalClose} signUpModal={this._handleSignUpClick}/>
           </Modal>
 
