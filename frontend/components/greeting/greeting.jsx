@@ -29,7 +29,7 @@ class Greeting extends React.Component{
   onLogInModalClose() { this.setState({ LogInmodalOpen: false }); }
 
   demoLogIn() {
-    this.props.login({ email: 'tom@myspace.com', password: 'password'});
+    this.props.login({ email: 'jerry@xanga.com', password: 'password'});
   }
 
   logOutRedirect() {
@@ -47,7 +47,7 @@ class Greeting extends React.Component{
     );
 
     const loggedInLinks = (currentUser, logout) => {
-      const profilePic = currentUser.image_url ? currentUser.image_url : 'https://a3-images.myspacecdn.com/images03/1/240e42b5d9ce48a78983961e7fcb3c39/600x600.jpg'
+      const profilePic = currentUser.image_url ? currentUser.image_url : 'https://d28rk61hailme.cloudfront.net/assets/default_user-856f2487c07862f3089cfcb1528df354.png'
 
       // <Link to="/">Help</Link>
       return (

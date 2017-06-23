@@ -5,6 +5,7 @@
   border-top: 1px solid #e8e8e8;
   background-color: white;
   padding-bottom: 10px;
+  // width: 70vw;
 }
 
 .footer-links-column {
@@ -30,6 +31,9 @@
 
 .music-player {
   opacity: 0;
+  width: 100px;
+  position: relative;
+  left: 100px;
 }
 
 .bio {
@@ -37,6 +41,10 @@
 }
 
 .bio-link {
-  font-size: 14px;
+  font-size: 20px;
   color: blue;
+}
+
+.bio-link:hover {
+  opacity: 0.6;
 }

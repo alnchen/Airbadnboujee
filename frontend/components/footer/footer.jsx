@@ -3,18 +3,18 @@ import { Link } from 'react-router-dom';
 class ListingsIndex extends React.Component {
 
   render() {
+    // <div className='bio'>Allen Chen. Software Developer. San Francisco.</div>
     return (
         <div className='footer-links'>
-          <par className='footer-links-column'>
-          <label className='footer-column-category'>About</label>
-            <div className='bio'>Allen Chen. Software Developer. San Francisco.</div>
-            <a className='bio-link' href='https://linkedin.com/in/alchen1231'>LinkedIn</a>
-            <a className='bio-link' href='https://github.com/alnchen'>Github</a>
-            <br/>
+          <div className='footer-links-column'>
+          <label className='footer-column-category'>About Me</label>
+            <a className='bio-link' target="_blank" href='http://allenchen.io/'>allenchen.io</a>
+            <a className='bio-link' target="_blank" href='https://linkedin.com/in/alchen1231'>LinkedIn</a>
+            <a className='bio-link' target="_blank" href='https://github.com/alnchen'>Github</a>
             <audio className='music-player' id="music" controls="controls">
               <source src="http://freeringtonesdownload.info/download/?id=5251" type="audio/mpeg" />
             </audio>
-          </par>
+          </div>
 
           <div className='footer-links-column'>
             <label className='footer-column-category'>AirBadnBoujee</label>
