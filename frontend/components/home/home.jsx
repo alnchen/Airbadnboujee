@@ -14,7 +14,8 @@ class HomePage extends React.Component {
 
   componentDidMount() {
     window.scrollTo(0, 0);
-    $('.home-transparent').parallax({imageSrc: 'https://goo.gl/nNSkx0'});
+    // $('.home-transparent').parallax({imageSrc: 'https://goo.gl/nNSkx0'});
+    $('.home-transparent').parallax({imageSrc: 'https://res.cloudinary.com/ac31624/image/upload/v1496624342/high_res_boujee_y0uwxw.jpg'});
   }
 
   componentWillUnmount() {
