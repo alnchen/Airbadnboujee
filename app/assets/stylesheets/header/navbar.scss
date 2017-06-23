@@ -69,7 +69,7 @@
   border-radius: 5px;
 }
 
-.nav-bar-session-links *:hover:not(.pfpic) {
+.nav-bar-session-links *:hover{
   opacity: 0.6;
   border-bottom: 1px solid #adadad;
 }
@@ -147,7 +147,8 @@
 }
 
 .pf-pic:hover {
-
+  border-bottom: none;
+  opacity: 1;
 }
 
 .auth-input-box {
