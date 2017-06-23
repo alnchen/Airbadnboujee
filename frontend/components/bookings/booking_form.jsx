@@ -83,7 +83,8 @@ class BookingForm extends React.Component {
           />
 
         <select className='guests-dropdown' onChange={this.handleGuests}>
-          <option selected disabled value='default'>Number of Guests</option>
+
+          <option default>Num of Guests</option>
           <option value={1}>1</option>
           <option value={2}>2</option>
           <option value={3}>3</option>

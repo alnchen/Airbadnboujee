@@ -1,14 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Modal from 'react-modal';
+import ModalStyle from '../../../app/assets/stylesheets/header/modal_style';
 
 class BookingIndexItem extends React.Component {
   constructor(props){
     super(props);
+    this.state = {
+      cancelPromptOpen: false,
+    };
     this.cancelTrip = this.cancelTrip.bind(this);
+    this.onCancelModalClose = this.onCancelModalClose.bind(this);
+    this.handleCancelClick = this.handleCancelClick.bind(this);
   }
 
+  onCancelModalClose() { this.setState({ cancelPromptOpen: false }); }
+  handleCancelClick() { this.setState({ cancelPromptOpen: true }); }
+
   cancelTrip(id) {
-    return (e) => this.props.deleteBooking(id);
+    // const id = this.props.booking.id;
+    return (e) => {
+      this.props.deleteBooking(id);
+      this.onCancelModalClose();
+    };
   }
 
   render(){
@@ -33,9 +47,22 @@ class BookingIndexItem extends React.Component {
           <div className='booking-city'>{city}</div>
           <div>{check_in} - {check_out}</div>
           <div>Number of Guests: { num_of_guests }</div>
-          <div>Nights Stayed: { diff }</div>
+          <div>Nights: { diff }</div>
           <br/>
-          <button className='cancel-button' onClick={ this.cancelTrip(id) }>Cancel Trip</button>
+          <button className='cancel-button' onClick={ this.handleCancelClick }>Cancel Trip?</button>
+            <Modal className="modal"
+              isOpen={this.state.cancelPromptOpen}
+              onRequestClose={this.onCancelModalClose}
+              onAfterOpen={this.afterModalOpen}
+              style={ModalStyle}
+              contentLabel="SignUpModal"
+              >
+              <button className='modal-x'onClick={this.onCancelModalClose}>X</button>
+              <div className='confirmation'>Are you sure you want to cancel this trip?</div>
+              <div className='buttons-container'>
+              <button onClick={ this.cancelTrip(id) } className='confirmation-yes'>Yes, process refund</button> <button onClick={ this.onCancelModalClose }className='confirmation-no'>No, keep reservation</button>
+              </div>
+            </Modal>
         </div>
 
       </div>

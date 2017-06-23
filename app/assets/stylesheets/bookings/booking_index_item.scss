@@ -16,6 +16,47 @@
   background-color: #fcfcfc;
 }
 
+.confirmation {
+  // width: 100%;
+  // margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-family: $sans-serif-header;
+}
+
+.confirmation-yes {
+  border-radius: 1px;
+  font-size: 16px;
+  width: 200px;
+  padding: 7px 0;
+  // height: 20px;
+  color: white;
+  font-family: $sans-serif-header;
+  background-color: red;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.confirmation-no {
+  border-radius: 1px;
+  font-size: 16px;
+  width: 200px;
+  // height: 20px;
+  padding: 7px 0;
+  color: white;
+  font-family: $sans-serif-header;
+  background-color: blue;
+  text-align: center;
+}
+
+.buttons-container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .booking-text {
   margin: 7px 15px 15px 15px;
 
@@ -30,6 +71,7 @@
 .cancel-button {
   font-size: 11px;
   margin-left: 300px;
+  color: red;
 }
 
 .booking-image-container {
