@@ -16,7 +16,7 @@ class HomePage extends React.Component {
     window.scrollTo(0, 0);
     // $('.home-transparent').parallax({imageSrc: 'https://goo.gl/nNSkx0'});
     // $('.home-transparent').parallax({imageSrc: 'https://res.cloudinary.com/ac31624/image/upload/v1496624342/high_res_boujee_y0uwxw.jpg'});
-    $('.home-transparent').parallax({imageSrc: '../../app/assets/images/airbnb_bg1.jpg'});
+    $('.home-transparent').parallax({imageSrc: './airbnb_bg1.jpg'});
   }
 
   componentWillUnmount() {
