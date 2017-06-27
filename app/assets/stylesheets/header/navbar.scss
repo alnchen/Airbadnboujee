@@ -51,14 +51,16 @@
 .nav-bar-session-links {
   width: 20vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .nav-bar-session-links * {
   margin: 0px 10px;
   padding: 3px 0px;
+  text-align: center;
+  // font-size: 1vw;
 }
 
 .search-listings {
@@ -84,7 +86,8 @@
 }
 
 .navbar-select {
-  width: 130px;
+  // width: 130px;
+  width: 10vw;
   height: 24px;
   position: relative;
   bottom: 1px;
@@ -192,7 +195,8 @@ color: #a5a4a4 !important;
 }
 
 #txtPlaces {
-  width: 200px;
+  // width: 200px;
+  width: 15vw;
   border: 1px solid #e8e8e8;
   padding: 2px;
   height: 20px;
