@@ -1,5 +1,6 @@
 import React from 'react';
 import FeaturedListingContainer from '../listings/featured_listing_container';
+import Slider from 'react-slick';
 
 class HomePage extends React.Component {
   constructor(props){
@@ -45,34 +46,47 @@ class HomePage extends React.Component {
       return <FeaturedListingContainer key={idx} listing={this.props.allListings[number]}/>;
     });
 
-    const cities = [];
-    this.props.allListings.forEach( (listing) => {
-      if (!cities.includes(listing.city)) {
-        cities.push(listing.city);
-      }
+    const simpleListings = randomNumbers.map( (number, idx) => {
+      // return <div className='simple-listing' key={idx} listing={this.props.allListings[number]}/>;
+      return <div className='simple-listing'>
+        <img className='simple-listing-pic' key={idx} src={this.props.allListings[number].image_url}/>
+        <h3>{this.props.allListings[number].city}</h3>
+        </div>;
     });
 
-    // const numHomes = this.props.allListings.length;
-    // const numCities = cities.length;
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+
 
     return (
       <div>
         <div className='home-transparent'>
-
           <div className='definition-container'>
             <div className='def-top'>
               <div className='boujee'>boujee:</div><div className='pronunciation'>[ boo • jee ]</div><div className='adjective'>adjective</div>
             </div>
           <div className='definition'>1. a critical term used to describe people, things, and places that are definitively high-class.</div>
           </div>
-
         </div>
 
         <div className='home-description'>
-          <div className='featured-spacing'>{featuredListings}</div>
-          <br/>
-          <div className='featured-heading'>Find your next vacation today!</div>
+          <div className='home-slider'>
+            <Slider {...settings}>
+              <div>{simpleListings[0]}</div>
+              <div>{simpleListings[1]}</div>
+              <div>{simpleListings[2]}</div>
+              <div>{simpleListings[3]}</div>
+              <div>{simpleListings[4]}</div>
+              <div>{simpleListings[5]}</div>
+            </Slider>
+          </div>
         </div>
+
       </div>
     );
   }
@@ -81,3 +95,10 @@ class HomePage extends React.Component {
 export default HomePage;
 
 // <button className='featured-button' onClick={this.handleButtonPush} type="submit">See Listings</button>
+
+// homepage section v1
+// <div className='home-description'>
+//   <div className='featured-spacing'>{featuredListings}</div>
+//   <br/>
+//   <div className='featured-heading'>Find your next vacation today!</div>
+// </div>
