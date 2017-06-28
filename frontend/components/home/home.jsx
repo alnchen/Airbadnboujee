@@ -50,7 +50,7 @@ class HomePage extends React.Component {
       // return <div className='simple-listing' key={idx} listing={this.props.allListings[number]}/>;
       return <div className='simple-listing'>
         <img className='simple-listing-pic' key={idx} src={this.props.allListings[number].image_url}/>
-        <div><span className='simple-listing-city'>{this.props.allListings[number].city}</span></div>
+        <div className='simple-listing-city'>{this.props.allListings[number].city}</div>
         </div>;
     });
 
@@ -62,8 +62,6 @@ class HomePage extends React.Component {
       slidesToScroll: 1,
       swipeToSlide: true,
       // fade: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
     };
 
 
