@@ -50,16 +50,20 @@ class HomePage extends React.Component {
       // return <div className='simple-listing' key={idx} listing={this.props.allListings[number]}/>;
       return <div className='simple-listing'>
         <img className='simple-listing-pic' key={idx} src={this.props.allListings[number].image_url}/>
-        <h3>{this.props.allListings[number].city}</h3>
+        <div><span className='simple-listing-city'>{this.props.allListings[number].city}</span></div>
         </div>;
     });
 
     const settings = {
-      dots: true,
+      // dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
+      // slidesToShow: 1,
+      slidesToScroll: 1,
+      swipeToSlide: true,
+      // fade: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
     };
 
 

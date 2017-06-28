@@ -55,14 +55,33 @@
 }
 
 .home-slider {
-  width: 50vw;
-  background-color: blue;
+  width: 44vw;
+  // opacity: 0.1;
   margin: 0 auto;
 }
 
 .simple-listing-pic {
-  width: 45vw;
-  height: auto;
-  overflow: hidden;
+  width: 42vw;
+  height: 27vw;
+  // overflow: hidden;
   margin: 0 auto;
+  object-fit: fill;
+}
+
+.simple-listing {
+  // margin: 0 auto;
+  margin-top: 3vw;
+  text-align: center;
+}
+
+.simple-listing-city {
+  color: white;
+  // font-family: $sans-serif-header;
+  font-family: 'Allura', cursive;
+  font-size: 4vw;
+  // position: relative;
+  // bottom: 6vh;
+  // background-color: rgba(0, 0, 0, 0.4);
+  padding: 3px;
+  border-radius: 2px;
 }
