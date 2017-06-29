@@ -60,7 +60,7 @@
 }
 
 .home-slider {
-  width: 46vw;
+  width: 50vw;
   // opacity: 0.1;
   // margin: 0!important auto;
   // margin-left: 30px;
@@ -68,8 +68,8 @@
 }
 
 .simple-listing-pic {
-  width: 44vw;
-  height: 26vw;
+  width: 48vw;
+  height: 28vw;
   // overflow: hidden;
   margin: 0 auto;
   object-fit: fill;
@@ -111,7 +111,7 @@
   padding: 7px 0px 18px 0px;
   margin: 0 auto;
   font-family: $sans-serif-header;
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
 }
 
@@ -140,18 +140,21 @@
 }
 
 .home-review {
-  width: 60vw;
+  max-width: 60vw;
+  min-width: 30vw;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   padding-bottom: 15px;
 }
 
 .review-pic {
-  width: 5vw;
-  height: 5vw;
-  height: auto;
+  width: 3vw;
+  height: 3vw;
+  // height: auto;
   border-radius: 50%;
+  // display: flex;
+  align-content: right;
 }
 
 .review-body {

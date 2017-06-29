@@ -83,15 +83,15 @@ class HomePage extends React.Component {
 
         <div className='home-description'>
           <br></br>
-          <div className='heading'>AirBadnBoujee</div>
+          <div className='heading'>What We Do</div>
           <div className='about-us'>
             Plan the perfect vacation with us! With over 2000 listings in 300 cities, you are bound to find the perfect fit.
             Whether you are looking for a high-rise condo for a romantic getaway, a multi-story mansion for your next birthday party,
             or one of the world's most unique places to check off the bucketlist, we've got you covered!
           </div>
-
+          <br></br>
           <hr className='line'></hr>
-
+          <br></br>
           <div className='description-split'>
             <div className='heading'>Featured Listings</div>
             <div className='home-slider'>
@@ -104,26 +104,29 @@ class HomePage extends React.Component {
                 <div>{simpleListings[5]}</div>
               </Slider>
             </div>
+            <br></br>
           </div>
-
+          <br></br>
           <hr className='line'></hr>
+          <br></br>
           <div className='heading'>Reviews</div>
-          
+
           <div className='home-review'>
+            <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
             <img className='review-pic' src='https://www.sideshowtoy.com/photo.php?sku=902622' />
-            <div className='review-body'>Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time.</div>
           </div>
 
           <div className='home-review'>
+            <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
             <img className='review-pic' src='https://www.sideshowtoy.com/photo.php?sku=902622' />
-            <div className='review-body'>Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time.</div>
           </div>
 
           <div className='home-review'>
+            <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
             <img className='review-pic' src='https://www.sideshowtoy.com/photo.php?sku=902622' />
-            <div className='review-body'>Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time.</div>
           </div>
-
+          <br></br>
+          <br></br>
         </div>
 
       </div>
