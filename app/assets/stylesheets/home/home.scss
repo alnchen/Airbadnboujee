@@ -104,15 +104,16 @@
 }
 
 .about-us {
-  width: 76vw;
+  width: 70vw;
   // background-color: brown;
   color: white;
   display: block;
-  padding: 7px 0px 18px 0px;
+  padding: 10px 0px 18px 0px;
   margin: 0 auto;
   font-family: $sans-serif-header;
   font-size: 17px;
   text-align: center;
+  line-height: 28px;
 }
 
 .description-split {
@@ -140,26 +141,27 @@
 }
 
 .home-review {
-  max-width: 60vw;
+  max-width: 70vw;
   min-width: 30vw;
   margin: 0 auto;
   // display: flex;
   // align-items: center;
-  padding-bottom: 15px;
+  padding: 25px 0px;
 }
 
 .review-pic {
-  width: 3vw;
-  height: 3vw;
+  width: 30px;
+  height: 30px;
   // height: auto;
   border-radius: 50%;
-  // display: flex;
-  align-content: right;
+  margin-right: 20px;
+  margin-top: 5px;
+  float: right;
 }
 
 .review-body {
   color: white;
   font-family: $sans-serif-header;
   margin: 0 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
