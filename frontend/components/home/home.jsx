@@ -58,10 +58,11 @@ class HomePage extends React.Component {
       // dots: true,
       infinite: true,
       speed: 500,
-      // slidesToShow: 1,
+      slidesToShow: 1,
       slidesToScroll: 1,
       swipeToSlide: true,
       // fade: true,
+      // centerMode: true,
     };
 
 
@@ -76,17 +77,36 @@ class HomePage extends React.Component {
           </div>
         </div>
 
+
         <div className='home-description'>
-          <div className='home-slider'>
-            <Slider {...settings}>
-              <div>{simpleListings[0]}</div>
-              <div>{simpleListings[1]}</div>
-              <div>{simpleListings[2]}</div>
-              <div>{simpleListings[3]}</div>
-              <div>{simpleListings[4]}</div>
-              <div>{simpleListings[5]}</div>
-            </Slider>
+
+          <div className='heading'>AirBadnBoujee</div>
+          <div className='about-us'>
+            Plan the perfect vacation with us! With over 2000 listings in 300 cities, you are bound to find the perfect fit.
+            Whether you are looking for a high-rise condo for a romantic getaway, a multi-story mansion for your next birthday party,
+            or one of the world's most unique places to check off the bucketlist, we've got you covered!
           </div>
+
+          <hr className='line'></hr>
+
+          <div className='description-split'>
+            <div className='heading'>Featured Listings</div>
+            <div className='home-slider'>
+              <Slider {...settings}>
+                <div>{simpleListings[0]}</div>
+                <div>{simpleListings[1]}</div>
+                <div>{simpleListings[2]}</div>
+                <div>{simpleListings[3]}</div>
+                <div>{simpleListings[4]}</div>
+                <div>{simpleListings[5]}</div>
+              </Slider>
+            </div>
+          </div>
+
+          <hr className='line'></hr>
+          <div className='heading'>Reviews</div>
+          <br></br>
+
         </div>
 
       </div>
@@ -103,4 +123,13 @@ export default HomePage;
 //   <div className='featured-spacing'>{featuredListings}</div>
 //   <br/>
 //   <div className='featured-heading'>Find your next vacation today!</div>
+// </div>
+
+//
+// <div className='home-blurb'>
+//   <h1>Finding your home is easy!</h1>
+//   <div>○Search by City</div>
+//   <div>○Filter by Number of Occupantss</div>
+//   <div>○Glance over Reviews and Ratings</div>
+//   <div>○Select Duration of Stay for Quote</div>
 // </div>
