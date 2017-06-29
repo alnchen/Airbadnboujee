@@ -113,17 +113,27 @@ class HomePage extends React.Component {
 
           <div className='home-review'>
             <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
-            <img className='review-pic' src='https://www.sideshowtoy.com/photo.php?sku=902622' />
+            <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778514/r5_s3rrbc.jpg' />
           </div>
 
           <div className='home-review'>
             <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
-            <img className='review-pic' src='https://www.sideshowtoy.com/photo.php?sku=902622' />
+            <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778515/r4_moyure.jpg' />
           </div>
 
           <div className='home-review'>
             <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
-            <img className='review-pic' src='https://www.sideshowtoy.com/photo.php?sku=902622' />
+            <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778514/r3_tzmmbk.jpg' />
+          </div>
+
+          <div className='home-review'>
+            <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
+            <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778515/r2_exxvby.png' />
+          </div>
+
+          <div className='home-review'>
+            <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
+            <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778514/r1_ajkn9r.jpg' />
           </div>
           <br></br>
           <Link to={'/listings/'} className='explore-button'><div className='button-text'>See Listings</div></Link>
