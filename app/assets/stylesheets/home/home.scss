@@ -140,11 +140,11 @@
 }
 
 .home-review {
-  width: 50vw;
+  width: 60vw;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding-bottom: 15px;
 }
 
 .review-pic {
@@ -157,5 +157,6 @@
 .review-body {
   color: white;
   font-family: $sans-serif-header;
-  margin: 5px;
+  margin: 0 10px;
+  font-size: 14px;
 }

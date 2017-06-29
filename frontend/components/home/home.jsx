@@ -108,21 +108,20 @@ class HomePage extends React.Component {
 
           <hr className='line'></hr>
           <div className='heading'>Reviews</div>
-          <br></br>
-
+          
           <div className='home-review'>
             <img className='review-pic' src='https://www.sideshowtoy.com/photo.php?sku=902622' />
-            <div className='review-body'>Best place ever! We had an Avengers party here and nobody was killed.</div>
+            <div className='review-body'>Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time.</div>
           </div>
 
           <div className='home-review'>
             <img className='review-pic' src='https://www.sideshowtoy.com/photo.php?sku=902622' />
-            <div className='review-body'>Best place ever! We had an Avengers party here and nobody was killed.</div>
+            <div className='review-body'>Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time.</div>
           </div>
 
           <div className='home-review'>
             <img className='review-pic' src='https://www.sideshowtoy.com/photo.php?sku=902622' />
-            <div className='review-body'>Best place ever! We had an Avengers party here and nobody was killed.</div>
+            <div className='review-body'>Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time.</div>
           </div>
 
         </div>
