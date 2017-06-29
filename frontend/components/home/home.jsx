@@ -126,6 +126,8 @@ class HomePage extends React.Component {
             <img className='review-pic' src='https://www.sideshowtoy.com/photo.php?sku=902622' />
           </div>
           <br></br>
+          <Link to={'/listings/'} className='explore-button'>See Listings</Link>
+          <br></br>
           <br></br>
         </div>
 

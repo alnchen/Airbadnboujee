@@ -141,7 +141,7 @@
 }
 
 .home-review {
-  max-width: 70vw;
+  max-width: 56vw;
   min-width: 30vw;
   margin: 0 auto;
   // display: flex;
@@ -164,4 +164,12 @@
   font-family: $sans-serif-header;
   margin: 0 10px;
   font-size: 16px;
+}
+
+.explore-button {
+  background-color: white;
+  width: 10vw;
+  height: auto;
+  font-family: $sans-serif-header;
+  text-align: center;
 }
