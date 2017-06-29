@@ -1,6 +1,7 @@
 import React from 'react';
 import FeaturedListingContainer from '../listings/featured_listing_container';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 
 class HomePage extends React.Component {
   constructor(props){
@@ -49,8 +50,10 @@ class HomePage extends React.Component {
     const simpleListings = randomNumbers.map( (number, idx) => {
       // return <div className='simple-listing' key={idx} listing={this.props.allListings[number]}/>;
       return <div className='simple-listing'>
-        <img className='simple-listing-pic' key={idx} src={this.props.allListings[number].image_url}/>
-        <div className='simple-listing-city'>{this.props.allListings[number].city}</div>
+        <Link to={`/listings/${this.props.allListings[number].id}`}>
+          <img className='simple-listing-pic' key={idx} src={this.props.allListings[number].image_url}/>
+          <div className='simple-listing-city'>{this.props.allListings[number].city}</div>
+        </Link>
         </div>;
     });
 
@@ -79,7 +82,7 @@ class HomePage extends React.Component {
 
 
         <div className='home-description'>
-
+          <br></br>
           <div className='heading'>AirBadnBoujee</div>
           <div className='about-us'>
             Plan the perfect vacation with us! With over 2000 listings in 300 cities, you are bound to find the perfect fit.
