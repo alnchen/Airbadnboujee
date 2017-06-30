@@ -114,7 +114,7 @@ class HomePage extends React.Component {
           <div className='home-review'>
             <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
             <div className='author'>
-              <div className='review-name'>Chris. Houston, TX.</div>
+              <div className='review-name'>Chris from Houston, TX.</div>
               <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778514/r5_s3rrbc.jpg' />
             </div>
           </div>
@@ -122,7 +122,7 @@ class HomePage extends React.Component {
           <div className='home-review'>
             <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
             <div className='author'>
-              <div className='review-name'>Aubrey. Toronto, ON.</div>
+              <div className='review-name'>Aubrey from Toronto, ON.</div>
               <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778515/r4_moyure.jpg' />
             </div>
           </div>
@@ -130,7 +130,7 @@ class HomePage extends React.Component {
           <div className='home-review'>
             <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
             <div className='author'>
-              <div className='review-name'>Taylor. New York, NY</div>
+              <div className='review-name'>Taylor from New York, NY</div>
               <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778514/r3_tzmmbk.jpg' />
             </div>
           </div>
@@ -138,7 +138,7 @@ class HomePage extends React.Component {
           <div className='home-review'>
             <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
             <div className='author'>
-              <div className='review-name'>Robert. Los Angeles, CA</div>
+              <div className='review-name'>Robert from Los Angeles, CA</div>
               <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778515/r2_exxvby.png' />
             </div>
           </div>
@@ -146,7 +146,7 @@ class HomePage extends React.Component {
           <div className='home-review'>
             <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
             <div className='author'>
-              <div className='review-name'>Michelle. Washington, DC</div>
+              <div className='review-name'>Michelle from Washington, DC</div>
               <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778514/r1_ajkn9r.jpg' />
             </div>
           </div>
