@@ -112,7 +112,7 @@ class HomePage extends React.Component {
           <div className='heading'>Reviews</div>
 
           <div className='home-review'>
-            <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
+            <div className='review-body'>"I needed a big place to host a Championship party for my teammates and staff. It was ridiculously easy finding just what we wanted and our hosts even threw in a couple bottles of champagne for us!"</div>
             <div className='author'>
               <div className='review-name'>Chris from Houston, TX.</div>
               <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778514/r5_s3rrbc.jpg' />
@@ -120,7 +120,7 @@ class HomePage extends React.Component {
           </div>
 
           <div className='home-review'>
-            <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
+            <div className='review-body'>"During the summer of sixteen. After one dance, I booked a spot named Marvin's Room and looked over at my wifey and said 'hold on, we're going home'. It ran me about 10 bands but it was the Best I Ever Had."</div>
             <div className='author'>
               <div className='review-name'>Aubrey from Toronto, ON.</div>
               <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778515/r4_moyure.jpg' />
