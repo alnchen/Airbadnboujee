@@ -120,7 +120,7 @@ class HomePage extends React.Component {
           </div>
 
           <div className='home-review'>
-            <div className='review-body'>"During the summer of sixteen. After one dance, I booked a spot named Marvin's Room and looked over at my wifey and said 'hold on, we're going home'. It ran me about 10 bands but it was the Best I Ever Had."</div>
+            <div className='review-body'>"During the summer of sixteen, I booked a spot named Marvin's Room that ran me about 10 bands but it was the best I ever had."</div>
             <div className='author'>
               <div className='review-name'>Aubrey from Toronto, ON.</div>
               <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778515/r4_moyure.jpg' />
@@ -128,7 +128,7 @@ class HomePage extends React.Component {
           </div>
 
           <div className='home-review'>
-            <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
+            <div className='review-body'>"My boyfriend surprised me with a beach vacation and the resort was gorgeous! I had such an amazing time there that I decided to book the same place two months later, with a new boyfriend."</div>
             <div className='author'>
               <div className='review-name'>Taylor from New York, NY</div>
               <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778514/r3_tzmmbk.jpg' />
@@ -136,7 +136,7 @@ class HomePage extends React.Component {
           </div>
 
           <div className='home-review'>
-            <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
+            <div className='review-body'>"I assembled a team in New York for business and needed a loft that could accommodate all of us. The space was exactly as described in the listing. Even came with a skydeck for those who prefer to fly in."</div>
             <div className='author'>
               <div className='review-name'>Robert from Los Angeles, CA</div>
               <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778515/r2_exxvby.png' />
@@ -144,7 +144,7 @@ class HomePage extends React.Component {
           </div>
 
           <div className='home-review'>
-            <div className='review-body'>"Best place ever! We had an Avengers party here and nobody was killed. Captain America, Hulk, Thor, and all their girls showed up as well. No Ultron this time."</div>
+            <div className='review-body'>"Needed a sweet retirement getaway for my husband since he's been working so hard his whole career. I found the perfect villa in Hawaii!"</div>
             <div className='author'>
               <div className='review-name'>Michelle from Washington, DC</div>
               <img className='review-pic' src='https://res.cloudinary.com/ac31624/image/upload/v1498778514/r1_ajkn9r.jpg' />
