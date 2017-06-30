@@ -4,7 +4,7 @@
 
 [AirBadnBoujee]: http://www.airbadnboujee.com/#/
 
-![screenshot](http://res.cloudinary.com/ac31624/image/upload/v1495837374/home_page_ffbyjh.png)
+![screenshot](https://res.cloudinary.com/ac31624/image/upload/v1498682892/Screen_Shot_2017-06-28_at_1.47.16_PM_o29y2x.png)
 
 AirBadnBoujee is a fullstack web application inspired and modeled after Airbnb. This project was created through Ruby on Rails and a PostgreSQL powered database in the backend along with the combination of React and Redux in the frontend.
 
@@ -56,7 +56,7 @@ import { DateRangePicker } from 'react-dates';
 
 ![screenshot](http://res.cloudinary.com/ac31624/image/upload/v1495838292/Screen_Shot_2017-05-26_at_3.37.36_PM_p1vk9n.png)
 
-![screenshot](http://res.cloudinary.com/ac31624/image/upload/v1495838934/Screen_Shot_2017-05-26_at_3.48.31_PM_kavdgy.png)
+![screenshot](https://res.cloudinary.com/ac31624/image/upload/v1498682999/Screen_Shot_2017-06-28_at_1.49.35_PM_j12kzf.png)
 
 
 ### Back End Composition
