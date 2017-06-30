@@ -27,8 +27,8 @@ class LogInForm extends React.Component {
   }
 
   guestLogIn() {
-    this.props.login({ email: 'jerry@xanga.com', password: 'password'})
-    .then(this.props.closeModal);
+    this.props.closeModal;
+    this.props.login({ email: 'jerry@xanga.com', password: 'password'});
   }
 
   switchForms(e) {
