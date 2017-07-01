@@ -20,15 +20,14 @@ class LogInForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    // const user = Object.assign({}, this.state);
-    // this.setState({email: this.state.email.toLowerCase()});
     const user = this.state;
     this.props.login(user).then(this.props.closeModal);
   }
 
-  guestLogIn() {
-    this.props.closeModal();
-    this.props.login({ email: 'jerry@xanga.com', password: 'password'});
+  guestLogIn(e) {
+    e.preventDefault();
+    this.props.login({ email: 'jerry@xanga.com', password: 'password'})
+    .then(this.props.closeModal);
   }
 
   switchForms(e) {
