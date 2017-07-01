@@ -26,7 +26,7 @@ class SignUpForm extends React.Component {
   }
 
   guestLogIn() {
-    this.props.closeModal;
+    this.props.closeModal();
     this.props.login({ email: 'jerry@xanga.com', password: 'password'});
   }
 
