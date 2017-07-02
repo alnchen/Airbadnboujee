@@ -83,7 +83,7 @@ class HomePage extends React.Component {
 
         <div className='home-description'>
           <br></br>
-          <div className='heading'>AirBadnBoujee</div>
+          <div className='heading'>About Us</div>
           <div className='about-us'>
             Plan the perfect vacation with us! With over 2000 listings in 300 cities, you are bound to find the perfect fit.
             Whether you are looking for a high-rise condo for a romantic getaway, a multi-story mansion for your next birthday party,
@@ -109,7 +109,7 @@ class HomePage extends React.Component {
           <br></br>
           <hr className='line'></hr>
           <br></br>
-          <div className='heading'>Reviews</div>
+          <div className='heading'>What Guests Are Saying</div>
 
           <div className='home-review'>
             <div className='review-body'>"I needed a big place to host a Championship party for my teammates and staff. It was ridiculously easy finding just what we wanted and our hosts even threw in a couple bottles of champagne for us!"</div>
