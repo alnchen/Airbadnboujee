@@ -85,7 +85,7 @@ class HomePage extends React.Component {
           <br></br>
           <div className='heading'>About Us</div>
           <div className='about-us'>
-            Plan the perfect vacation with us! With over 2000 listings in 300 cities, you are bound to find the perfect fit.
+            Plan the perfect vacation with us! With over 1500 listings in 200 cities, you are bound to find the perfect fit.
             Whether you are looking for a high-rise condo for a romantic getaway, a multi-story mansion for your next birthday party,
             or one of the world's most unique places to check off the bucketlist, we've got you covered!
           </div>
