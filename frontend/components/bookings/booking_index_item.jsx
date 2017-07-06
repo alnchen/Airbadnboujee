@@ -55,7 +55,7 @@ class BookingIndexItem extends React.Component {
 
         <div className='booking-text'>
           <div className='booking-city'>{city}</div>
-          <div>{check_in} - {check_out}</div>
+          <div>{check_in} to {check_out}</div>
           <div>Number of Guests: { num_of_guests }</div>
           <div>Nights: { diff }</div>
           <br/>
