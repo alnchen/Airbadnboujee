@@ -4,7 +4,7 @@
 
 [AirBadnBoujee]: http://www.airbadnboujee.com/#/
 
-![screenshot](http://res.cloudinary.com/ac31624/image/upload/v1498682892/Screen_Shot_2017-06-28_at_1.47.16_PM_o29y2x.png)
+![screenshot](https://res.cloudinary.com/ac31624/image/upload/v1499423597/updated_home_page_adf0eq.jpg)
 
 AirBadnBoujee is a fullstack web application inspired and modeled after Airbnb. This project was created through Ruby on Rails and a PostgreSQL powered database in the backend along with the combination of React and Redux in the frontend.
 
