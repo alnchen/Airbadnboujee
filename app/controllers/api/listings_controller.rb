@@ -13,14 +13,6 @@ class Api::ListingsController < ApplicationController
     end
   end
 
-  def destroy
-    # implementation to come
-  end
-
-  def update
-    # implementation to come
-  end
-
   def listing_params
     params.require(:listing).permit(:owner_id, :lat, :lng, :price, :image_url,
                                     :title, :description, :city, :state, :country, :max_guests)
