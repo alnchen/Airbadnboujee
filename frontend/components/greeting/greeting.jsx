@@ -59,7 +59,7 @@ class Greeting extends React.Component{
     );
 
     const loggedInLinks = (currentUser, logout) => {
-      const profilePic = currentUser.image_url ? currentUser.image_url : 'https://d28rk61hailme.cloudfront.net/assets/default_user-856f2487c07862f3089cfcb1528df354.png'
+      const profilePic = currentUser.image_url ? currentUser.image_url : 'https://res.cloudinary.com/ac31624/image/upload/v1500594277/Screen_Shot_2017-07-20_at_4.43.33_PM_hbs3h4.png'
 
       // <Link to="/">Help</Link>
       return (
