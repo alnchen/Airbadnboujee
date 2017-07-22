@@ -46,7 +46,6 @@ class Greeting extends React.Component{
 
   logOutRedirect() {
     this.props.logout();
-    // .then(this.props.history.push(`/`));
   }
 
   render(){

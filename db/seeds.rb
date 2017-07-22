@@ -271,7 +271,7 @@ Listing.create!(
                 lat: 36.1662,
                 lng: -115.1745,
                 price: 452,
-                image_url: 'http://eaudusoleil-empire.com/resources/eau%20du%20Soliel%20suites.jpg',
+                image_url: 'http://www.brabbu.com/en/news-events/wp-content/uploads/2015/11/skyline-terrace-suite-grand-las-vegas-.jpeg',
                 title: 'Roll in style with my crib!',
                 description: 'The penthouse offers a captivating view of the glittering city below. Sprawled out over 4,000 square feet of living space. Sleeps 8.',
                 city: 'Las Vegas',
