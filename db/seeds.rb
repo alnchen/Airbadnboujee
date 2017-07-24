@@ -77,7 +77,7 @@ Listing.create!(
                 image_url: 'http://d751626467d7f300fc09-8b5ab94d6c0e85f41c767cd488d9c749.r17.cf1.rackcdn.com/020.jpg',
                 title: 'Watch the sunset/sunrise from the 50th floor!',
                 description: 'This beautiful condo is located on the 50th Floor of the Place Tower facing the San Francisco Bay. I just purchased this unit and it is newly refurbished by the hotel with brand new furniture, wall coverings & flooring. The best feature of this condo is the large balcony with expansive views. I keep the balcony open at all times for my guests to enjoy the outdoor space and relax while taking in the breathtaking views.',
-                city: 'Sausolito',
+                city: 'Sausalito',
                 state: 'California',
                 country: 'USA',
                 max_guests: 10
@@ -542,7 +542,7 @@ Listing.create!(
                 image_url: 'https://images.contentful.com/tncnbuc6u1l7/NQrf3TR5iCYywgUEo6Wye/a43f8cbf4241b4335438366bcd5af55d/embed-01-le-palais-royal-05.jpg',
                 title: 'Your own White House',
                 description: "Comfortable house, modern, bright and functional. Eight bedrooms and five full bath and three half bath, two large living rooms, fully equipped kitchen with a separate space for breakfast, a beautiful garden with pergola. Two parking spaces inside. Centrally Located..",
-                city: 'Sausolito',
+                city: 'Sausalito',
                 state: 'California',
                 country: 'USA',
                 max_guests: 20
