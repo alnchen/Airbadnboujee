@@ -336,20 +336,6 @@ Listing.create!(
                 max_guests: 6
                 )
 
-Listing.create!(
-                owner_id: 1,
-                lat: 37.7852,
-                lng: -122.4043,
-                price: 375,
-                image_url: 'https://sanfranciscoarchitects.files.wordpress.com/2017/03/gallery_house_e_facade_746x1000.jpg?w=760',
-                title: 'It’s not always about the size!',
-                description: 'This cozy property offers visitors an unique San Francisco experience. Enjoy natural sunlight and magnificent views with the gorgeous panoramic windows. Located in the mission, you are close to many bars and restaurants.',
-                city: 'San Francisco',
-                state: 'California',
-                country: 'USA',
-                max_guests: 6
-                )
-
 
 Listing.create!(
                 owner_id: 1,
