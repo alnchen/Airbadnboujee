@@ -548,20 +548,6 @@ Listing.create!(
                 max_guests: 2
                 )
 
-Listing.create(
-               owner_id: 1,
-               lat: 35.8384,
-               lng: -115.2709,
-               price: 300,
-               image_url: 'https://s3.amazonaws.com/citybuzz/2016/01/best-places-to-live-in-california-for-democrats-and-republicans/best-places-to-live-in-california-for-democrats-and-republicans-1.jpg',
-               title: 'LUXURY MANSION minutes from Strip!',
-               description: 'Our 5,000 sq. ft. property provides a comfortable, relaxing, and tranquil retreat just minutes from the Las Vegas Strip. Have the convenience of staying in the same spacious, fully furnished house with family and friends!',
-               city: 'Las Vegas',
-               state: 'California',
-               country: 'USA',
-               max_guests: 16
-               )
-
 Listing.create!(
                 owner_id: 1,
                 lat: 34.2439,
@@ -672,20 +658,6 @@ Listing.create!(
                 state: 'California',
                 country: 'USA',
                 max_guests: 10
-                )
-
-Listing.create!(
-                owner_id: 1,
-                lat: 38.2975,
-                lng: -122.2869,
-                price: 380,
-                image_url: 'http://blog.visitnapavalley.com/wp-content/uploads/2016/07/Ghost-Wineries-of-Napa-Valley-Far-Niente.jpg',
-                title: 'Five minutes from the best Napa Valley Vineyards',
-                description: 'Fully renovated farmhouse Cottage. Two queen beds and additional twin bed for a fifth person. Full bathroom, couch, hd TV, dinette and kitchenette. Great patio space for enjoying the Napa wine and weather!.',
-                city: 'Napa',
-                state: 'California',
-                country: 'USA',
-                max_guests: 5
                 )
 
 Listing.create!(
